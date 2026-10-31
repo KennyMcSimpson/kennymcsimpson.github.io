@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark light"><meta name="theme-color" content="#091b22">
+  <title>从一个小修复开始 · Kenny</title><meta name="description" content="四个已经合并的上游 PR，和 Contributor 标签背后的具体贡献。Kenny 的开源记录。">
+  <link rel="canonical" href="https://kennymcsimpson.github.io/notes/upstream/"><meta property="og:type" content="article"><meta property="og:title" content="一个小修复，也能成为一条连接。"><meta property="og:description" content="四个已经合并的上游 PR，和 Contributor 标签背后的具体贡献。"><meta property="og:url" content="https://kennymcsimpson.github.io/notes/upstream/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="alternate" type="application/rss+xml" title="Kenny · 实验手记" href="/feed.xml">
+  <script src="/preferences.js"></script><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/enhancements.css"><script src="/reading.js" type="module"></script>
+</head>
+<body data-page="upstream">
+  <div class="reading-progress" aria-hidden="true"></div><a class="skip-link" href="#main" data-i18n="skip">跳到正文</a>
+  <header class="site-header wrap"><a class="brand" href="/" aria-label="Kenny — home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2v28M2 16h28M6 6l20 20M26 6 6 26"/><circle cx="16" cy="16" r="6"/></svg><span>KENNY<span class="brand-dot">.</span></span></a><nav class="main-nav" aria-label="主导航" data-label="nav"><a href="/#ecosystem">Ecosystem</a><a href="/notes/" data-i18n="nav.notes">手记</a><a href="/#contributions" data-i18n="nav.contributions">开源足迹</a></nav><div class="preferences"><button class="search-trigger js-control" data-search-open type="button" aria-label="搜索与快速跳转" data-label="search.open"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><kbd>K</kbd></button><button class="text-button js-control" id="language-toggle" type="button" aria-label="Switch to English">EN</button><span class="preference-divider" aria-hidden="true"></span><button class="theme-button js-control" id="theme-toggle" type="button" aria-label="切换到浅色主题"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg></button></div></header>
+  <main id="main" class="reader-page wrap">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Kenny</a><span aria-hidden="true">/</span><a href="/notes/" data-i18n="notes.back">全部手记</a><span aria-hidden="true">/</span><span>02</span></nav>
+    <header class="reading-head"><div class="reading-meta"><span data-i18n="notes.open.category">开源记录</span><span aria-hidden="true">·</span><time datetime="2026-10-31" data-i18n="reader.updated">写于 2026.10.31</time></div><h1 data-i18n="notes.open.title">一个小修复，也能成为一条连接。</h1><p class="page-lede" data-i18n="notes.open.description">从四个已合并的改动出发，聊聊贡献留下了什么，以及 Contributor 这个标签意味着什么。</p></header>
+    <div class="reading-layout">
+      <div>
+        <article class="reading-body" data-language="zh-CN" lang="zh-CN" aria-label="开源记录正文">
+          <h2 id="small-problems">从具体的问题开始</h2>
+          <p>上游贡献里有一些很小的切口：文件能不能正常解码，配置会不会被悄悄漏读，一条响应在出错后有没有关掉，流里的第一个事件是否被保留下来。改动的行数可能不多，但都能指向一个可以复现的问题。</p>
+          <p>下面四项是已经合并的记录。每一项都可以沿着 PR 回到改动、测试和讨论。</p>
+          <h2 id="four-fixes">四个已经留下的修复</h2>
+          <ul>
+            <li><strong>Hugging Face · datasets：</strong><a href="https://github.com/huggingface/datasets/pull/8737" target="_blank" rel="noopener noreferrer">#8737</a> 修复远程 NIfTI 文件的解码路径，并补上回归测试。</li>
+            <li><strong>Microsoft · SkillOpt：</strong><a href="https://github.com/microsoft/SkillOpt/pull/304" target="_blank" rel="noopener noreferrer">#304</a> 兼容旧编码配置，避免读取失败时丢失原有限制。</li>
+            <li><strong>Tencent · WeKnora：</strong><a href="https://github.com/Tencent/WeKnora/pull/3930" target="_blank" rel="noopener noreferrer">#3930</a> 关闭 HTTP 错误后遗留的 MCP SSE 响应。</li>
+            <li><strong>OpenSandbox：</strong><a href="https://github.com/opensandbox-group/OpenSandbox/pull/2226" target="_blank" rel="noopener noreferrer">#2226</a> 保留带 UTF-8 BOM 的第一个 SSE 事件。</li>
+          </ul>
+          <h2 id="contributor-label">Contributor 这个标签，意味着什么？</h2>
+          <p>GitHub 会根据账号与仓库的关系显示不同标记。贡献被接收后出现的 Contributor，说明这里有过一段实际参与的记录。它不自动带来维护权限，也不等于成为项目员工或核心维护者。</p>
+          <p>更值得留下的是标签背后的证据：发现了什么问题，怎样复现，为什么这样修改，以及测试保护了哪一种行为。对想了解一个人的访客来说，这些具体过程比单独一个数字更有用。</p>
+          <h2 id="leave-a-trail">让别人能沿着记录走回来</h2>
+          <p>截至 2026 年 10 月 31 日，账号有 <strong>40 个公开已合并的上游 PR，涉及 36 个仓库</strong>。统计排除了自己名下仓库、私有仓库和未合并的 PR，可以在 <a href="https://github.com/search?q=author%3AKennyMcSimpson+is%3Apr+is%3Amerged+is%3Apublic+-user%3AKennyMcSimpson&amp;type=pullrequests" target="_blank" rel="noopener noreferrer">GitHub 的完整检索里查看</a>。</p>
+          <p>这些数字是一个有日期的快照。这里保留四个具体入口，让每次贡献都能回到它实际解决的问题。</p>
+        </article>
+        <article class="reading-body" data-language="en" lang="en" aria-label="Open-source note" hidden>
+          <h2 id="small-problems-en">Start with something concrete</h2>
+          <p>Some useful entry points upstream are small: whether a file decodes, whether configuration gets silently skipped, whether an error response is closed, or whether the first event in a stream survives. A change may only touch a few lines and still address a reproducible problem.</p>
+          <p>The following four changes have been merged. Each PR leads back to the patch, its tests, and the discussion around it.</p>
+          <h2 id="four-fixes-en">Four fixes that stayed upstream</h2>
+          <ul>
+            <li><strong>Hugging Face · datasets:</strong> <a href="https://github.com/huggingface/datasets/pull/8737" target="_blank" rel="noopener noreferrer">#8737</a> fixes remote NIfTI decoding paths and adds regression coverage.</li>
+            <li><strong>Microsoft · SkillOpt:</strong> <a href="https://github.com/microsoft/SkillOpt/pull/304" target="_blank" rel="noopener noreferrer">#304</a> reads legacy-encoded configuration without silently dropping existing constraints.</li>
+            <li><strong>Tencent · WeKnora:</strong> <a href="https://github.com/Tencent/WeKnora/pull/3930" target="_blank" rel="noopener noreferrer">#3930</a> closes MCP SSE responses left open after HTTP errors.</li>
+            <li><strong>OpenSandbox:</strong> <a href="https://github.com/opensandbox-group/OpenSandbox/pull/2226" target="_blank" rel="noopener noreferrer">#2226</a> preserves the first SSE event when a UTF-8 BOM is present.</li>
+          </ul>
+          <h2 id="contributor-label-en">What does Contributor mean?</h2>
+          <p>GitHub uses different labels for an account’s relationship with a repository. Contributor points to a record of participation accepted by that project. It does not automatically grant maintenance permissions or mean that someone is an employee or core maintainer.</p>
+          <p>The evidence behind the label is more useful: the problem, a way to reproduce it, the reason for the change, and the behavior protected by a test. Those details give a visitor more to work with than a number alone.</p>
+          <h2 id="leave-a-trail-en">Leave a trail people can follow</h2>
+          <p>As of October 31, 2026, the account has <strong>40 merged public upstream PRs across 36 repositories</strong>. This excludes repositories under my own account, private repositories, and unmerged PRs. The <a href="https://github.com/search?q=author%3AKennyMcSimpson+is%3Apr+is%3Amerged+is%3Apublic+-user%3AKennyMcSimpson&amp;type=pullrequests" target="_blank" rel="noopener noreferrer">full GitHub search</a> makes the selection inspectable.</p>
+          <p>Those counts are a dated snapshot. The four links here are a way back to the actual problems each contribution addressed.</p>
+        </article>
+        <nav class="reading-end" aria-label="More notes"><p class="eyebrow" data-i18n="reader.next">接着读</p><a class="next-note" href="/notes/ecosystem/"><span data-i18n="notes.eco.title">Ecosystem、PI 与 Lyra，各自在做什么？</span> ↗</a><br><a class="quiet-link" href="/" data-i18n="reader.home">回到星图</a></nav>
+      </div>
+      <aside class="reading-sidebar"><p class="eyebrow" data-i18n="reader.toc">这篇里有什么</p><ol class="reading-toc" id="reading-toc"><li><a href="#small-problems">从具体的问题开始</a></li><li><a href="#four-fixes">四个已经留下的修复</a></li><li><a href="#contributor-label">Contributor 这个标签，意味着什么？</a></li><li><a href="#leave-a-trail">让别人能沿着记录走回来</a></li></ol><button class="share-reading js-control" type="button"><span data-i18n="notes.share">复制链接</span><span aria-hidden="true">↗</span></button><p class="copy-status" role="status"></p></aside>
+    </div>
+  </main>
+  <footer class="site-footer wrap"><div><a class="footer-wordmark" href="/">Kenny<span>✳</span></a><p data-i18n="footer.note">这里会随着 PI 一起长大。</p></div><div class="footer-links"><a href="/feed.xml">RSS ↗</a><a href="https://github.com/KennyMcSimpson" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" target="_blank" rel="noopener noreferrer" data-i18n="footer.source">本站源码 ↗</a><span>© 2026 Kenny</span></div></footer><a class="back-to-top js-control" href="#" aria-label="回到顶部" data-label="top">↑</a>
+</body>
+</html>

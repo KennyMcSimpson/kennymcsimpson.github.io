@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kenny · 实验手记 / Field notes</title><link>https://kennymcsimpson.github.io/notes/</link><description>科研、代码与长期记忆。Research, code, and lasting context.</description><language>zh-CN</language><lastBuildDate>Sat, 31 Oct 2026 06:30:00 GMT</lastBuildDate><atom:link href="https://kennymcsimpson.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <item><title>Ecosystem、PI 与 Lyra，各自在做什么？ / How do they fit?</title><link>https://kennymcsimpson.github.io/notes/ecosystem/</link><guid isPermaLink="true">https://kennymcsimpson.github.io/notes/ecosystem/</guid><pubDate>Sat, 31 Oct 2026 06:30:00 GMT</pubDate><description>一套工作方式、一个桌面工作区，以及其中正在完善的搭档。A way of working, a desktop workspace, and the companion taking shape inside it.</description></item>
+    <item><title>一个小修复，也能成为一条连接。 / A small fix can be a connection.</title><link>https://kennymcsimpson.github.io/notes/upstream/</link><guid isPermaLink="true">https://kennymcsimpson.github.io/notes/upstream/</guid><pubDate>Sat, 31 Oct 2026 06:30:00 GMT</pubDate><description>四个已合并的改动，以及 Contributor 标签意味着什么。Four merged changes and what the Contributor label means.</description></item>
+  </channel>
+</rss>
