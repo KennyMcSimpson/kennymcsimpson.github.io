@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://kennymcsimpson.github.io/sitemap.xml

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#091b22">
+  <title>Kenny · 想法的引力</title>
+  <meta name="description" content="Kenny 的个人实验室。科研、代码与长期记忆，在 Ecosystem 里慢慢连成星图。PI-Ecosystem 本地开发中。">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kenny · A small universe of things I build">
+  <meta property="og:description" content="Research, code, and lasting context. Exploring a personal Ecosystem, one connection at a time.">
+  <meta property="og:url" content="https://kennymcsimpson.github.io/">
+  <link rel="canonical" href="https://kennymcsimpson.github.io/">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">跳到正文</a>
+  <header class="site-header wrap">
+    <a class="brand" href="#" aria-label="Kenny — home">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2v28M2 16h28M6 6l20 20M26 6 6 26"/><circle cx="16" cy="16" r="6"/></svg>
+      <span>KENNY<span class="brand-dot">.</span></span>
+    </a>
+    <nav class="main-nav" aria-label="主导航" data-label="nav">
+      <a href="#ecosystem">Ecosystem</a>
+      <a href="#contributions" data-i18n="nav.contributions">开源足迹</a>
+      <a class="nav-github" href="https://github.com/KennyMcSimpson" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+    </nav>
+    <div class="preferences">
+      <button class="text-button js-control" id="language-toggle" type="button" aria-label="Switch to English">EN</button>
+      <span class="preference-divider" aria-hidden="true"></span>
+      <button class="theme-button js-control" id="theme-toggle" type="button" aria-label="切换到浅色主题" title="切换到浅色主题"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg></button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="tiny-star" aria-hidden="true">✳</span> A PERSONAL LAB, ALWAYS IN PROGRESS</p>
+        <h1 id="hero-title" data-i18n="hero.title">把想法，
+连成星图。</h1>
+        <p class="hero-description" data-i18n="hero.description">我是 Kenny。写代码、做研究，也在搭一个让知识、工具与长期记忆彼此相连的工作环境。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#ecosystem"><span data-i18n="hero.explore">走进 Ecosystem</span><span aria-hidden="true">↗</span></a>
+          <a class="quiet-link" href="#contributions"><span data-i18n="hero.contributions">看看开源足迹</span><span aria-hidden="true">↓</span></a>
+        </div>
+        <p class="hero-footnote"><span class="small-orbit" aria-hidden="true"></span><span data-i18n="hero.footnote">还在生长。不妨先逛一圈。</span></p>
+      </div>
+
+      <div class="atlas" aria-label="Ecosystem 交互星图" data-label="atlas">
+        <div class="atlas-canvas">
+          <div class="atlas-coordinate" aria-hidden="true">FIG. 01 <span>THE ECOSYSTEM</span></div>
+          <svg class="orbit-lines" viewBox="0 0 600 500" fill="none" aria-hidden="true">
+            <ellipse class="orbit" cx="300" cy="250" rx="242" ry="180" transform="rotate(-24 300 250)"/>
+            <ellipse class="orbit orbit-inner" cx="300" cy="250" rx="155" ry="110" transform="rotate(24 300 250)"/>
+            <path class="connection" d="M300 250 162 95M300 250 438 95M300 250 510 270M300 250 396 410M300 250 156 390M300 250 78 240"/>
+            <path class="constellation" d="m162 95 276 0 72 175-114 140-240-20L78 240Z"/>
+            <g class="stars"><circle cx="63" cy="73" r="2"/><circle cx="532" cy="116" r="2.2"/><circle cx="330" cy="48" r="1.8"/><circle cx="478" cy="426" r="1.7"/><circle cx="72" cy="398" r="1.6"/><circle cx="280" cy="441" r="2"/><circle cx="560" cy="349" r="1.5"/><circle cx="220" cy="167" r="1.3"/></g>
+            <path class="cross-star" d="M523 190v12m-6-6h12M219 438v10m-5-5h10"/>
+          </svg>
+          <a class="atlas-core" href="#ecosystem"><span class="core-mark" aria-hidden="true">✳</span><strong>Ecosystem</strong><small data-i18n="atlas.core">一个相连的工作环境</small></a>
+          <button class="map-node node-memory is-active" data-module="memory" type="button" aria-pressed="true" aria-controls="module-detail"><span class="node-point" aria-hidden="true"></span><span class="node-label" data-i18n="module.memory.name">项目记忆</span><small>MEMORY</small></button>
+          <button class="map-node node-research" data-module="research" type="button" aria-pressed="false" aria-controls="module-detail"><span class="node-point" aria-hidden="true"></span><span class="node-label" data-i18n="module.research.name">科研与评审</span><small>RESEARCH</small></button>
+          <button class="map-node node-code" data-module="code" type="button" aria-pressed="false" aria-controls="module-detail"><span class="node-point" aria-hidden="true"></span><span class="node-label" data-i18n="module.code.name">编码与执行</span><small>BUILD</small></button>
+          <button class="map-node node-tools" data-module="tools" type="button" aria-pressed="false" aria-controls="module-detail"><span class="node-point" aria-hidden="true"></span><span class="node-label" data-i18n="module.tools.name">技能与工具</span><small>CONNECT</small></button>
+          <button class="map-node node-pi" data-module="pi" type="button" aria-pressed="false" aria-controls="module-detail"><span class="node-point" aria-hidden="true"></span><span class="node-label">PI-Ecosystem</span><small>WORKSPACE</small></button>
+          <button class="map-node node-lyra" data-module="lyra" type="button" aria-pressed="false" aria-controls="module-detail"><span class="node-point lyra-point" aria-hidden="true"></span><span class="node-label">Lyra</span><small>COMPANION</small></button>
+          <p class="atlas-hint" data-i18n="atlas.hint">选一颗星，看看它在做什么。</p>
+        </div>
+        <div class="module-detail" id="module-detail" aria-live="polite" aria-atomic="true">
+          <span class="detail-index" id="module-index" aria-hidden="true">01 / 06</span>
+          <div><h2 id="module-title">项目记忆</h2><p id="module-description">让下一次工作接得上：保留项目上下文、已经做过的决定，以及它们的来源。</p></div>
+          <span class="detail-spark" aria-hidden="true">↗</span>
+        </div>
+      </div>
+    </section>
+
+    <div class="section-rule wrap"><span>01 — ECOSYSTEM</span><span data-i18n="divider">FROM SCATTERED TO CONNECTED</span></div>
+
+    <section class="ecosystem-section wrap" id="ecosystem" aria-labelledby="ecosystem-title">
+      <div class="section-intro">
+        <div><p class="eyebrow" data-i18n="eco.eyebrow">给每天的工作，留一条线索</p><h2 id="ecosystem-title" data-i18n="eco.title">事情很多，
+可以在同一个世界里。</h2></div>
+        <p class="section-description" data-i18n="eco.description">论文、代码、笔记和工具常常散在不同地方。我在做的 Ecosystem，是把它们串起来：知道从哪里开始，做过什么，下次又该从哪里接着走。</p>
+      </div>
+
+      <div class="workflow">
+        <div class="workflow-heading"><p class="eyebrow" data-i18n="workflow.label">三种日常，试着走一遍</p><div class="workflow-tabs js-control" role="tablist" aria-label="工作流程" data-label="workflow">
+          <button id="tab-research" class="is-active" type="button" role="tab" data-workflow="research" aria-selected="true" aria-controls="workflow-panel" tabindex="0" data-i18n="workflow.research">做研究</button>
+          <button id="tab-build" type="button" role="tab" data-workflow="build" aria-selected="false" aria-controls="workflow-panel" tabindex="-1" data-i18n="workflow.build">写代码</button>
+          <button id="tab-return" type="button" role="tab" data-workflow="return" aria-selected="false" aria-controls="workflow-panel" tabindex="-1" data-i18n="workflow.return">接着做</button>
+        </div></div>
+        <div id="workflow-panel" class="workflow-panel" role="tabpanel" aria-labelledby="tab-research" tabindex="0">
+          <ol id="workflow-steps" class="workflow-steps"><li><span class="step-number">01</span><h3>带着问题找证据</h3><p>从资料和文献出发，把问题、依据与仍然不确定的部分留下来。</p></li><li><span class="step-number">02</span><h3>把方案交给实验</h3><p>让设计、执行和验证有各自的位置，用真实结果修正想法。</p></li><li><span class="step-number">03</span><h3>让评价独立发生</h3><p>研究和评审分开组织，再把结论与下一步接回项目上下文。</p></li></ol>
+        </div>
+        <p class="workflow-caption"><span aria-hidden="true">↳</span><span data-i18n="workflow.caption">这是我组织工作的方式；各模块仍在持续完善。</span></p>
+      </div>
+
+      <div class="workspace-story">
+        <div class="workspace-index" aria-hidden="true"><span>π</span><small>THE WORKSPACE</small></div>
+        <div class="workspace-copy"><p class="status-label"><span aria-hidden="true"></span><span data-i18n="pi.status">本地开发中 · 源码尚未公开</span></p><h3>PI-Ecosystem</h3><p data-i18n="pi.description">承载这张星图的桌面工作区。把记忆、技能、工具连接和不同的工作流程放到一起，也为 Lyra 留一个位置。</p><p class="muted" data-i18n="pi.release">等它准备好，我会在这里放上源码与更完整的故事。</p></div>
+        <div class="workspace-margin"><span aria-hidden="true">UNDER<br>CONSTRUCTION<br>WITH CARE.</span><a class="quiet-link" href="https://github.com/KennyMcSimpson" target="_blank" rel="noopener noreferrer"><span data-i18n="pi.follow">在 GitHub 找到我</span> <span aria-hidden="true">↗</span></a></div>
+      </div>
+
+      <aside class="lyra-note" aria-labelledby="lyra-title">
+        <svg class="lyra-sigil" viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="m19 38-2-24 25 17a45 45 0 0 1 17 0l24-17-2 25c8 9 9 25-1 36-12 13-49 13-61-1-9-11-8-25 0-36Z"/><path d="M21 17 31 34m48-17L68 34M36 61h28M48 71l3 2 3-2M78 85l10-6 4-12"/><circle cx="34" cy="56" r="13"/><circle cx="68" cy="56" r="13"/><path d="M30 56h8m26 0h8M47 53h8M90 24v10m-5-5h10"/></svg>
+        <div class="lyra-copy"><p class="eyebrow" id="lyra-title">A NOTE FROM LYRA <span data-i18n="lyra.name">/ 喻琪的便签</span></p><blockquote id="lyra-quote" aria-live="polite">“星图可以很大，今天先点亮一颗就好。”</blockquote><p class="lyra-context" data-i18n="lyra.context">Lyra 是 PI 里正在完善的管家与搭档。这里是她的一小叠预写便签。</p></div>
+        <button class="note-next js-control" id="note-next" type="button"><span data-i18n="lyra.next">换张便签</span><span aria-hidden="true">↻</span></button>
+      </aside>
+    </section>
+
+    <div class="section-rule wrap"><span>02 — OPEN SOURCE</span><span data-i18n="contrib.divider">SMALL FIXES, SHARED TOOLS</span></div>
+
+    <section class="contributions-section wrap" id="contributions" aria-labelledby="contributions-title">
+      <div class="contributions-top"><div><p class="eyebrow" data-i18n="contrib.eyebrow">也在别人的星图里，补过几条线</p><h2 id="contributions-title" data-i18n="contrib.title">一点开源足迹。</h2><p class="contributions-description" data-i18n="contrib.description">从遇到的小问题开始，修好它、补上测试，再交回上游。这里选了四次已经合并的贡献。</p></div><div class="contribution-stats"><div><strong>40</strong><span data-i18n="contrib.prs">已合并公开 PR</span></div><span class="stats-slash" aria-hidden="true">/</span><div><strong>36</strong><span data-i18n="contrib.repos">上游仓库</span></div></div></div>
+      <div class="contribution-list">
+        <a class="contribution-row" href="https://github.com/huggingface/datasets/pull/8737" target="_blank" rel="noopener noreferrer"><span class="contribution-number">01</span><div class="contribution-project"><h3>Hugging Face</h3><span>datasets <span class="pr-number">#8737</span></span></div><p data-i18n="pr.datasets">修复远程 NIfTI 文件的解码路径，并补上回归测试。</p><span class="merged">MERGED</span><span class="row-arrow" aria-hidden="true">↗</span></a>
+        <a class="contribution-row" href="https://github.com/microsoft/SkillOpt/pull/304" target="_blank" rel="noopener noreferrer"><span class="contribution-number">02</span><div class="contribution-project"><h3>Microsoft</h3><span>SkillOpt <span class="pr-number">#304</span></span></div><p data-i18n="pr.skillopt">兼容旧编码配置，避免读取失败时丢失原有限制。</p><span class="merged">MERGED</span><span class="row-arrow" aria-hidden="true">↗</span></a>
+        <a class="contribution-row" href="https://github.com/Tencent/WeKnora/pull/3930" target="_blank" rel="noopener noreferrer"><span class="contribution-number">03</span><div class="contribution-project"><h3>Tencent</h3><span>WeKnora <span class="pr-number">#3930</span></span></div><p data-i18n="pr.weknora">关闭 HTTP 错误后遗留的 MCP SSE 响应。</p><span class="merged">MERGED</span><span class="row-arrow" aria-hidden="true">↗</span></a>
+        <a class="contribution-row" href="https://github.com/opensandbox-group/OpenSandbox/pull/2226" target="_blank" rel="noopener noreferrer"><span class="contribution-number">04</span><div class="contribution-project"><h3>OpenSandbox</h3><span>OpenSandbox <span class="pr-number">#2226</span></span></div><p data-i18n="pr.sandbox">保留带 UTF-8 BOM 的第一个 SSE 事件。</p><span class="merged">MERGED</span><span class="row-arrow" aria-hidden="true">↗</span></a>
+      </div>
+      <div class="contributions-footnote"><p data-i18n="contrib.snapshot">统计截至 2026.10.31 · 仅含公开、已合并的上游 PR</p><a class="quiet-link" href="https://github.com/search?q=author%3AKennyMcSimpson+is%3Apr+is%3Amerged+is%3Apublic+-user%3AKennyMcSimpson&amp;type=pullrequests" target="_blank" rel="noopener noreferrer"><span data-i18n="contrib.all">查看全部贡献</span><span aria-hidden="true">↗</span></a></div>
+    </section>
+
+    <footer class="site-footer wrap"><div><a class="footer-wordmark" href="#">Kenny<span>✳</span></a><p data-i18n="footer.note">这里会随着 PI 一起长大。</p></div><div class="footer-links"><a href="https://github.com/KennyMcSimpson" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" target="_blank" rel="noopener noreferrer" data-i18n="footer.source">本站源码 ↗</a><span>© 2026 Kenny</span></div></footer>
+  </main>
+</body>
+</html>
