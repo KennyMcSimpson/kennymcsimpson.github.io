@@ -6,8 +6,8 @@
   <title>A small fix can be a connection · Kenny</title>
   <meta name="description" content="A few merged upstream changes, and what the Contributor label actually means. 几个已合并的改动，以及 Contributor 标签意味着什么。">
   <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#faf8f4" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#171513" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f6efe2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d1628" media="(prefers-color-scheme: dark)">
   <link rel="canonical" href="https://kennymcsimpson.github.io/notes/upstream/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="A small fix can be a connection · Kenny">
@@ -21,9 +21,8 @@
 </head>
 <body>
   <a class="skip" href="#main"><span data-l="en">Skip to content</span><span data-l="zh" lang="zh-CN">跳到正文</span></a>
-  <div class="progress" aria-hidden="true"></div>
-  <header class="site-head col">
-    <a class="wordmark" href="/"><svg class="seal" viewBox="4 4 56 56" aria-hidden="true"><rect x="4" y="4" width="56" height="56" rx="7"/><path d="M20 17h10v1.8l-3 .6v11.3l11.6-11.2-2.6-.7V17h10v1.8l-2.6.6-10.1 9.7 11 15.3 2.6.7V47H36.7v-1.8l2-.6-8.4-11.9-3.3 3.1v8.8l3 .6V47H20v-1.8l3-.6V19.4l-3-.6z"/></svg>Kenny</a>
+  <header class="site-head wrap">
+    <a class="wordmark" href="/"><svg class="seal" viewBox="4 4 56 56" aria-hidden="true" focusable="false"><rect x="4" y="4" width="56" height="56" rx="12"/><path d="M20 17h10v1.8l-3 .6v11.3l11.6-11.2-2.6-.7V17h10v1.8l-2.6.6-10.1 9.7 11 15.3 2.6.7V47H36.7v-1.8l2-.6-8.4-11.9-3.3 3.1v8.8l3 .6V47H20v-1.8l3-.6V19.4l-3-.6z"/></svg>Kenny</a>
     <nav class="site-nav" aria-label="Site">
       <a href="/ecosystem/">Ecosystem</a>
       <a href="/contributions/"><span data-l="en">Open source</span><span data-l="zh" lang="zh-CN">开源</span></a>
@@ -33,14 +32,19 @@
     <button class="lang" type="button" data-lang-toggle aria-label="切换到中文"><span data-l="en" lang="zh-CN">中文</span><span data-l="zh" lang="en">EN</span></button>
   </header>
 
-  <main id="main" class="col">
-    <article>
-    <header class="page-head">
-      <p class="kicker"><span data-l="en">Note</span><span data-l="zh" lang="zh-CN">手记</span> <span class="mono">· 2026-10-31</span></p>
-      <h1 class="title"><span data-l="en">A small fix can be a connection.</span><span data-l="zh" lang="zh-CN">一个小修复，也能成为一条连接。</span></h1>
-      <p class="lede" data-l="en">Four merged changes, what they leave behind, and what the Contributor label actually means.</p><p class="lede" data-l="zh" lang="zh-CN">从四个已合并的改动出发，聊聊贡献留下了什么，以及 Contributor 这个标签意味着什么。</p>
-    </header>
-    <div class="prose">
+  <main id="main" class="narrow">
+    <article class="article">
+      <header style="padding-top:clamp(1.5rem,4vw,3rem)">
+        <p class="kicker"><span data-l="en">Note</span><span data-l="zh" lang="zh-CN">手记</span> <span class="mono">· 2026-10-31</span></p>
+        <h1 style="font-size:clamp(2.2rem,5.4vw,3.6rem);letter-spacing:-.035em"><span data-l="en">A small fix can be a connection.</span><span data-l="zh" lang="zh-CN">一个小修复，也能成为一条连接。</span></h1>
+        <p class="lede" data-l="en">Four merged changes, what they leave behind, and what the Contributor label actually means.</p><p class="lede" data-l="zh" lang="zh-CN">从四个已合并的改动出发，聊聊贡献留下了什么，以及 Contributor 这个标签意味着什么。</p>
+        <div class="cover" style="--c-soft:var(--amber-soft)"><svg viewBox="0 0 200 90" preserveAspectRatio="xMidYMid meet" class="art" aria-hidden="true" focusable="false">
+    <path d="M10 64H190" class="nf s-out" stroke-width="3" stroke-linecap="round"/>
+    <path d="M14 64C20 28 34 26 40 26M40 26C48 26 52 40 54 64" class="nf s-amber" stroke-width="3" stroke-linecap="round"/><circle cx="40" cy="26" r="6" class="f-card o2"/><circle cx="54" cy="64" r="6" class="f-amber o2"/><path d="M54 64C60 28 74 26 80 26M80 26C88 26 92 40 94 64" class="nf s-teal" stroke-width="3" stroke-linecap="round"/><circle cx="80" cy="26" r="6" class="f-card o2"/><circle cx="94" cy="64" r="6" class="f-teal o2"/><path d="M94 64C100 28 114 26 120 26M120 26C128 26 132 40 134 64" class="nf s-verm" stroke-width="3" stroke-linecap="round"/><circle cx="120" cy="26" r="6" class="f-card o2"/><circle cx="134" cy="64" r="6" class="f-verm o2"/><path d="M134 64C140 28 154 26 160 26M160 26C168 26 172 40 174 64" class="nf s-lav" stroke-width="3" stroke-linecap="round"/><circle cx="160" cy="26" r="6" class="f-card o2"/><circle cx="174" cy="64" r="6" class="f-lav o2"/>
+    <circle cx="10" cy="64" r="5" class="f-card o2"/>
+  </svg></div>
+      </header>
+      <div class="prose">
       <h2><span data-l="en">Start with something concrete</span><span data-l="zh" lang="zh-CN">从具体的问题开始</span></h2>
       <p data-l="en">Some useful entry points upstream are small: whether a file decodes, whether configuration gets silently skipped, whether an error response is closed, or whether the first event in a stream survives. A change may only touch a few lines and still address a reproducible problem.</p><p data-l="zh" lang="zh-CN">上游贡献里有一些很小的切口：文件能不能正常解码，配置会不会被悄悄漏读，一条响应在出错后有没有关掉，流里的第一个事件是否被保留下来。改动的行数可能不多，但都能指向一个可以复现的问题。</p>
       <p data-l="en">The following four have been merged. Each PR leads back to the patch, its tests, and the discussion around it.</p><p data-l="zh" lang="zh-CN">下面四项是已经合并的记录。每一项都可以沿着 PR 回到改动、测试和讨论。</p>
@@ -53,12 +57,12 @@
       <p data-l="en">When this was written (October 31, 2026), the account had 40 merged public upstream PRs across 36 repositories. That excludes repositories under my own account, private repositories, and unmerged PRs.</p><p data-l="zh" lang="zh-CN">写这篇时（2026 年 10 月 31 日），账号有 40 个公开已合并的上游 PR，涉及 36 个仓库。统计排除了自己名下仓库、私有仓库和未合并的 PR。</p>
       <p data-l="en">Update, 2026-11-03: it is now 41 across 37 repositories. Every one is listed on the <a href="/contributions/">open-source page</a>, grouped by kind.</p><p data-l="zh" lang="zh-CN">2026-11-03 补记：现在是 41 个、37 个仓库。每一个都列在<a href="/contributions/">开源页</a>上，按类别分组。</p>
     </div>
-    <p class="next"><span class="kicker"><span data-l="en">Read next</span><span data-l="zh" lang="zh-CN">接着读</span></span><a class="more" href="/notes/ecosystem/"><span data-l="en">Ecosystem, PI and Lyra: how do they fit?</span><span data-l="zh" lang="zh-CN">Ecosystem、PI 与 Lyra，各自在做什么？</span></a></p>
+      <p class="next"><span class="kicker" style="display:block"><span data-l="en">Read next</span><span data-l="zh" lang="zh-CN">接着读</span></span><a class="go" href="/notes/ecosystem/"><span data-l="en">Ecosystem, PI and Lyra: how do they fit?</span><span data-l="zh" lang="zh-CN">Ecosystem、PI 与 Lyra，各自在做什么？</span></a></p>
     </article>
   </main>
 
-  <footer class="site-foot col">
-    <div class="inner">
+  <footer class="site-foot">
+    <div class="inner wrap">
       <nav aria-label="Elsewhere">
         <a href="mailto:kenny@kojoo.co">kenny@kojoo.co</a>
         <a href="https://github.com/KennyMcSimpson" rel="me noopener">GitHub</a>
@@ -71,7 +75,7 @@
         <button type="button" data-theme-set="light" aria-pressed="false"><span data-l="en">light</span><span data-l="zh" lang="zh-CN">浅色</span></button>
         <button type="button" data-theme-set="dark" aria-pressed="false"><span data-l="en">dark</span><span data-l="zh" lang="zh-CN">深色</span></button>
       </div>
-      <p class="meta-line"><span data-l="en">Updated 2026-11-03 · plain HTML, no trackers · <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">source</a></span><span data-l="zh" lang="zh-CN">更新于 2026-11-03 · 纯 HTML，无统计 · <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">源码</a></span></p>
+      <p class="meta-line"><span data-l="en">Updated 2026-11-03 · drawn by hand in SVG · no trackers · <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">source</a></span><span data-l="zh" lang="zh-CN">更新于 2026-11-03 · SVG 手绘 · 无统计 · <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">源码</a></span></p>
     </div>
   </footer>
 </body>

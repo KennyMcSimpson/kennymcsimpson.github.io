@@ -6,8 +6,8 @@
   <title>Ecosystem, PI and Lyra: how do they fit? · Kenny</title>
   <meta name="description" content="A workbench used every day, the habits that grew around it, and the assistant who lives inside. 一个每天在用的工作台，围着它长出来的习惯，以及住在里面的助手。">
   <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#faf8f4" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#171513" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f6efe2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d1628" media="(prefers-color-scheme: dark)">
   <link rel="canonical" href="https://kennymcsimpson.github.io/notes/ecosystem/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Ecosystem, PI and Lyra: how do they fit? · Kenny">
@@ -21,9 +21,8 @@
 </head>
 <body>
   <a class="skip" href="#main"><span data-l="en">Skip to content</span><span data-l="zh" lang="zh-CN">跳到正文</span></a>
-  <div class="progress" aria-hidden="true"></div>
-  <header class="site-head col">
-    <a class="wordmark" href="/"><svg class="seal" viewBox="4 4 56 56" aria-hidden="true"><rect x="4" y="4" width="56" height="56" rx="7"/><path d="M20 17h10v1.8l-3 .6v11.3l11.6-11.2-2.6-.7V17h10v1.8l-2.6.6-10.1 9.7 11 15.3 2.6.7V47H36.7v-1.8l2-.6-8.4-11.9-3.3 3.1v8.8l3 .6V47H20v-1.8l3-.6V19.4l-3-.6z"/></svg>Kenny</a>
+  <header class="site-head wrap">
+    <a class="wordmark" href="/"><svg class="seal" viewBox="4 4 56 56" aria-hidden="true" focusable="false"><rect x="4" y="4" width="56" height="56" rx="12"/><path d="M20 17h10v1.8l-3 .6v11.3l11.6-11.2-2.6-.7V17h10v1.8l-2.6.6-10.1 9.7 11 15.3 2.6.7V47H36.7v-1.8l2-.6-8.4-11.9-3.3 3.1v8.8l3 .6V47H20v-1.8l3-.6V19.4l-3-.6z"/></svg>Kenny</a>
     <nav class="site-nav" aria-label="Site">
       <a href="/ecosystem/">Ecosystem</a>
       <a href="/contributions/"><span data-l="en">Open source</span><span data-l="zh" lang="zh-CN">开源</span></a>
@@ -33,14 +32,19 @@
     <button class="lang" type="button" data-lang-toggle aria-label="切换到中文"><span data-l="en" lang="zh-CN">中文</span><span data-l="zh" lang="en">EN</span></button>
   </header>
 
-  <main id="main" class="col">
-    <article>
-    <header class="page-head">
-      <p class="kicker"><span data-l="en">Note</span><span data-l="zh" lang="zh-CN">手记</span> <span class="mono">· 2026-10-31 · <span data-l="en">revised</span><span data-l="zh" lang="zh-CN">修订</span> 2026-11-03</span></p>
-      <h1 class="title"><span data-l="en">Ecosystem, PI and Lyra: how do they fit?</span><span data-l="zh" lang="zh-CN">Ecosystem、PI 与 Lyra，各自在做什么？</span></h1>
-      <p class="lede" data-l="en">A workbench I use every day, the habits that grew around it, and the assistant who lives inside.</p><p class="lede" data-l="zh" lang="zh-CN">一个每天在用的工作台，围着它长出来的一圈习惯，以及住在里面的助手。</p>
-    </header>
-    <div class="prose">
+  <main id="main" class="narrow">
+    <article class="article">
+      <header style="padding-top:clamp(1.5rem,4vw,3rem)">
+        <p class="kicker"><span data-l="en">Note</span><span data-l="zh" lang="zh-CN">手记</span> <span class="mono">· 2026-10-31 · <span data-l="en">revised</span><span data-l="zh" lang="zh-CN">修订</span> 2026-11-03</span></p>
+        <h1 style="font-size:clamp(2.2rem,5.4vw,3.6rem);letter-spacing:-.035em"><span data-l="en">Ecosystem, PI and Lyra: how do they fit?</span><span data-l="zh" lang="zh-CN">Ecosystem、PI 与 Lyra，各自在做什么？</span></h1>
+        <p class="lede" data-l="en">A workbench I use every day, the habits that grew around it, and the assistant who lives inside.</p><p class="lede" data-l="zh" lang="zh-CN">一个每天在用的工作台，围着它长出来的一圈习惯，以及住在里面的助手。</p>
+        <div class="cover" style="--c-soft:var(--lav-soft)"><svg viewBox="0 0 200 90" preserveAspectRatio="xMidYMid meet" class="art" aria-hidden="true" focusable="false">
+    <path d="M100 45L40 22M100 45L46 70M100 45L160 20M100 45L156 70M100 45L70 12M100 45L132 80M100 45L20 46M100 45L180 46" class="nf s-out" stroke-width="1.6" stroke-dasharray="2 4" stroke-linecap="round" opacity=".6"/>
+    <circle cx="100" cy="45" r="15" class="f-amber o2"/><text x="100" y="49.5" text-anchor="middle" class="f-ink" font-family="ui-rounded,'Segoe UI',system-ui,sans-serif" font-size="11" font-weight="900">PI</text>
+    <circle cx="40" cy="22" r="7" class="f-lav o2"/><circle cx="46" cy="70" r="7" class="f-teal o2"/><circle cx="160" cy="20" r="7" class="f-verm o2"/><circle cx="156" cy="70" r="7" class="f-lav o2"/><circle cx="70" cy="12" r="7" class="f-teal o2"/><circle cx="132" cy="80" r="7" class="f-amber o2"/><circle cx="20" cy="46" r="7" class="f-verm o2"/><circle cx="180" cy="46" r="7" class="f-teal o2"/>
+  </svg></div>
+      </header>
+      <div class="prose">
       <h2><span data-l="en">Start with the loose threads</span><span data-l="zh" lang="zh-CN">先从断掉的线说起</span></h2>
       <p data-l="en">A question might start in a paper, become a note, then turn into code and an experiment. Coming back later often means reconstructing the context: why this approach, what has already been tried, and where that result came from.</p><p data-l="zh" lang="zh-CN">一个问题可能始于论文，接着变成笔记、代码和实验。隔一段时间再回来，最费劲的往往是找回上下文：上次为什么选这个方案，试过哪些办法，那个结果又是从哪里来的。</p>
       <p data-l="en">The Ecosystem starts with those everyday gaps. It isn’t a product. It is a set of habits I built, bit by bit, around one workbench.</p><p data-l="zh" lang="zh-CN">Ecosystem 从这些日常的断点出发。它不是一个产品，而是我围着一个工作台，一点点搭出来的一套习惯。</p>
@@ -54,12 +58,12 @@
       <p data-l="en">As of 2026-11-03: PI, Lyra, the scheduled jobs, PI Chrome and the reading workspace are in daily use; the institution is still being built. My PI build is not released. It is wired to my own machine and accounts, with no installer or docs. PI Desktop itself is open source.</p><p data-l="zh" lang="zh-CN">截至 2026-11-03：PI、Lyra、定时任务、PI Chrome 和阅读区每天都在用；研究院还在建设中。我的 PI 构建没有公开发布，它连着我自己的机器和账号，没有安装包和文档。PI Desktop 本身是开源的。</p>
       <p data-l="en">If a piece becomes something other people can use, it will show up here first. For now, there is <a href="/ecosystem/">a drawing of the whole thing</a>.</p><p data-l="zh" lang="zh-CN">如果哪一部分变成别人也能用的东西，会先出现在这里。现在可以先看看<a href="/ecosystem/">整张图</a>。</p>
     </div>
-    <p class="next"><span class="kicker"><span data-l="en">Read next</span><span data-l="zh" lang="zh-CN">接着读</span></span><a class="more" href="/notes/upstream/"><span data-l="en">A small fix can be a connection.</span><span data-l="zh" lang="zh-CN">一个小修复，也能成为一条连接。</span></a></p>
+      <p class="next"><span class="kicker" style="display:block"><span data-l="en">Read next</span><span data-l="zh" lang="zh-CN">接着读</span></span><a class="go" href="/notes/upstream/"><span data-l="en">A small fix can be a connection.</span><span data-l="zh" lang="zh-CN">一个小修复，也能成为一条连接。</span></a></p>
     </article>
   </main>
 
-  <footer class="site-foot col">
-    <div class="inner">
+  <footer class="site-foot">
+    <div class="inner wrap">
       <nav aria-label="Elsewhere">
         <a href="mailto:kenny@kojoo.co">kenny@kojoo.co</a>
         <a href="https://github.com/KennyMcSimpson" rel="me noopener">GitHub</a>
@@ -72,7 +76,7 @@
         <button type="button" data-theme-set="light" aria-pressed="false"><span data-l="en">light</span><span data-l="zh" lang="zh-CN">浅色</span></button>
         <button type="button" data-theme-set="dark" aria-pressed="false"><span data-l="en">dark</span><span data-l="zh" lang="zh-CN">深色</span></button>
       </div>
-      <p class="meta-line"><span data-l="en">Updated 2026-11-03 · plain HTML, no trackers · <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">source</a></span><span data-l="zh" lang="zh-CN">更新于 2026-11-03 · 纯 HTML，无统计 · <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">源码</a></span></p>
+      <p class="meta-line"><span data-l="en">Updated 2026-11-03 · drawn by hand in SVG · no trackers · <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">source</a></span><span data-l="zh" lang="zh-CN">更新于 2026-11-03 · SVG 手绘 · 无统计 · <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">源码</a></span></p>
     </div>
   </footer>
 </body>

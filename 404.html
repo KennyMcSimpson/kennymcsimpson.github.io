@@ -6,8 +6,8 @@
   <title>Not found · Kenny</title>
   <meta name="description" content="Nothing at this address. 这个地址什么也没有。">
   <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#faf8f4" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#171513" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f6efe2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d1628" media="(prefers-color-scheme: dark)">
   <meta name="robots" content="noindex">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="alternate" type="application/rss+xml" title="Kenny — Notes" href="/feed.xml">
@@ -17,8 +17,8 @@
 </head>
 <body>
   <a class="skip" href="#main"><span data-l="en">Skip to content</span><span data-l="zh" lang="zh-CN">跳到正文</span></a>
-  <header class="site-head col">
-    <a class="wordmark" href="/"><svg class="seal" viewBox="4 4 56 56" aria-hidden="true"><rect x="4" y="4" width="56" height="56" rx="7"/><path d="M20 17h10v1.8l-3 .6v11.3l11.6-11.2-2.6-.7V17h10v1.8l-2.6.6-10.1 9.7 11 15.3 2.6.7V47H36.7v-1.8l2-.6-8.4-11.9-3.3 3.1v8.8l3 .6V47H20v-1.8l3-.6V19.4l-3-.6z"/></svg>Kenny</a>
+  <header class="site-head wrap">
+    <a class="wordmark" href="/"><svg class="seal" viewBox="4 4 56 56" aria-hidden="true" focusable="false"><rect x="4" y="4" width="56" height="56" rx="12"/><path d="M20 17h10v1.8l-3 .6v11.3l11.6-11.2-2.6-.7V17h10v1.8l-2.6.6-10.1 9.7 11 15.3 2.6.7V47H36.7v-1.8l2-.6-8.4-11.9-3.3 3.1v8.8l3 .6V47H20v-1.8l3-.6V19.4l-3-.6z"/></svg>Kenny</a>
     <nav class="site-nav" aria-label="Site">
       <a href="/ecosystem/">Ecosystem</a>
       <a href="/contributions/"><span data-l="en">Open source</span><span data-l="zh" lang="zh-CN">开源</span></a>
@@ -28,24 +28,41 @@
     <button class="lang" type="button" data-lang-toggle aria-label="切换到中文"><span data-l="en" lang="zh-CN">中文</span><span data-l="zh" lang="en">EN</span></button>
   </header>
 
-  <main id="main" class="col">
-    <header class="page-head">
-      <p class="kicker">404</p>
-      <h1 class="title"><span data-l="en">Nothing at this address.</span><span data-l="zh" lang="zh-CN">这个地址，什么也没有。</span></h1>
-      <p class="lede" data-l="en">The link may be mistyped, or the page may have moved. These are the pages that exist:</p><p class="lede" data-l="zh" lang="zh-CN">可能是链接写错了，也可能是页面搬了家。现有的页面在这里：</p>
-    </header>
-    <ol class="rows">
-      <li><a class="row" href="/"><span class="where">/</span><span class="what"><span data-l="en">Home</span><span data-l="zh" lang="zh-CN">首页</span></span></a></li>
-      <li><a class="row" href="/ecosystem/"><span class="where">/ecosystem/</span><span class="what"><span data-l="en">The Ecosystem</span><span data-l="zh" lang="zh-CN">Ecosystem</span></span></a></li>
-      <li><a class="row" href="/contributions/"><span class="where">/contributions/</span><span class="what"><span data-l="en">Open source</span><span data-l="zh" lang="zh-CN">开源</span></span></a></li>
-      <li><a class="row" href="/now/"><span class="where">/now/</span><span class="what"><span data-l="en">Now</span><span data-l="zh" lang="zh-CN">此刻</span></span></a></li>
-      <li><a class="row" href="/notes/"><span class="where">/notes/</span><span class="what"><span data-l="en">Notes</span><span data-l="zh" lang="zh-CN">手记</span></span></a></li>
-      <li><a class="row" href="/uses/"><span class="where">/uses/</span><span class="what"><span data-l="en">Uses</span><span data-l="zh" lang="zh-CN">工具</span></span></a></li>
-    </ol>
+  <main id="main" class="wrap">
+    <div class="lost">
+      <div>
+        <p class="kicker">404</p>
+        <h1 style="font-size:clamp(2.6rem,6.4vw,4.6rem);letter-spacing:-.04em"><span data-l="en">Nothing at this address.</span><span data-l="zh" lang="zh-CN">这个地址，什么也没有。</span></h1>
+        <p class="lede-404" data-l="en">Maybe one of these:</p><p class="lede-404" data-l="zh" lang="zh-CN">也许你要找的是这些：</p>
+      </div>
+      <svg viewBox="0 0 240 240" class="art" aria-hidden="true" focusable="false">
+  <path d="M106 102L34 214H204L158 84z" class="f-glow a-lamp"/>
+  <ellipse cx="120" cy="216" rx="100" ry="6" class="f-shadow"/>
+  <path d="M14 216H226" class="nf s-out" stroke-width="3" stroke-linecap="round"/>
+  <g transform="rotate(-5 104 170)">
+    <rect x="58" y="122" width="92" height="92" rx="7" class="f-paper o2"/>
+    <path d="M72 140h52M72 152h40M72 164h46" class="nf s-uil" stroke-width="3" stroke-linecap="round" stroke-dasharray="6 6"/>
+    <text x="104" y="206" text-anchor="middle" class="f-verm" font-family="ui-rounded,'Segoe UI',system-ui,sans-serif" font-size="40" font-weight="900">?</text>
+  </g>
+  <path d="M196 208l12-86l-50-30" class="nf s-out" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="208" cy="122" r="5" class="f-amber o2"/>
+  <rect x="178" y="206" width="40" height="10" rx="4" class="f-out"/>
+  <path d="M96 74l44-26l22 34l-56 20z" class="f-amber o2"/>
+  <path d="M110 96q10 8 22 2" class="nf" stroke="#fff6dd" stroke-width="5" stroke-linecap="round"/>
+</svg>
+    </div>
+    <ul class="cards">
+      <li><a class="card" href="/"><svg viewBox="0 0 64 64" class="art ic" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-lav-soft"/><path d="M32 32L14 20M32 32L50 18M32 32L50 46M32 32L16 46M32 32L32 10" class="nf s-out" stroke-width="2.2" stroke-dasharray="2 4" stroke-linecap="round"/><circle cx="32" cy="32" r="9" class="f-amber o2"/><circle cx="14" cy="20" r="5" class="f-lav o2"/><circle cx="50" cy="18" r="5" class="f-teal o2"/><circle cx="50" cy="46" r="5" class="f-verm o2"/><circle cx="16" cy="46" r="5" class="f-teal o2"/><circle cx="32" cy="10" r="4" class="f-card o2"/></svg><div class="txt"><h3><span data-l="en">Home</span><span data-l="zh" lang="zh-CN">首页</span></h3><span class="meta">/</span></div></a></li>
+      <li><a class="card" href="/ecosystem/"><svg viewBox="0 0 64 64" class="art ic" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-lav-soft"/><path d="M32 32L14 20M32 32L50 18M32 32L50 46M32 32L16 46M32 32L32 10" class="nf s-out" stroke-width="2.2" stroke-dasharray="2 4" stroke-linecap="round"/><circle cx="32" cy="32" r="9" class="f-amber o2"/><circle cx="14" cy="20" r="5" class="f-lav o2"/><circle cx="50" cy="18" r="5" class="f-teal o2"/><circle cx="50" cy="46" r="5" class="f-verm o2"/><circle cx="16" cy="46" r="5" class="f-teal o2"/><circle cx="32" cy="10" r="4" class="f-card o2"/></svg><div class="txt"><h3><span data-l="en">The Ecosystem</span><span data-l="zh" lang="zh-CN">Ecosystem</span></h3><span class="meta">/ecosystem/</span></div></a></li>
+      <li><a class="card" href="/contributions/"><svg viewBox="0 0 64 64" class="art ic" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-amber-soft"/><path d="M20 14v36M20 26c0 10 24 6 24 18" class="nf s-out" stroke-width="3.2" stroke-linecap="round"/><circle cx="20" cy="14" r="6" class="f-teal o2"/><circle cx="20" cy="50" r="6" class="f-teal o2"/><circle cx="44" cy="46" r="6" class="f-verm o2"/><path d="M40 18l4 4l8-8" class="nf s-teal" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="txt"><h3><span data-l="en">Open source</span><span data-l="zh" lang="zh-CN">开源</span></h3><span class="meta">/contributions/</span></div></a></li>
+      <li><a class="card" href="/now/"><svg viewBox="0 0 64 64" class="art ic" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-teal-soft"/><circle cx="32" cy="33" r="19" class="f-card o2"/><path d="M32 33V21M32 33l8 5" class="nf s-out" stroke-width="3" stroke-linecap="round"/><path d="M32 35V17" class="nf s-verm a-tick" stroke-width="1.6" stroke-linecap="round" style="transform-origin:32px 33px"/><circle cx="32" cy="33" r="2.4" class="f-verm"/><path d="M18 13l-5 5M46 13l5 5" class="nf s-out" stroke-width="3" stroke-linecap="round"/></svg><div class="txt"><h3><span data-l="en">Now</span><span data-l="zh" lang="zh-CN">此刻</span></h3><span class="meta">/now/</span></div></a></li>
+      <li><a class="card" href="/notes/"><svg viewBox="0 0 64 64" class="art ic" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-amber-soft"/><path d="M18 12h24l6 6v34H18z" class="f-paper o2"/><path d="M24 24h18M24 31h18M24 38h12" class="nf s-uil" stroke-width="2.4" stroke-linecap="round"/><path d="M40 46l12-22l5 3l-12 22l-6 3z" class="f-verm o2"/></svg><div class="txt"><h3><span data-l="en">Notes</span><span data-l="zh" lang="zh-CN">手记</span></h3><span class="meta">/notes/</span></div></a></li>
+      <li><a class="card" href="/uses/"><svg viewBox="0 0 64 64" class="art ic" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-teal-soft"/><path d="M16 46l18-18a8 8 0 0 1 10-10l-5 5l2 4l4 2l5-5a8 8 0 0 1-10 10L22 52z" class="f-amber o2"/></svg><div class="txt"><h3><span data-l="en">Uses</span><span data-l="zh" lang="zh-CN">工具</span></h3><span class="meta">/uses/</span></div></a></li>
+    </ul>
   </main>
 
-  <footer class="site-foot col">
-    <div class="inner">
+  <footer class="site-foot">
+    <div class="inner wrap">
       <nav aria-label="Elsewhere">
         <a href="mailto:kenny@kojoo.co">kenny@kojoo.co</a>
         <a href="https://github.com/KennyMcSimpson" rel="me noopener">GitHub</a>
@@ -58,7 +75,7 @@
         <button type="button" data-theme-set="light" aria-pressed="false"><span data-l="en">light</span><span data-l="zh" lang="zh-CN">浅色</span></button>
         <button type="button" data-theme-set="dark" aria-pressed="false"><span data-l="en">dark</span><span data-l="zh" lang="zh-CN">深色</span></button>
       </div>
-      <p class="meta-line"><span data-l="en">Updated 2026-11-03 · plain HTML, no trackers · <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">source</a></span><span data-l="zh" lang="zh-CN">更新于 2026-11-03 · 纯 HTML，无统计 · <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">源码</a></span></p>
+      <p class="meta-line"><span data-l="en">Updated 2026-11-03 · drawn by hand in SVG · no trackers · <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">source</a></span><span data-l="zh" lang="zh-CN">更新于 2026-11-03 · SVG 手绘 · 无统计 · <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">源码</a></span></p>
     </div>
   </footer>
 </body>

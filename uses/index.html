@@ -6,8 +6,8 @@
   <title>Uses · Kenny</title>
   <meta name="description" content="The tools Kenny uses every day, and how this site is made. 每天用的工具，以及这个网站的做法。">
   <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#faf8f4" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#171513" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f6efe2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d1628" media="(prefers-color-scheme: dark)">
   <link rel="canonical" href="https://kennymcsimpson.github.io/uses/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Uses · Kenny">
@@ -21,8 +21,8 @@
 </head>
 <body>
   <a class="skip" href="#main"><span data-l="en">Skip to content</span><span data-l="zh" lang="zh-CN">跳到正文</span></a>
-  <header class="site-head col">
-    <a class="wordmark" href="/"><svg class="seal" viewBox="4 4 56 56" aria-hidden="true"><rect x="4" y="4" width="56" height="56" rx="7"/><path d="M20 17h10v1.8l-3 .6v11.3l11.6-11.2-2.6-.7V17h10v1.8l-2.6.6-10.1 9.7 11 15.3 2.6.7V47H36.7v-1.8l2-.6-8.4-11.9-3.3 3.1v8.8l3 .6V47H20v-1.8l3-.6V19.4l-3-.6z"/></svg>Kenny</a>
+  <header class="site-head wrap">
+    <a class="wordmark" href="/"><svg class="seal" viewBox="4 4 56 56" aria-hidden="true" focusable="false"><rect x="4" y="4" width="56" height="56" rx="12"/><path d="M20 17h10v1.8l-3 .6v11.3l11.6-11.2-2.6-.7V17h10v1.8l-2.6.6-10.1 9.7 11 15.3 2.6.7V47H36.7v-1.8l2-.6-8.4-11.9-3.3 3.1v8.8l3 .6V47H20v-1.8l3-.6V19.4l-3-.6z"/></svg>Kenny</a>
     <nav class="site-nav" aria-label="Site">
       <a href="/ecosystem/">Ecosystem</a>
       <a href="/contributions/"><span data-l="en">Open source</span><span data-l="zh" lang="zh-CN">开源</span></a>
@@ -32,39 +32,51 @@
     <button class="lang" type="button" data-lang-toggle aria-label="切换到中文"><span data-l="en" lang="zh-CN">中文</span><span data-l="zh" lang="en">EN</span></button>
   </header>
 
-  <main id="main" class="col">
+  <main id="main" class="wrap">
     <header class="page-head">
-      <p class="kicker"><span data-l="en">Uses & colophon</span><span data-l="zh" lang="zh-CN">工具与版权页</span> <span class="mono">· 2026-11-03</span></p>
-      <h1 class="title"><span data-l="en">What I use, and how this site is made.</span><span data-l="zh" lang="zh-CN">每天用的东西，<br>和这个网站的做法。</span></h1>
-      <p class="lede" data-l="en">Only the things I actually open every day. No affiliate links, no sponsors.</p><p class="lede" data-l="zh" lang="zh-CN">只列真正每天在开的东西。没有推荐链接，也没有赞助。</p>
+      <div>
+        <p class="kicker"><span data-l="en">Uses &amp; colophon</span><span data-l="zh" lang="zh-CN">工具与版本说明</span> · 2026-11-03</p>
+        <h1><span data-l="en">What I use, and how this site is made.</span><span data-l="zh" lang="zh-CN">我用什么，以及这个网站怎么做的。</span></h1>
+        <p data-l="en">Only what I open every day. No affiliate links.</p><p data-l="zh" lang="zh-CN">只列每天真的会打开的东西。没有推广链接。</p>
+      </div>
+      <svg viewBox="0 0 64 64" class="art art" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-teal-soft"/><path d="M16 46l18-18a8 8 0 0 1 10-10l-5 5l2 4l4 2l5-5a8 8 0 0 1-10 10L22 52z" class="f-amber o2"/></svg>
     </header>
-    <section class="part first" aria-labelledby="wb-h">
-      <h2 id="wb-h"><span data-l="en">Every day</span><span data-l="zh" lang="zh-CN">每天</span></h2>
-      <dl class="split">
-        <div><dt><span data-l="en">Workbench</span><span data-l="zh" lang="zh-CN">工作台</span></dt><dd><p data-l="en">PI, my own build of the open-source <a href="https://github.com/AR307/PI-Desktop" rel="noopener">PI Desktop</a> (Electron), on Windows. Not released.</p><p data-l="zh" lang="zh-CN">PI，我基于开源的 <a href="https://github.com/AR307/PI-Desktop" rel="noopener">PI Desktop</a>（Electron）改的个人构建，跑在 Windows 上。未公开发布。</p></dd></div>
-        <div><dt><span data-l="en">Assistant</span><span data-l="zh" lang="zh-CN">助手</span></dt><dd><p data-l="en">Lyra, inside PI, with her own window, memory notebook and reminders.</p><p data-l="zh" lang="zh-CN">Lyra，住在 PI 里，有自己的窗口、记忆本和提醒。</p></dd></div>
-        <div><dt><span data-l="en">Coding agents</span><span data-l="zh" lang="zh-CN">编码代理</span></dt><dd><p data-l="en">Claude Code and Codex, for everyday code and for building PI itself.</p><p data-l="zh" lang="zh-CN">Claude Code 和 Codex，日常写代码，也用来开发 PI 本身。</p></dd></div>
-        <div><dt><span data-l="en">Browser for agents</span><span data-l="zh" lang="zh-CN">给代理的浏览器</span></dt><dd><p data-l="en">PI Chrome: confirmation cards, an audit log, and a read-only mirror in the work panel.</p><p data-l="zh" lang="zh-CN">PI Chrome：确认卡、审计日志、工作面板里的只读镜像。</p></dd></div>
-        <div><dt><span data-l="en">Reading & notes</span><span data-l="zh" lang="zh-CN">阅读与笔记</span></dt><dd><p data-l="en">Zotero for papers and PDF annotations, Obsidian for notes, both opened in PI’s side panel.</p><p data-l="zh" lang="zh-CN">文献和 PDF 批注在 Zotero，笔记在 Obsidian，两者都在 PI 的侧栏里打开。</p></dd></div>
-        <div><dt><span data-l="en">Code</span><span data-l="zh" lang="zh-CN">代码</span></dt><dd><p data-l="en">Git and GitHub. Upstream contributions go through a fork and a pull request.</p><p data-l="zh" lang="zh-CN">Git 和 GitHub。上游贡献走 fork 加 PR。</p></dd></div>
-      </dl>
+    <section aria-labelledby="every-h">
+
+      <div class="sec-head">
+        <div class="t"><svg viewBox="0 0 64 64" class="art sticker" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-lav-soft"/><path d="M32 32L14 20M32 32L50 18M32 32L50 46M32 32L16 46M32 32L32 10" class="nf s-out" stroke-width="2.2" stroke-dasharray="2 4" stroke-linecap="round"/><circle cx="32" cy="32" r="9" class="f-amber o2"/><circle cx="14" cy="20" r="5" class="f-lav o2"/><circle cx="50" cy="18" r="5" class="f-teal o2"/><circle cx="50" cy="46" r="5" class="f-verm o2"/><circle cx="16" cy="46" r="5" class="f-teal o2"/><circle cx="32" cy="10" r="4" class="f-card o2"/></svg><h2 id="every-h"><span data-l="en">Every day</span><span data-l="zh" lang="zh-CN">每天</span></h2></div>
+
+
+      </div>
+      <ul class="cards">
+        <li><div class="card"><svg viewBox="0 0 64 64" class="art ic" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-lav-soft"/><path d="M32 32L14 20M32 32L50 18M32 32L50 46M32 32L16 46M32 32L32 10" class="nf s-out" stroke-width="2.2" stroke-dasharray="2 4" stroke-linecap="round"/><circle cx="32" cy="32" r="9" class="f-amber o2"/><circle cx="14" cy="20" r="5" class="f-lav o2"/><circle cx="50" cy="18" r="5" class="f-teal o2"/><circle cx="50" cy="46" r="5" class="f-verm o2"/><circle cx="16" cy="46" r="5" class="f-teal o2"/><circle cx="32" cy="10" r="4" class="f-card o2"/></svg><div class="txt"><h3><span data-l="en">Workbench</span><span data-l="zh" lang="zh-CN">工作台</span></h3><p data-l="en">PI, my build of the open-source PI Desktop (Electron), on Windows. Not released.</p><p data-l="zh" lang="zh-CN">PI，我基于开源 PI Desktop（Electron）的个人构建，跑在 Windows 上。未发布。</p></div></div></li>
+        <li><div class="card"><svg viewBox="0 0 64 64" class="art ic" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-lav-soft"/><circle cx="32" cy="32" r="25" class="f-lav o2"/><path d="M23.5 21.5L33 18M23.5 21.5L30.5 29M33 18L30.5 29M30.5 29L42 34M42 34L38 46M38 46L26.5 41.5M26.5 41.5L30.5 29" class="nf s-star" stroke-width="1.38" stroke-linecap="round" opacity=".7"/><path d="M23.5 15.5Q23.5 21.5 29.5 21.5Q23.5 21.5 23.5 27.5Q23.5 21.5 17.5 21.5Q23.5 21.5 23.5 15.5z" class="f-star"/><circle cx="23.5" cy="21.5" r="1.75" class="f-star"/><circle cx="33" cy="18" r="1.88" class="f-star"/><circle cx="30.5" cy="29" r="2.13" class="f-star"/><circle cx="42" cy="34" r="2.13" class="f-star"/><circle cx="38" cy="46" r="2.38" class="f-star"/><circle cx="26.5" cy="41.5" r="2.38" class="f-star"/></svg><div class="txt"><h3><span data-l="en">Assistant</span><span data-l="zh" lang="zh-CN">助手</span></h3><p data-l="en">Lyra, inside PI, with her own window, memory notebook and reminders.</p><p data-l="zh" lang="zh-CN">Lyra，住在 PI 里，有自己的窗口、记忆本和提醒。</p></div></div></li>
+        <li><div class="card"><svg viewBox="0 0 64 64" class="art ic" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-amber-soft"/><rect x="10" y="16" width="44" height="32" rx="6" class="f-code o2"/><path d="M18 28l5 4l-5 4" class="nf s-amber" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><rect x="27" y="35" width="12" height="3" rx="1.5" class="f-teal"/></svg><div class="txt"><h3><span data-l="en">Coding agents</span><span data-l="zh" lang="zh-CN">编码代理</span></h3><p data-l="en">Claude Code and Codex, for everyday code and for building PI itself.</p><p data-l="zh" lang="zh-CN">Claude Code 和 Codex，写日常代码，也用来改 PI 本身。</p></div></div></li>
+        <li><div class="card"><svg viewBox="0 0 64 64" class="art ic" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-lav-soft"/><rect x="10" y="14" width="44" height="34" rx="6" class="f-card o2"/><path d="M10 22h44" class="nf s-out" stroke-width="2"/><circle cx="15" cy="18" r="1.6" class="f-verm"/><circle cx="20" cy="18" r="1.6" class="f-amber"/><path d="M20 36q12-11 24 0q-12 11-24 0z" class="f-paper o2"/><circle cx="32" cy="36" r="3.6" class="f-out"/><path d="M24 52h16" class="nf s-out" stroke-width="3" stroke-linecap="round"/></svg><div class="txt"><h3><span data-l="en">Browser for agents</span><span data-l="zh" lang="zh-CN">代理的浏览器</span></h3><p data-l="en">PI Chrome: confirmation cards, an audit log, a read-only mirror.</p><p data-l="zh" lang="zh-CN">PI Chrome：确认卡片、审计日志、只读镜像。</p></div></div></li>
+        <li><div class="card"><svg viewBox="0 0 64 64" class="art ic" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-lav-soft"/><path d="M8 18q12-5 24 2q12-7 24-2v30q-12-5-24 2q-12-7-24-2z" class="f-paper o2"/><path d="M32 20v30" class="nf s-out" stroke-width="2"/><path d="M14 26h12M14 32h12M38 26h12M38 32h8" class="nf s-uil" stroke-width="2.2" stroke-linecap="round"/><rect x="37" y="35" width="14" height="5" rx="1" class="f-amber" opacity=".7"/></svg><div class="txt"><h3><span data-l="en">Reading &amp; notes</span><span data-l="zh" lang="zh-CN">阅读与笔记</span></h3><p data-l="en">Zotero for papers and PDF notes, Obsidian for notes, both in PI’s side panel.</p><p data-l="zh" lang="zh-CN">Zotero 管论文和 PDF 批注，Obsidian 记笔记，都开在 PI 的侧栏里。</p></div></div></li>
+        <li><div class="card"><svg viewBox="0 0 64 64" class="art ic" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-verm" opacity=".18"/><path d="M22 14v36M22 26c0 10 20 4 20 16" class="nf s-out" stroke-width="3" stroke-linecap="round"/><circle cx="22" cy="14" r="5" class="f-card o2"/><circle cx="22" cy="50" r="5" class="f-card o2"/><circle cx="42" cy="44" r="5" class="f-verm o2"/></svg><div class="txt"><h3><span data-l="en">Code</span><span data-l="zh" lang="zh-CN">代码</span></h3><p data-l="en">Git and GitHub. Upstream fixes go through a fork and a pull request.</p><p data-l="zh" lang="zh-CN">Git 和 GitHub。交回上游的修复都走 fork 和 PR。</p></div></div></li>
+      </ul>
     </section>
-    <section class="part" id="colophon" aria-labelledby="site-h">
-      <h2 id="site-h"><span data-l="en">This site</span><span data-l="zh" lang="zh-CN">这个网站</span></h2>
-      <dl class="split">
-        <div><dt><span data-l="en">Built with</span><span data-l="zh" lang="zh-CN">写法</span></dt><dd><p data-l="en">Hand-written HTML and CSS, and a little JavaScript for the language switch, the theme and the drawing. No framework, no build step, no dependencies.</p><p data-l="zh" lang="zh-CN">手写的 HTML 和 CSS，加一点 JavaScript 负责语言切换、主题和那张图。没有框架，没有构建步骤，没有依赖。</p></dd></div>
-        <div><dt><span data-l="en">Type</span><span data-l="zh" lang="zh-CN">字体</span></dt><dd><p data-l="en">System fonts only. Headings in your system’s serif (New York, Iowan, Sitka or Georgia; Songti or Noto Serif for Chinese), text in its sans (Segoe UI, PingFang, Microsoft YaHei), dates in its monospace.</p><p data-l="zh" lang="zh-CN">只用系统字体。标题用衬线体（New York、Iowan、Sitka 或 Georgia；中文用宋体或思源宋体），正文用无衬线体（Segoe UI、苹方、微软雅黑），日期用等宽字体。</p></dd></div>
-        <div><dt><span data-l="en">Colour</span><span data-l="zh" lang="zh-CN">颜色</span></dt><dd><p data-l="en">Warm paper, near-black ink, and one vermilion accent, the colour of a seal. Dark mode follows your system unless you pick one at the bottom of the page.</p><p data-l="zh" lang="zh-CN">暖白的纸、近黑的墨，再加一种朱红，像印章的颜色。深色模式跟随系统，也可以在页面底部手动选。</p></dd></div>
-        <div><dt><span data-l="en">Privacy</span><span data-l="zh" lang="zh-CN">隐私</span></dt><dd><p data-l="en">No analytics, no cookies, no requests to anyone else. Your language and theme choices stay in your own browser.</p><p data-l="zh" lang="zh-CN">没有统计、没有 cookie，也不请求任何第三方资源。语言和主题的选择只存在你自己的浏览器里。</p></dd></div>
-        <div><dt><span data-l="en">Two languages</span><span data-l="zh" lang="zh-CN">两种语言</span></dt><dd><p data-l="en">English and Chinese live on the same page. It follows your browser’s language; switch at the top, or add <code>?lang=zh</code> to a link.</p><p data-l="zh" lang="zh-CN">中文和英文写在同一页里，默认跟随浏览器语言；可以在页面顶部切换，也可以在地址后加 <code>?lang=en</code>。</p></dd></div>
-        <div><dt><span data-l="en">Borrowed from</span><span data-l="zh" lang="zh-CN">借鉴</span></dt><dd><p data-l="en">The quiet single column, the vermilion accent and the monospace dates of <a href="https://blog.eigentime.org/" rel="noopener">blog.eigentime.org</a>; the name-and-a-line index rows of <a href="https://sayori.org/" rel="noopener">sayori.org</a>; the one-line status of <a href="https://www.theslowmo.com/" rel="noopener">SlowMo</a>; the warm paper of <a href="https://qianling.pw/" rel="noopener">qianling.pw</a>; and the <a href="https://sive.rs/now" rel="noopener">now page</a> idea from Derek Sivers.</p><p data-l="zh" lang="zh-CN">安静的单栏、朱红的点缀色和等宽日期，来自 <a href="https://blog.eigentime.org/" rel="noopener">blog.eigentime.org</a>；“名字加一句话”的索引行，来自 <a href="https://sayori.org/" rel="noopener">sayori.org</a>；一行状态，来自 <a href="https://www.theslowmo.com/" rel="noopener">SlowMo</a>；暖白的纸，来自 <a href="https://qianling.pw/" rel="noopener">qianling.pw</a>；now 页的想法来自 <a href="https://sive.rs/now" rel="noopener">Derek Sivers</a>。</p></dd></div>
-        <div><dt><span data-l="en">Made with</span><span data-l="zh" lang="zh-CN">制作</span></dt><dd><p data-l="en">Written together with coding agents. The source is <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">on GitHub</a>.</p><p data-l="zh" lang="zh-CN">和编码代理一起写的。源码在 <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">GitHub</a>。</p></dd></div>
-      </dl>
+    <section class="sec" aria-labelledby="site-h">
+
+      <div class="sec-head">
+        <div class="t"><svg viewBox="0 0 64 64" class="art sticker" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-lav-soft"/><path d="M32 10a22 22 0 1 0 0 44c4 0 5-3 3-6s0-6 4-6h6a10 10 0 0 0 10-10c0-12-10-22-23-22z" class="f-card o2"/><circle cx="22" cy="26" r="4.5" class="f-verm"/><circle cx="33" cy="20" r="4.5" class="f-amber"/><circle cx="44" cy="26" r="4.5" class="f-teal"/><circle cx="20" cy="38" r="4.5" class="f-lav"/></svg><h2 id="site-h"><span data-l="en">This site</span><span data-l="zh" lang="zh-CN">这个网站</span></h2></div>
+
+
+      </div>
+      <ul class="cards">
+        <li><div class="card"><svg viewBox="0 0 64 64" class="art ic" aria-hidden="true" focusable="false"><rect x="6" y="12" width="52" height="40" rx="8" class="f-code o2"/><path d="M18 26l-6 6l6 6M30 26l6 6l-6 6" class="nf s-amber" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><rect x="40" y="36" width="10" height="4" rx="2" class="f-teal"/></svg><div class="txt"><h3><span data-l="en">Built with</span><span data-l="zh" lang="zh-CN">用什么做的</span></h3><p data-l="en">Plain HTML and CSS, a little JavaScript. No framework, no build step, no dependencies.</p><p data-l="zh" lang="zh-CN">纯 HTML 和 CSS，加一点 JavaScript。没有框架、构建步骤和依赖。</p></div></div></li>
+        <li><div class="card"><svg viewBox="0 0 64 64" class="art ic" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-lav-soft"/><path d="M32 10a22 22 0 1 0 0 44c4 0 5-3 3-6s0-6 4-6h6a10 10 0 0 0 10-10c0-12-10-22-23-22z" class="f-card o2"/><circle cx="22" cy="26" r="4.5" class="f-verm"/><circle cx="33" cy="20" r="4.5" class="f-amber"/><circle cx="44" cy="26" r="4.5" class="f-teal"/><circle cx="20" cy="38" r="4.5" class="f-lav"/></svg><div class="txt"><h3><span data-l="en">Drawings</span><span data-l="zh" lang="zh-CN">插画</span></h3><p data-l="en">Every picture is inline SVG drawn for this site.</p><p data-l="zh" lang="zh-CN">每一张图都是为这个网站画的内联 SVG。</p></div></div></li>
+        <li><div class="card"><svg viewBox="0 0 64 64" class="art ic" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-amber-soft"/><text x="32" y="43" text-anchor="middle" class="f-ink" font-family="ui-rounded,'Segoe UI',system-ui,sans-serif" font-size="30" font-weight="900">Aa</text></svg><div class="txt"><h3><span data-l="en">Type &amp; colour</span><span data-l="zh" lang="zh-CN">字体与颜色</span></h3><p data-l="en">System fonts. Paper and ink by day, night blue by night; amber, vermilion, teal.</p><p data-l="zh" lang="zh-CN">只用系统字体。白天是纸和墨，夜里是夜蓝；点缀琥珀、朱红、青绿。</p></div></div></li>
+        <li><div class="card"><svg viewBox="0 0 64 64" class="art ic" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-teal-soft"/><path d="M32 8l18 7v14c0 12-8 21-18 26c-10-5-18-14-18-26V15z" class="f-card o2"/><path d="M24 31l6 6l11-12" class="nf s-teal" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div class="txt"><h3><span data-l="en">Privacy</span><span data-l="zh" lang="zh-CN">隐私</span></h3><p data-l="en">No analytics, no cookies. Only the contributor avatars load from GitHub.</p><p data-l="zh" lang="zh-CN">没有统计，没有 cookie。只有贡献页的头像从 GitHub 加载。</p></div></div></li>
+        <li><div class="card"><svg viewBox="0 0 64 64" class="art ic" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-amber-soft"/><rect x="8" y="14" width="30" height="24" rx="6" class="f-card o2"/><text x="23" y="31" text-anchor="middle" class="f-ink" font-family="ui-rounded,'Segoe UI',system-ui,sans-serif" font-size="14" font-weight="900">A</text><rect x="26" y="28" width="30" height="24" rx="6" class="f-verm o2"/><text x="41" y="45" text-anchor="middle" fill="#fffaf1" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="13" font-weight="800">文</text></svg><div class="txt"><h3><span data-l="en">Two languages</span><span data-l="zh" lang="zh-CN">两种语言</span></h3><p data-l="en">English and 中文 on the same page; add ?lang=zh to a link.</p><p data-l="zh" lang="zh-CN">中英文在同一页；链接后加 ?lang=zh 即可。</p></div></div></li>
+        <li><div class="card"><svg viewBox="0 0 64 64" class="art ic" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-amber-soft"/><rect x="10" y="16" width="44" height="32" rx="6" class="f-code o2"/><path d="M18 28l5 4l-5 4" class="nf s-amber" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><rect x="27" y="35" width="12" height="3" rx="1.5" class="f-teal"/></svg><div class="txt"><h3><span data-l="en">Made with</span><span data-l="zh" lang="zh-CN">一起做的</span></h3><p data-l="en">Written together with coding agents. <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">Source on GitHub</a>.</p><p data-l="zh" lang="zh-CN">和编码代理一起写的。<a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">源码在 GitHub</a>。</p></div></div></li>
+      </ul>
     </section>
   </main>
 
-  <footer class="site-foot col">
-    <div class="inner">
+  <footer class="site-foot">
+    <div class="inner wrap">
       <nav aria-label="Elsewhere">
         <a href="mailto:kenny@kojoo.co">kenny@kojoo.co</a>
         <a href="https://github.com/KennyMcSimpson" rel="me noopener">GitHub</a>
@@ -77,7 +89,7 @@
         <button type="button" data-theme-set="light" aria-pressed="false"><span data-l="en">light</span><span data-l="zh" lang="zh-CN">浅色</span></button>
         <button type="button" data-theme-set="dark" aria-pressed="false"><span data-l="en">dark</span><span data-l="zh" lang="zh-CN">深色</span></button>
       </div>
-      <p class="meta-line"><span data-l="en">Updated 2026-11-03 · plain HTML, no trackers · <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">source</a></span><span data-l="zh" lang="zh-CN">更新于 2026-11-03 · 纯 HTML，无统计 · <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">源码</a></span></p>
+      <p class="meta-line"><span data-l="en">Updated 2026-11-03 · drawn by hand in SVG · no trackers · <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">source</a></span><span data-l="zh" lang="zh-CN">更新于 2026-11-03 · SVG 手绘 · 无统计 · <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">源码</a></span></p>
     </div>
   </footer>
 </body>
