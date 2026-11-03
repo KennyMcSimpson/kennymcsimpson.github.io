@@ -1,0 +1,295 @@
+<!doctype html>
+<html lang="en" data-lang="en" data-title-en="Open source · Kenny" data-title-zh="开源 · Kenny">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Open source · Kenny</title>
+  <meta name="description" content="Every merged upstream pull request: 41 across 37 public repositories, each checked against the GitHub API (snapshot 2026-11-03). 全部已合并的上游 PR。">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#faf8f4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#171513" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://kennymcsimpson.github.io/contributions/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Open source · Kenny">
+  <meta property="og:description" content="Every merged upstream pull request: 41 across 37 public repositories, each checked against the GitHub API (snapshot 2026-11-03). 全部已合并的上游 PR。">
+  <meta property="og:url" content="https://kennymcsimpson.github.io/contributions/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="Kenny — Notes" href="/feed.xml">
+  <script src="/prefs.js"></script>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/site.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main"><span data-l="en">Skip to content</span><span data-l="zh" lang="zh-CN">跳到正文</span></a>
+  <header class="site-head col">
+    <a class="wordmark" href="/"><svg class="seal" viewBox="4 4 56 56" aria-hidden="true"><rect x="4" y="4" width="56" height="56" rx="7"/><path d="M20 17h10v1.8l-3 .6v11.3l11.6-11.2-2.6-.7V17h10v1.8l-2.6.6-10.1 9.7 11 15.3 2.6.7V47H36.7v-1.8l2-.6-8.4-11.9-3.3 3.1v8.8l3 .6V47H20v-1.8l3-.6V19.4l-3-.6z"/></svg>Kenny</a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="/ecosystem/">Ecosystem</a>
+      <a href="/contributions/" aria-current="page"><span data-l="en">Open source</span><span data-l="zh" lang="zh-CN">开源</span></a>
+      <a href="/now/"><span data-l="en">Now</span><span data-l="zh" lang="zh-CN">此刻</span></a>
+      <a href="/notes/"><span data-l="en">Notes</span><span data-l="zh" lang="zh-CN">手记</span></a>
+    </nav>
+    <button class="lang" type="button" data-lang-toggle aria-label="切换到中文"><span data-l="en" lang="zh-CN">中文</span><span data-l="zh" lang="en">EN</span></button>
+  </header>
+
+  <main id="main" class="col">
+    <header class="page-head">
+      <p class="kicker"><span data-l="en">Open source</span><span data-l="zh" lang="zh-CN">开源</span> <span class="mono">· <span data-l="en">snapshot</span><span data-l="zh" lang="zh-CN">快照</span> 2026-11-03</span></p>
+      <h1 class="title"><span data-l="en">Small fixes, sent upstream.</span><span data-l="zh" lang="zh-CN">小修复，交回上游。</span></h1>
+      <p class="lede" data-l="en">Every pull request I’ve had merged into a public repository I don’t own: 41 of them, in 37 repositories. Each one starts the same way — reproduce the problem, add a test that fails, fix it, send it back.</p><p class="lede" data-l="zh" lang="zh-CN">合并进别人公开仓库的 PR，全部在这里：41 个，37 个仓库。每一个的做法都一样——先复现问题，补一个会失败的测试，修好，交回去。</p>
+      <ul class="facts">
+        <li><strong>41</strong><span><span data-l="en">merged PRs</span><span data-l="zh" lang="zh-CN">已合并 PR</span></span></li>
+        <li><strong>37</strong><span><span data-l="en">repositories</span><span data-l="zh" lang="zh-CN">个仓库</span></span></li>
+        <li><strong>40</strong><span><span data-l="en">in October 2026</span><span data-l="zh" lang="zh-CN">在 2026 年 10 月</span></span></li>
+      </ul>
+    </header>
+
+    <section class="part prose first" aria-labelledby="contrib-h">
+      <h2 id="contrib-h"><span data-l="en">What being a contributor means</span><span data-l="zh" lang="zh-CN">“Contributor” 意味着什么</span></h2>
+      <p data-l="en">A merged pull request puts a “Contributor” label next to my name in that repository. It means the project accepted a change from me. It doesn’t mean maintainer rights, and it isn’t a job there. The useful part is behind each link: the problem, how to reproduce it, the change, and the test that keeps it fixed.</p><p data-l="zh" lang="zh-CN">PR 被合并后，我在那个仓库里会带上 “Contributor” 的标记。它说明项目接收了我的一次改动，不代表维护权限，也不是在那里任职。真正有用的在每条链接后面：问题是什么、怎么复现、改了什么、哪个测试让它不再坏掉。</p>
+      <p data-l="en">Merged between 2026-10-04 and 2026-11-02. Titles are the PRs’ own, with commit prefixes like <code>fix:</code> trimmed. Anything newer shows up in <a href="https://github.com/search?q=author%3AKennyMcSimpson+is%3Apr+is%3Amerged+is%3Apublic+-user%3AKennyMcSimpson&amp;type=pullrequests" rel="noopener">this GitHub search</a>.</p><p data-l="zh" lang="zh-CN">合并时间在 2026-10-04 到 2026-11-02 之间。标题沿用 PR 原文（英文），只去掉了 <code>fix:</code> 这类前缀。之后的新 PR 可以在 <a href="https://github.com/search?q=author%3AKennyMcSimpson+is%3Apr+is%3Amerged+is%3Apublic+-user%3AKennyMcSimpson&amp;type=pullrequests" rel="noopener">GitHub 检索</a>里看到。</p>
+    </section>
+
+    <section class="group" aria-labelledby="g-apps">
+      <h2 class="label" id="g-apps"><span data-l="en">AI apps &amp; tools</span><span data-l="zh" lang="zh-CN">AI 应用与工具</span><span class="count">20</span></h2>
+      <ol class="rows">
+        <li><a class="row" href="https://github.com/NianJiuZst/CodeGraph-Rust/pull/5" rel="noopener">
+          <span class="where">NianJiuZst/<b>CodeGraph-Rust</b> #5</span>
+          <time datetime="2026-11-02">2026-11-02</time>
+          <span class="what"><span lang="en">Preserve TypeScript initializer types through satisfies</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/alphaXiv/OpenResearch/pull/595" rel="noopener">
+          <span class="where">alphaXiv/<b>OpenResearch</b> #595</span>
+          <time datetime="2026-10-28">2026-10-28</time>
+          <span class="what"><span lang="en">Decode reserved characters in chat file links</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/andrewyng/openworker/pull/724" rel="noopener">
+          <span class="where">andrewyng/<b>openworker</b> #724</span>
+          <time datetime="2026-10-25">2026-10-25</time>
+          <span class="what"><span lang="en">Omit incomplete trajectory cost totals</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/opensandbox-group/OpenSandbox/pull/2226" rel="noopener">
+          <span class="where">opensandbox-group/<b>OpenSandbox</b> #2226</span>
+          <time datetime="2026-10-24">2026-10-24</time>
+          <span class="what"><span lang="en">Preserve the first SSE event after a UTF-8 BOM</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/latent-spaces/brag/pull/55" rel="noopener">
+          <span class="where">latent-spaces/<b>brag</b> #55</span>
+          <time datetime="2026-10-23">2026-10-23</time>
+          <span class="what"><span lang="en">Require contrast audit coverage before rendering</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/HKUDS/nanobot/pull/6013" rel="noopener">
+          <span class="where">HKUDS/<b>nanobot</b> #6013</span>
+          <time datetime="2026-10-18">2026-10-18</time>
+          <span class="what"><span lang="en">Use JSON equality for enum validation</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/microsoft/SkillOpt/pull/304" rel="noopener">
+          <span class="where">microsoft/<b>SkillOpt</b> #304</span>
+          <time datetime="2026-10-17">2026-10-17</time>
+          <span class="what"><span lang="en">Preserve config limits across encoding upgrades</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/ApodexAI/FrontierAgent/pull/65" rel="noopener">
+          <span class="where">ApodexAI/<b>FrontierAgent</b> #65</span>
+          <time datetime="2026-10-14">2026-10-14</time>
+          <span class="what"><span lang="en">Parse quoted and extended response filenames</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/sansan0/TrendRadar/pull/1229" rel="noopener">
+          <span class="where">sansan0/<b>TrendRadar</b> #1229</span>
+          <time datetime="2026-10-13">2026-10-13</time>
+          <span class="what"><span lang="en">Preserve offsets in fractional ISO timestamps</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/HKUDS/DeepCode/pull/253" rel="noopener">
+          <span class="where">HKUDS/<b>DeepCode</b> #253</span>
+          <time datetime="2026-10-12">2026-10-12</time>
+          <span class="what"><span lang="en">Preserve non-LF characters in structured diffs</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/genspark-ai/genoffice/pull/1945" rel="noopener">
+          <span class="where">genspark-ai/<b>genoffice</b> #1945</span>
+          <time datetime="2026-10-12">2026-10-12</time>
+          <span class="what"><span lang="en">Distinguish literal quotes in XLSX number formats</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/simonlin1212/a-stock-data/pull/58" rel="noopener">
+          <span class="where">simonlin1212/<b>a-stock-data</b> #58</span>
+          <time datetime="2026-10-11">2026-10-11</time>
+          <span class="what"><span lang="en">Avoid zero digestion years for non-growing earnings</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/Tencent/BrowserSkill/pull/403" rel="noopener">
+          <span class="where">Tencent/<b>BrowserSkill</b> #403</span>
+          <time datetime="2026-10-09">2026-10-09</time>
+          <span class="what"><span lang="en">Avoid fetching nonexistent overlay CSS</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/Tencent/WeKnora/pull/3930" rel="noopener">
+          <span class="where">Tencent/<b>WeKnora</b> #3930</span>
+          <time datetime="2026-10-07">2026-10-07</time>
+          <span class="what"><span lang="en">Close legacy chat responses on HTTP errors</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/HKUDS/DeepTutor/pull/1790" rel="noopener">
+          <span class="where">HKUDS/<b>DeepTutor</b> #1790</span>
+          <time datetime="2026-10-07">2026-10-07</time>
+          <span class="what"><span lang="en">Allow editing legacy objective counts</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/genspark-ai/genoffice/pull/1888" rel="noopener">
+          <span class="where">genspark-ai/<b>genoffice</b> #1888</span>
+          <time datetime="2026-10-06">2026-10-06</time>
+          <span class="what"><span lang="en">Handle literal semicolons in XLSX formats</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/gosimfoundation/hackathon-survey26/pull/332" rel="noopener">
+          <span class="where">gosimfoundation/<b>hackathon-survey26</b> #332</span>
+          <time datetime="2026-10-06">2026-10-06</time>
+          <span class="what"><span lang="en">Prevent invalidated requests from refilling the cache</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/latent-spaces/brag/pull/48" rel="noopener">
+          <span class="where">latent-spaces/<b>brag</b> #48</span>
+          <time datetime="2026-10-06">2026-10-06</time>
+          <span class="what"><span lang="en">Quote optional audio map in poster command</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/HKUDS/RAG-Anything/pull/379" rel="noopener">
+          <span class="where">HKUDS/<b>RAG-Anything</b> #379</span>
+          <time datetime="2026-10-05">2026-10-05</time>
+          <span class="what"><span lang="en">Keep literal Markdown images in text</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/bytedance/deer-flow/pull/6194" rel="noopener">
+          <span class="where">bytedance/<b>deer-flow</b> #6194</span>
+          <time datetime="2026-10-04">2026-10-04</time>
+          <span class="what"><span lang="en">Exclude indented bold lines from outlines</span></span>
+        </a></li>
+      </ol>
+    </section>
+
+    <section class="group" aria-labelledby="g-data">
+      <h2 class="label" id="g-data"><span data-l="en">Data &amp; encodings</span><span data-l="zh" lang="zh-CN">数据与编码</span><span class="count">9</span></h2>
+      <ol class="rows">
+        <li><a class="row" href="https://github.com/petl-developers/petl/pull/769" rel="noopener">
+          <span class="where">petl-developers/<b>petl</b> #769</span>
+          <time datetime="2026-10-28">2026-10-28</time>
+          <span class="what"><span lang="en">Handle detached standard stream buffers during import</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/simple-statistics/simple-statistics/pull/881" rel="noopener">
+          <span class="where">simple-statistics/<b>simple-statistics</b> #881</span>
+          <time datetime="2026-10-26">2026-10-26</time>
+          <span class="what"><span lang="en">Return zero silhouettes for coincident clusters</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/scott-griffiths/bitstring/pull/370" rel="noopener">
+          <span class="where">scott-griffiths/<b>bitstring</b> #370</span>
+          <time datetime="2026-10-25">2026-10-25</time>
+          <span class="what"><span lang="en">Fix extended slice assignment from arrays sharing data</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/pillarjs/iconv-lite/pull/427" rel="noopener">
+          <span class="where">pillarjs/<b>iconv-lite</b> #427</span>
+          <time datetime="2026-10-25">2026-10-25</time>
+          <span class="what"><span lang="en">Preserve caller options in UTF-16 and UTF-32 auto encoders</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/axuno/SmartFormat/pull/536" rel="noopener">
+          <span class="where">axuno/<b>SmartFormat</b> #536</span>
+          <time datetime="2026-10-25">2026-10-25</time>
+          <span class="what"><span lang="en">Add Uzbek and Kyrgyz plural rules</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/stefankoegl/python-json-patch/pull/238" rel="noopener">
+          <span class="where">stefankoegl/<b>python-json-patch</b> #238</span>
+          <time datetime="2026-10-24">2026-10-24</time>
+          <span class="what"><span lang="en">Use UTF-8 for JSON command-line file I/O</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/stefankoegl/python-json-pointer/pull/95" rel="noopener">
+          <span class="where">stefankoegl/<b>python-json-pointer</b> #95</span>
+          <time datetime="2026-10-24">2026-10-24</time>
+          <span class="what"><span lang="en">Read CLI JSON and pointer files as UTF-8</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/simplejson/simplejson/pull/397" rel="noopener">
+          <span class="where">simplejson/<b>simplejson</b> #397</span>
+          <time datetime="2026-10-24">2026-10-24</time>
+          <span class="what"><span lang="en">Read UTF-8 files correctly in simplejson.tool</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/huggingface/datasets/pull/8737" rel="noopener">
+          <span class="where">huggingface/<b>datasets</b> #8737</span>
+          <time datetime="2026-10-05">2026-10-05</time>
+          <span class="what"><span lang="en">Decode remote NIfTI files through the bytes path</span></span>
+        </a></li>
+      </ol>
+    </section>
+
+    <section class="group" aria-labelledby="g-libs">
+      <h2 class="label" id="g-libs"><span data-l="en">Libraries &amp; tooling</span><span data-l="zh" lang="zh-CN">库与开发工具</span><span class="count">12</span></h2>
+      <ol class="rows">
+        <li><a class="row" href="https://github.com/python-cmd2/cmd2/pull/1793" rel="noopener">
+          <span class="where">python-cmd2/<b>cmd2</b> #1793</span>
+          <time datetime="2026-10-29">2026-10-29</time>
+          <span class="what"><span lang="en">Keep direct window title errors with their caller</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/cpburnz/python-pathspec/pull/170" rel="noopener">
+          <span class="where">cpburnz/<b>python-pathspec</b> #170</span>
+          <time datetime="2026-10-29">2026-10-29</time>
+          <span class="what"><span lang="en">Handle escaped internal separators in gitignore patterns</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/tox-dev/filelock/pull/875" rel="noopener">
+          <span class="where">tox-dev/<b>filelock</b> #875</span>
+          <time datetime="2026-10-28">2026-10-28</time>
+          <span class="what"><span lang="en">Check a closed descriptor by errno</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/tox-dev/platformdirs/pull/640" rel="noopener">
+          <span class="where">tox-dev/<b>platformdirs</b> #640</span>
+          <time datetime="2026-10-28">2026-10-28</time>
+          <span class="what"><span lang="en">Honor overridden iter_*_paths in find</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/bw2/ConfigArgParse/pull/363" rel="noopener">
+          <span class="where">bw2/<b>ConfigArgParse</b> #363</span>
+          <time datetime="2026-10-27">2026-10-27</time>
+          <span class="what"><span lang="en">Respect -- when detecting command-line overrides</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/dgilland/pydash/pull/370" rel="noopener">
+          <span class="where">dgilland/<b>pydash</b> #370</span>
+          <time datetime="2026-10-27">2026-10-27</time>
+          <span class="what"><span lang="en">Compare literal dictionary keys in is_equal_with</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/kayak/pypika/pull/3546" rel="noopener">
+          <span class="where">kayak/<b>pypika</b> #3546</span>
+          <time datetime="2026-10-27">2026-10-27</time>
+          <span class="what"><span lang="en">Quote IP address values in generated SQL</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/python-poetry/tomlkit/pull/681" rel="noopener">
+          <span class="where">python-poetry/<b>tomlkit</b> #681</span>
+          <time datetime="2026-10-27">2026-10-27</time>
+          <span class="what"><span lang="en">Keep the Python 3.9 Linux job on Ubuntu 24.04</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/jmespath-community/typescript-jmespath/pull/110" rel="noopener">
+          <span class="where">jmespath-community/<b>typescript-jmespath</b> #110</span>
+          <time datetime="2026-10-24">2026-10-24</time>
+          <span class="what"><span lang="en">Keep empty strided slices empty</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/jmespath-community/typescript-jmespath/pull/104" rel="noopener">
+          <span class="where">jmespath-community/<b>typescript-jmespath</b> #104</span>
+          <time datetime="2026-10-24">2026-10-24</time>
+          <span class="what"><span lang="en">Reject repeated numbers in slice components</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/jfhbrook/pyee/pull/223" rel="noopener">
+          <span class="where">jfhbrook/<b>pyee</b> #223</span>
+          <time datetime="2026-10-24">2026-10-24</time>
+          <span class="what"><span lang="en">Ignore canceled executor futures in completion callbacks</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/jmespath-community/typescript-jmespath/pull/100" rel="noopener">
+          <span class="where">jmespath-community/<b>typescript-jmespath</b> #100</span>
+          <time datetime="2026-10-24">2026-10-24</time>
+          <span class="what"><span lang="en">Run CLI artifact checks without shell quoting</span></span>
+        </a></li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-foot col">
+    <div class="inner">
+      <nav aria-label="Elsewhere">
+        <a href="mailto:kenny@kojoo.co">kenny@kojoo.co</a>
+        <a href="https://github.com/KennyMcSimpson" rel="me noopener">GitHub</a>
+        <a href="/uses/"><span data-l="en">Uses</span><span data-l="zh" lang="zh-CN">工具</span></a>
+        <a href="/feed.xml">RSS</a>
+      </nav>
+      <div class="theme" role="group" aria-label="Theme">
+        <span><span data-l="en">Theme</span><span data-l="zh" lang="zh-CN">主题</span></span>
+        <button type="button" data-theme-set="auto" aria-pressed="true"><span data-l="en">auto</span><span data-l="zh" lang="zh-CN">自动</span></button>
+        <button type="button" data-theme-set="light" aria-pressed="false"><span data-l="en">light</span><span data-l="zh" lang="zh-CN">浅色</span></button>
+        <button type="button" data-theme-set="dark" aria-pressed="false"><span data-l="en">dark</span><span data-l="zh" lang="zh-CN">深色</span></button>
+      </div>
+      <p class="meta-line"><span data-l="en">Updated 2026-11-03 · plain HTML, no trackers · <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">source</a></span><span data-l="zh" lang="zh-CN">更新于 2026-11-03 · 纯 HTML，无统计 · <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">源码</a></span></p>
+    </div>
+  </footer>
+</body>
+</html>

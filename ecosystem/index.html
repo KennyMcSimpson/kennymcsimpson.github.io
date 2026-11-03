@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en" data-lang="en" data-title-en="The Ecosystem · Kenny" data-title-zh="Ecosystem · Kenny">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Ecosystem · Kenny</title>
+  <meta name="description" content="PI, Kenny’s fork of the PI Desktop workbench, and what grew around it: Lyra, scheduled jobs, a research institution, PI Chrome, a reading workspace. PI 与围着它长出来的一圈。">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#faf8f4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#171513" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://kennymcsimpson.github.io/ecosystem/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The Ecosystem · Kenny">
+  <meta property="og:description" content="PI, Kenny’s fork of the PI Desktop workbench, and what grew around it: Lyra, scheduled jobs, a research institution, PI Chrome, a reading workspace. PI 与围着它长出来的一圈。">
+  <meta property="og:url" content="https://kennymcsimpson.github.io/ecosystem/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="Kenny — Notes" href="/feed.xml">
+  <script src="/prefs.js"></script>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/site.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main"><span data-l="en">Skip to content</span><span data-l="zh" lang="zh-CN">跳到正文</span></a>
+  <div class="progress" aria-hidden="true"></div>
+  <header class="site-head col">
+    <a class="wordmark" href="/"><svg class="seal" viewBox="4 4 56 56" aria-hidden="true"><rect x="4" y="4" width="56" height="56" rx="7"/><path d="M20 17h10v1.8l-3 .6v11.3l11.6-11.2-2.6-.7V17h10v1.8l-2.6.6-10.1 9.7 11 15.3 2.6.7V47H36.7v-1.8l2-.6-8.4-11.9-3.3 3.1v8.8l3 .6V47H20v-1.8l3-.6V19.4l-3-.6z"/></svg>Kenny</a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="/ecosystem/" aria-current="page">Ecosystem</a>
+      <a href="/contributions/"><span data-l="en">Open source</span><span data-l="zh" lang="zh-CN">开源</span></a>
+      <a href="/now/"><span data-l="en">Now</span><span data-l="zh" lang="zh-CN">此刻</span></a>
+      <a href="/notes/"><span data-l="en">Notes</span><span data-l="zh" lang="zh-CN">手记</span></a>
+    </nav>
+    <button class="lang" type="button" data-lang-toggle aria-label="切换到中文"><span data-l="en" lang="zh-CN">中文</span><span data-l="zh" lang="en">EN</span></button>
+  </header>
+
+  <main id="main" class="col">
+    <header class="page-head">
+      <p class="kicker"><span data-l="en">The Ecosystem</span><span data-l="zh" lang="zh-CN">Ecosystem</span> <span class="mono">· 2026-11-03</span></p>
+      <h1 class="title"><span data-l="en">One workbench, and the habits that grew around it.</span><span data-l="zh" lang="zh-CN">一个工作台，<br>和围着它长出来的习惯。</span></h1>
+      <p class="lede" data-l="en">PI is my fork of <a href="https://github.com/AR307/PI-Desktop" rel="noopener">PI Desktop</a>, an open-source Electron AI workbench. It is open all day, and everything on this page lives in it or works on it.</p><p class="lede" data-l="zh" lang="zh-CN">PI 是我基于开源项目 <a href="https://github.com/AR307/PI-Desktop" rel="noopener">PI Desktop</a>（Electron AI 桌面工作台）改出来的个人版本，整天开着。这一页上的东西，要么住在它里面，要么在给它干活。</p>
+    </header>
+
+    <figure class="fig" aria-labelledby="fig-cap-title">
+      <div class="fig-wide">
+    <svg class="eco" viewBox="0 0 760 480" role="group" aria-labelledby="fig-title" data-eco>
+      <title id="fig-title">The Ecosystem: PI at the centre, with Lyra, scheduled jobs, the research institution, PI Chrome and the reading workspace around it, inside a ring of state and release rules; the coding agents sit outside and work on PI.</title>
+      <path class="ring" d="M665 238.1C662.9 247.5 659.3 276.3 652 294.4C644.7 312.4 634.3 330.2 621.4 346.4C608.6 362.7 593.3 378.9 575 392C556.7 405 534.3 416.1 511.7 424.7C489 433.3 463.9 439.5 438.9 443.6C414 447.7 387.6 450.3 362.1 449.4C336.6 448.5 310.1 444.5 286 438.2C261.8 431.9 238.3 422.5 217.2 411.6C196.2 400.8 176 387.8 159.6 373.2C143.1 358.7 129.2 341.7 118.6 324.3C108 307 99.4 287.9 95.9 269.2C92.3 250.4 94 230.5 97.4 211.6C100.9 192.7 107.1 173.7 116.6 156C126.2 138.4 139 120.8 154.7 105.7C170.4 90.7 189.8 76.5 210.8 65.6C231.8 54.6 256.4 46.8 280.5 40.1C304.7 33.4 330.2 27.1 355.7 25.2C381.2 23.4 408.2 25.4 433.6 28.8C459.1 32.2 485.3 37.4 508.6 45.6C531.9 53.9 554.6 65.4 573.4 78.5C592.3 91.6 607.9 107.8 621.7 124.1C635.5 140.3 647.9 157.8 656.1 176C664.2 194.2 669.7 214.1 670.5 233.3C671.3 252.5 662.3 281.6 660.7 291.2"/>
+      <path class="spoke" data-for="lyra" d="M380 179C377.9 154.1 378.4 127.7 380 104.5"/>
+      <path class="spoke" data-for="jobs" d="M437.3 224.1C475 212 516.2 201.6 554.3 195.8"/>
+      <path class="spoke" data-for="research" d="M421.2 280.2C443.5 300.8 466.5 324.1 486.5 347.2"/>
+      <path class="spoke" data-for="reading" d="M338.8 280.2C319.4 304.5 298.2 328.7 273.5 347.2"/>
+      <path class="spoke" data-for="chrome" d="M322.7 224.1C282.5 218.5 242.2 209.9 205.7 195.8"/>
+      <path class="spoke dashed" data-for="agents" d="M433.4 212.9C511.4 169.4 597.3 128.8 678.7 97.3"/>
+      <a class="node" href="#pi" data-node="pi">
+        <rect class="hit" x="320" y="178" width="120" height="120" rx="60"/>
+        <circle class="fill" cx="380" cy="238" r="52"/>
+        <path class="pen" d="M430.5 248.7C428.5 252.3 423.9 264.3 418.7 270.4C413.5 276.5 406.6 282.2 399.3 285.5C392 288.7 382.7 290.6 374.7 289.9C366.6 289.2 357.8 285.8 351 281.2C344.3 276.7 338.3 269.6 334.4 262.5C330.5 255.3 327.8 246.4 327.7 238.2C327.6 230.1 330.1 221.1 333.8 213.8C337.6 206.4 343.4 198.9 350.1 194.2C356.8 189.4 365.9 186.2 374.1 185.4C382.3 184.6 391.5 186.4 399.3 189.4C407 192.4 415.4 197 420.8 203.2C426.3 209.4 430.2 218.3 432 226.5C433.8 234.7 433.8 244.2 431.7 252.3C429.6 260.5 421.4 271.5 419.4 275.3"/>
+        <path class="pen faint" d="M425.4 238.2C424.3 242.1 422.9 255.1 418.8 261.9C414.8 268.8 407.9 275.5 400.8 279C393.8 282.6 384.5 284 376.4 283.5C368.3 283 358.8 280.9 352.2 276.3C345.6 271.8 339.6 263.7 336.5 256.1C333.5 248.5 332.7 238.9 334 230.9C335.3 222.8 339.1 214.2 344.3 207.8C349.4 201.3 357.1 194.9 364.8 192.2C372.6 189.6 382.6 189.9 390.8 191.7C399 193.6 408 197.6 414.1 203.4C420.1 209.1 425.3 218 427.3 226.2C429.3 234.4 426.2 248.1 426 252.4"/>
+        <text class="core" x="380" y="243" text-anchor="middle">PI</text>
+        <text class="role tiny" x="380" y="260" text-anchor="middle" data-l="en">WORKBENCH</text>
+        <text class="role tiny" x="380" y="260" text-anchor="middle" data-l="zh" lang="zh-CN">工作台</text>
+      </a>
+      <a class="node" href="#lyra" data-node="lyra">
+        <rect class="hit" x="338.7" y="34" width="82.6" height="70" rx="4"/>
+        <circle class="fill dotfill" cx="380" cy="92" r="6"/>
+        <path class="pen" d="M386.2 92.3C385.7 93 384.9 95.8 383.7 96.8C382.4 97.8 380.1 98.7 378.6 98.4C377 98.1 375 96.4 374.3 95C373.6 93.5 373.6 91.1 374.3 89.6C374.9 88.1 376.5 86.4 378.1 85.8C379.6 85.3 382.3 85.3 383.7 86.1C385.2 87 386.4 89.4 386.6 91.2C386.7 92.9 385.1 95.6 384.8 96.5"/>
+        <text x="380" y="54" text-anchor="middle" data-l="en">Lyra</text>
+        <text x="380" y="54" text-anchor="middle" data-l="zh" lang="zh-CN">Lyra</text>
+        <text class="role" x="380" y="70" text-anchor="middle" data-l="en">ASSISTANT</text>
+        <text class="role" x="380" y="70" text-anchor="middle" data-l="zh" lang="zh-CN">助手</text>
+      </a>
+      <a class="node" href="#jobs" data-node="jobs">
+        <rect class="hit" x="552.4" y="170.9" width="90" height="70" rx="4"/>
+        <circle class="fill dotfill" cx="566.4" cy="192.9" r="6"/>
+        <path class="pen" d="M572.4 193.2C572.1 194 571.6 197.1 570.4 198.1C569.1 199.1 566.6 199.6 565 199.3C563.4 198.9 561.5 197.3 560.7 195.8C559.9 194.3 559.6 191.9 560.2 190.3C560.8 188.7 562.7 186.9 564.4 186.3C566 185.8 568.7 186.2 570.1 187.1C571.5 188.1 572.6 190.3 572.8 192.1C573.1 193.8 571.6 196.5 571.3 197.4"/>
+        <text x="582.4" y="190.9" text-anchor="start" data-l="en">Jobs</text>
+        <text x="582.4" y="190.9" text-anchor="start" data-l="zh" lang="zh-CN">定时任务</text>
+        <text class="role" x="582.4" y="206.9" text-anchor="start" data-l="en">ON A CLOCK</text>
+        <text class="role" x="582.4" y="206.9" text-anchor="start" data-l="zh" lang="zh-CN">按时运行</text>
+      </a>
+      <a class="node" href="#research" data-node="research">
+        <rect class="hit" x="481.2" y="334.1" width="127" height="56" rx="4"/>
+        <circle class="fill dotfill" cx="495.2" cy="356.1" r="6"/>
+        <path class="pen" d="M501.6 356.4C501.2 357.2 500.4 360.2 499.1 361.2C497.8 362.2 495.4 362.8 493.8 362.5C492.2 362.1 490.4 360.5 489.6 359C488.8 357.5 488.4 355.1 489.1 353.5C489.7 352 491.6 350.3 493.2 349.8C494.9 349.3 497.5 349.5 498.8 350.5C500.2 351.4 501.3 353.6 501.5 355.3C501.8 357 500.4 359.8 500.2 360.7"/>
+        <text x="510.2" y="366.1" text-anchor="start" data-l="en">Institution</text>
+        <text x="510.2" y="366.1" text-anchor="start" data-l="zh" lang="zh-CN">研究院</text>
+        <text class="role" x="510.2" y="382.1" text-anchor="start" data-l="en">MULTI-ROLE RUNS</text>
+        <text class="role" x="510.2" y="382.1" text-anchor="start" data-l="zh" lang="zh-CN">多角色研究</text>
+      </a>
+      <a class="node" href="#reading" data-node="reading">
+        <rect class="hit" x="137" y="334.1" width="141.8" height="56" rx="4"/>
+        <circle class="fill dotfill" cx="264.8" cy="356.1" r="6"/>
+        <path class="pen" d="M271 356.4C270.6 357.2 269.9 360.1 268.6 361.1C267.3 362.1 264.9 362.8 263.4 362.4C261.8 362.1 260 360.5 259.2 359C258.4 357.5 258.1 355.1 258.7 353.6C259.4 352.1 261.3 350.6 262.9 350.1C264.5 349.5 266.9 349.7 268.4 350.6C269.8 351.4 271.4 353.5 271.7 355.2C271.9 356.9 270.2 359.9 269.8 360.8"/>
+        <text x="249.8" y="366.1" text-anchor="end" data-l="en">Reading</text>
+        <text x="249.8" y="366.1" text-anchor="end" data-l="zh" lang="zh-CN">阅读区</text>
+        <text class="role" x="249.8" y="382.1" text-anchor="end" data-l="en">ZOTERO · OBSIDIAN</text>
+        <text class="role" x="249.8" y="382.1" text-anchor="end" data-l="zh" lang="zh-CN">ZOTERO · OBSIDIAN</text>
+      </a>
+      <a class="node" href="#chrome" data-node="chrome">
+        <rect class="hit" x="106.1" y="170.9" width="101.5" height="70" rx="4"/>
+        <circle class="fill dotfill" cx="193.6" cy="192.9" r="6"/>
+        <path class="pen" d="M199.7 193.2C199.3 193.9 198.6 196.8 197.4 197.8C196.1 198.8 193.7 199.5 192.2 199.2C190.6 198.8 188.8 197.2 188 195.7C187.3 194.3 187 191.9 187.6 190.4C188.2 188.8 190 186.9 191.6 186.4C193.2 185.9 195.6 186.5 197.1 187.4C198.6 188.4 200.1 190.3 200.4 192C200.6 193.7 199 196.7 198.7 197.6"/>
+        <text x="177.6" y="190.9" text-anchor="end" data-l="en">PI Chrome</text>
+        <text x="177.6" y="190.9" text-anchor="end" data-l="zh" lang="zh-CN">PI Chrome</text>
+        <text class="role" x="177.6" y="206.9" text-anchor="end" data-l="en">BROWSER</text>
+        <text class="role" x="177.6" y="206.9" text-anchor="end" data-l="zh" lang="zh-CN">受控浏览器</text>
+      </a>
+      <a class="node" href="#agents" data-node="agents">
+        <rect class="hit" x="611.7" y="34" width="156.6" height="70" rx="4"/>
+        <circle class="fill dotfill" cx="690" cy="92" r="6"/>
+        <path class="pen" d="M696.5 92.3C696 93.1 695 95.9 693.7 96.8C692.4 97.8 690.1 98.6 688.6 98.3C687 97.9 685.2 96.3 684.5 94.8C683.8 93.4 683.5 91 684.1 89.5C684.7 88 686.5 86.3 688.1 85.8C689.6 85.3 692 85.8 693.4 86.6C694.9 87.5 696.4 89.5 696.7 91.2C696.9 92.9 695.4 95.9 695.2 96.8"/>
+        <text x="690" y="54" text-anchor="middle" data-l="en">Coding agents</text>
+        <text x="690" y="54" text-anchor="middle" data-l="zh" lang="zh-CN">编码代理</text>
+        <text class="role" x="690" y="70" text-anchor="middle" data-l="en">CLAUDE CODE · CODEX</text>
+        <text class="role" x="690" y="70" text-anchor="middle" data-l="zh" lang="zh-CN">CLAUDE CODE · CODEX</text>
+      </a>
+      <a class="node" href="#rules" data-node="rules">
+        <rect class="hit" x="288" y="438" width="184" height="24" rx="4"/>
+        <text class="role" x="380" y="454" text-anchor="middle" data-l="en">STATE &amp; RELEASE RULES</text>
+        <text class="role" x="380" y="454" text-anchor="middle" data-l="zh" lang="zh-CN">状态与发布的规矩</text>
+      </a>
+    </svg>
+        <div class="caption" id="eco-caption" aria-live="polite">
+          <p class="fig-no"><span data-l="en">Fig. 1 — select a part of the drawing</span><span data-l="zh" lang="zh-CN">图 1 — 点选图中的一部分</span></p>
+        </div>
+      </div>
+      <figcaption class="sr-only" id="fig-cap-title"><span data-l="en">The Ecosystem, drawn out</span><span data-l="zh" lang="zh-CN">Ecosystem 全图</span></figcaption>
+      <p class="fig-hint" aria-hidden="true"><span data-l="en">Tap a part to read what it does.</span><span data-l="zh" lang="zh-CN">点开一项，看它做什么。</span></p>
+      <ol class="fig-list">
+      <li class="root">
+        <details>
+          <summary><span class="bead" aria-hidden="true"></span><span class="n"><span data-l="en">PI</span><span data-l="zh" lang="zh-CN">PI</span></span></summary>
+          <div class="d"><p data-l="en">My fork of PI Desktop, an open-source Electron AI workbench. It is open all day, and everything else here lives inside it.</p><p data-l="zh" lang="zh-CN">我基于开源的 PI Desktop（Electron AI 桌面工作台）改的个人版本，整天开着；这里的其他部分都住在它里面。</p><a href="#pi"><span data-l="en">More below ↓</span><span data-l="zh" lang="zh-CN">下文详述 ↓</span></a></div>
+        </details>
+      </li>
+      <li class="">
+        <details>
+          <summary><span class="bead" aria-hidden="true"></span><span class="n"><span data-l="en">Lyra</span><span data-l="zh" lang="zh-CN">Lyra</span></span></summary>
+          <div class="d"><p data-l="en">An always-on assistant with her own window, a notebook memory and reminders. She acts on my behalf and asks first only before anything irreversible or outward.</p><p data-l="zh" lang="zh-CN">常驻的助手，有自己的窗口、记忆本和提醒。她替我动手，只有不可逆或对外的事才先问我。</p><a href="#lyra"><span data-l="en">More below ↓</span><span data-l="zh" lang="zh-CN">下文详述 ↓</span></a></div>
+        </details>
+      </li>
+      <li class="">
+        <details>
+          <summary><span class="bead" aria-hidden="true"></span><span class="n"><span data-l="en">Scheduled jobs</span><span data-l="zh" lang="zh-CN">定时任务</span></span></summary>
+          <div class="d"><p data-l="en">Work that runs on a clock: a daily paper digest, a GitHub report, a group-chat digest, memory distillation, and a weekly health check.</p><p data-l="zh" lang="zh-CN">按时跑的活：每日论文摘要、GitHub 报告、群聊摘要、记忆整理，以及每周一次的健康检查。</p><a href="#jobs"><span data-l="en">More below ↓</span><span data-l="zh" lang="zh-CN">下文详述 ↓</span></a></div>
+        </details>
+      </li>
+      <li class="">
+        <details>
+          <summary><span class="bead" aria-hidden="true"></span><span class="n"><span data-l="en">Research &amp; the institution</span><span data-l="zh" lang="zh-CN">研究模式与研究院</span></span><span class="r building"><span data-l="en">being built</span><span data-l="zh" lang="zh-CN">建设中</span></span></summary>
+          <div class="d"><p data-l="en">Research mode for focused questions. Bigger ones go to the institution: a director, reviewers and a council run them as separate roles, with review kept apart from the research.</p><p data-l="zh" lang="zh-CN">聚焦的问题走研究模式；大问题交给研究院，由主持、评审和评审会分角色来跑，评审与研究分开。</p><a href="#research"><span data-l="en">More below ↓</span><span data-l="zh" lang="zh-CN">下文详述 ↓</span></a></div>
+        </details>
+      </li>
+      <li class="">
+        <details>
+          <summary><span class="bead" aria-hidden="true"></span><span class="n"><span data-l="en">PI Chrome</span><span data-l="zh" lang="zh-CN">PI Chrome</span></span></summary>
+          <div class="d"><p data-l="en">A controlled browser for the agents. Outward steps wait on a confirmation card, every step lands in an audit log, and a read-only mirror shows it all in the work panel.</p><p data-l="zh" lang="zh-CN">给代理用的受控浏览器：对外的步骤先弹确认卡，每一步写进审计日志，工作面板里有一面只读镜像。</p><a href="#chrome"><span data-l="en">More below ↓</span><span data-l="zh" lang="zh-CN">下文详述 ↓</span></a></div>
+        </details>
+      </li>
+      <li class="">
+        <details>
+          <summary><span class="bead" aria-hidden="true"></span><span class="n"><span data-l="en">Reading workspace</span><span data-l="zh" lang="zh-CN">阅读区</span></span></summary>
+          <div class="d"><p data-l="en">My Zotero library and Obsidian notes beside the conversation. Highlights and notes on a PDF go back to Zotero.</p><p data-l="zh" lang="zh-CN">Zotero 文献库和 Obsidian 笔记就在对话旁边，PDF 上的高亮和批注写回 Zotero。</p><a href="#reading"><span data-l="en">More below ↓</span><span data-l="zh" lang="zh-CN">下文详述 ↓</span></a></div>
+        </details>
+      </li>
+      <li class="">
+        <details>
+          <summary><span class="bead" aria-hidden="true"></span><span class="n"><span data-l="en">State &amp; release rules</span><span data-l="zh" lang="zh-CN">状态与发布的规矩</span></span><span class="r"><span data-l="en">house rule</span><span data-l="zh" lang="zh-CN">规矩</span></span></summary>
+          <div class="d"><p data-l="en">What keeps it from breaking: state files are handled strictly, and a new build is built and checked before it replaces the running one.</p><p data-l="zh" lang="zh-CN">让它不出乱子的规矩：状态文件严格读写；新版本先构建、再检查，确认无误才替换正在用的那一版。</p><a href="#rules"><span data-l="en">More below ↓</span><span data-l="zh" lang="zh-CN">下文详述 ↓</span></a></div>
+        </details>
+      </li>
+      <li class="outside">
+        <details>
+          <summary><span class="bead" aria-hidden="true"></span><span class="n"><span data-l="en">Coding agents</span><span data-l="zh" lang="zh-CN">编码代理</span></span></summary>
+          <div class="d"><p data-l="en">Claude Code and Codex, for everyday code and for building PI itself. They work on PI from the outside.</p><p data-l="zh" lang="zh-CN">Claude Code 和 Codex，日常写代码，也用来开发 PI 本身。它们站在 PI 外面改它。</p><a href="#agents"><span data-l="en">More below ↓</span><span data-l="zh" lang="zh-CN">下文详述 ↓</span></a></div>
+        </details>
+      </li>
+      </ol>
+    </figure>
+    <template id="about-pi">
+      <p class="fig-no"><span data-l="en">Fig. 1 — select a part of the drawing</span><span data-l="zh" lang="zh-CN">图 1 — 点选图中的一部分</span></p>
+      <h3><span data-l="en">PI</span><span data-l="zh" lang="zh-CN">PI</span> <span class="state"><span data-l="en">in daily use</span><span data-l="zh" lang="zh-CN">每天在用</span></span></h3>
+      <p data-l="en">My fork of PI Desktop, an open-source Electron AI workbench. It is open all day, and everything else here lives inside it.</p><p data-l="zh" lang="zh-CN">我基于开源的 PI Desktop（Electron AI 桌面工作台）改的个人版本，整天开着；这里的其他部分都住在它里面。</p>
+      <a href="#pi"><span data-l="en">More below ↓</span><span data-l="zh" lang="zh-CN">下文详述 ↓</span></a>
+    </template>
+    <template id="about-lyra">
+      <p class="fig-no"><span data-l="en">Fig. 1 — select a part of the drawing</span><span data-l="zh" lang="zh-CN">图 1 — 点选图中的一部分</span></p>
+      <h3><span data-l="en">Lyra</span><span data-l="zh" lang="zh-CN">Lyra</span> <span class="state"><span data-l="en">in daily use</span><span data-l="zh" lang="zh-CN">每天在用</span></span></h3>
+      <p data-l="en">An always-on assistant with her own window, a notebook memory and reminders. She acts on my behalf and asks first only before anything irreversible or outward.</p><p data-l="zh" lang="zh-CN">常驻的助手，有自己的窗口、记忆本和提醒。她替我动手，只有不可逆或对外的事才先问我。</p>
+      <a href="#lyra"><span data-l="en">More below ↓</span><span data-l="zh" lang="zh-CN">下文详述 ↓</span></a>
+    </template>
+    <template id="about-jobs">
+      <p class="fig-no"><span data-l="en">Fig. 1 — select a part of the drawing</span><span data-l="zh" lang="zh-CN">图 1 — 点选图中的一部分</span></p>
+      <h3><span data-l="en">Scheduled jobs</span><span data-l="zh" lang="zh-CN">定时任务</span> <span class="state"><span data-l="en">in daily use</span><span data-l="zh" lang="zh-CN">每天在用</span></span></h3>
+      <p data-l="en">Work that runs on a clock: a daily paper digest, a GitHub report, a group-chat digest, memory distillation, and a weekly health check.</p><p data-l="zh" lang="zh-CN">按时跑的活：每日论文摘要、GitHub 报告、群聊摘要、记忆整理，以及每周一次的健康检查。</p>
+      <a href="#jobs"><span data-l="en">More below ↓</span><span data-l="zh" lang="zh-CN">下文详述 ↓</span></a>
+    </template>
+    <template id="about-research">
+      <p class="fig-no"><span data-l="en">Fig. 1 — select a part of the drawing</span><span data-l="zh" lang="zh-CN">图 1 — 点选图中的一部分</span></p>
+      <h3><span data-l="en">Research &amp; the institution</span><span data-l="zh" lang="zh-CN">研究模式与研究院</span> <span class="state building"><span data-l="en">being built</span><span data-l="zh" lang="zh-CN">建设中</span></span></h3>
+      <p data-l="en">Research mode for focused questions. Bigger ones go to the institution: a director, reviewers and a council run them as separate roles, with review kept apart from the research.</p><p data-l="zh" lang="zh-CN">聚焦的问题走研究模式；大问题交给研究院，由主持、评审和评审会分角色来跑，评审与研究分开。</p>
+      <a href="#research"><span data-l="en">More below ↓</span><span data-l="zh" lang="zh-CN">下文详述 ↓</span></a>
+    </template>
+    <template id="about-chrome">
+      <p class="fig-no"><span data-l="en">Fig. 1 — select a part of the drawing</span><span data-l="zh" lang="zh-CN">图 1 — 点选图中的一部分</span></p>
+      <h3><span data-l="en">PI Chrome</span><span data-l="zh" lang="zh-CN">PI Chrome</span> <span class="state"><span data-l="en">in daily use</span><span data-l="zh" lang="zh-CN">每天在用</span></span></h3>
+      <p data-l="en">A controlled browser for the agents. Outward steps wait on a confirmation card, every step lands in an audit log, and a read-only mirror shows it all in the work panel.</p><p data-l="zh" lang="zh-CN">给代理用的受控浏览器：对外的步骤先弹确认卡，每一步写进审计日志，工作面板里有一面只读镜像。</p>
+      <a href="#chrome"><span data-l="en">More below ↓</span><span data-l="zh" lang="zh-CN">下文详述 ↓</span></a>
+    </template>
+    <template id="about-reading">
+      <p class="fig-no"><span data-l="en">Fig. 1 — select a part of the drawing</span><span data-l="zh" lang="zh-CN">图 1 — 点选图中的一部分</span></p>
+      <h3><span data-l="en">Reading workspace</span><span data-l="zh" lang="zh-CN">阅读区</span> <span class="state"><span data-l="en">in daily use</span><span data-l="zh" lang="zh-CN">每天在用</span></span></h3>
+      <p data-l="en">My Zotero library and Obsidian notes beside the conversation. Highlights and notes on a PDF go back to Zotero.</p><p data-l="zh" lang="zh-CN">Zotero 文献库和 Obsidian 笔记就在对话旁边，PDF 上的高亮和批注写回 Zotero。</p>
+      <a href="#reading"><span data-l="en">More below ↓</span><span data-l="zh" lang="zh-CN">下文详述 ↓</span></a>
+    </template>
+    <template id="about-agents">
+      <p class="fig-no"><span data-l="en">Fig. 1 — select a part of the drawing</span><span data-l="zh" lang="zh-CN">图 1 — 点选图中的一部分</span></p>
+      <h3><span data-l="en">Coding agents</span><span data-l="zh" lang="zh-CN">编码代理</span> <span class="state"><span data-l="en">in daily use</span><span data-l="zh" lang="zh-CN">每天在用</span></span></h3>
+      <p data-l="en">Claude Code and Codex, for everyday code and for building PI itself. They work on PI from the outside.</p><p data-l="zh" lang="zh-CN">Claude Code 和 Codex，日常写代码，也用来开发 PI 本身。它们站在 PI 外面改它。</p>
+      <a href="#agents"><span data-l="en">More below ↓</span><span data-l="zh" lang="zh-CN">下文详述 ↓</span></a>
+    </template>
+    <template id="about-rules">
+      <p class="fig-no"><span data-l="en">Fig. 1 — select a part of the drawing</span><span data-l="zh" lang="zh-CN">图 1 — 点选图中的一部分</span></p>
+      <h3><span data-l="en">State &amp; release rules</span><span data-l="zh" lang="zh-CN">状态与发布的规矩</span> <span class="state"><span data-l="en">house rule</span><span data-l="zh" lang="zh-CN">规矩</span></span></h3>
+      <p data-l="en">What keeps it from breaking: state files are handled strictly, and a new build is built and checked before it replaces the running one.</p><p data-l="zh" lang="zh-CN">让它不出乱子的规矩：状态文件严格读写；新版本先构建、再检查，确认无误才替换正在用的那一版。</p>
+      <a href="#rules"><span data-l="en">More below ↓</span><span data-l="zh" lang="zh-CN">下文详述 ↓</span></a>
+    </template>
+
+    <section class="part prose" aria-labelledby="why-h">
+      <h2 id="why-h"><span data-l="en">Why it exists</span><span data-l="zh" lang="zh-CN">为什么会有它</span></h2>
+      <p data-l="en">A question might start in a paper, become a note, then turn into code and an experiment. Coming back later often means reconstructing the context: why this approach, what has already been tried, and where that result came from.</p><p data-l="zh" lang="zh-CN">一个问题可能始于论文，接着变成笔记、代码和实验。隔一段时间再回来，最费劲的往往是找回上下文：上次为什么选这个方案，试过哪些办法，那个结果又是从哪里来的。</p>
+      <p data-l="en">The Ecosystem starts with those everyday gaps. It isn’t a product. It is a set of habits I built, bit by bit, around one workbench.</p><p data-l="zh" lang="zh-CN">Ecosystem 从这些日常的断点出发。它不是一个产品，而是我围着一个工作台，一点点搭出来的一套习惯。</p>
+    </section>
+
+    <section class="part" aria-labelledby="parts-h">
+      <h2 id="parts-h"><span data-l="en">The parts</span><span data-l="zh" lang="zh-CN">各个部分</span></h2>
+      <p class="note" data-l="en">All in daily use, except where marked.</p><p class="note" data-l="zh" lang="zh-CN">除标注的以外，都在每天使用。</p>
+      <section class="piece" id="pi" aria-labelledby="pi-h">
+        <h3 id="pi-h"><span data-l="en">PI</span><span data-l="zh" lang="zh-CN">PI</span></h3>
+        <p data-l="en">My fork of PI Desktop (Electron, LGPL-3.0). I run it on Windows all day; the assistant, the jobs, the research runs, the browser and the reading workspace all live inside it.</p><p data-l="zh" lang="zh-CN">我基于 PI Desktop（Electron，LGPL-3.0）改的个人版本，在 Windows 上整天开着；助手、定时任务、研究流程、浏览器和阅读区都住在里面。</p>
+      </section>
+      <section class="piece" id="lyra" aria-labelledby="lyra-h">
+        <h3 id="lyra-h"><span data-l="en">Lyra</span><span data-l="zh" lang="zh-CN">Lyra</span></h3>
+        <p data-l="en">The always-on assistant. She acts on my behalf; anything irreversible or outward waits for my yes.</p><p data-l="zh" lang="zh-CN">常驻的助手。她替我动手；不可逆或对外的事，要等我点头。</p>
+        <ul data-l="en"><li>Her own window, with several chats that share one Lyra</li><li>A notebook memory, reminders and to-dos</li><li>Permanent deletion, spending or messaging anyone: she asks first</li></ul><ul data-l="zh" lang="zh-CN"><li>独立窗口，可以开多个对话，共用同一个 Lyra</li><li>记忆本、提醒和待办</li><li>永久删除、花钱、对外发消息：先问我</li></ul>
+      </section>
+      <section class="piece" id="jobs" aria-labelledby="jobs-h">
+        <h3 id="jobs-h"><span data-l="en">Scheduled jobs</span><span data-l="zh" lang="zh-CN">定时任务</span></h3>
+        <p data-l="en">Work that runs on a clock, so the day starts with things already gathered.</p><p data-l="zh" lang="zh-CN">按时跑的活，一天开始时，东西已经收好了。</p>
+        <ul data-l="en"><li>A daily paper digest</li><li>A GitHub report and a group-chat digest</li><li>Memory distillation, and a weekly health check</li></ul><ul data-l="zh" lang="zh-CN"><li>每日论文摘要</li><li>GitHub 报告和群聊摘要</li><li>记忆整理，以及每周一次的健康检查</li></ul>
+      </section>
+      <section class="piece" id="research" aria-labelledby="research-h">
+        <h3 id="research-h"><span data-l="en">Research &amp; the institution</span><span data-l="zh" lang="zh-CN">研究模式与研究院</span> <span class="state building"><span data-l="en">being built</span><span data-l="zh" lang="zh-CN">建设中</span></span></h3>
+        <p data-l="en">Research mode handles focused questions. Bigger ones go to the institution, where separate roles run them and review never gets mixed into the research. Most of it is built; it hasn’t finished a real run yet.</p><p data-l="zh" lang="zh-CN">聚焦的问题走研究模式；更大的交给研究院，由不同角色来跑，评审不和研究混在一起。大部分已经建好，还没有完整跑通一轮真实的研究。</p>
+        <ul data-l="en"><li>A director who plans and runs the work</li><li>Reviewers who check it independently</li><li>A council for the final call</li></ul><ul data-l="zh" lang="zh-CN"><li>主持：规划和推进</li><li>评审：独立检查</li><li>评审会：最后拍板</li></ul>
+      </section>
+      <section class="piece" id="chrome" aria-labelledby="chrome-h">
+        <h3 id="chrome-h"><span data-l="en">PI Chrome</span><span data-l="zh" lang="zh-CN">PI Chrome</span></h3>
+        <p data-l="en">The browser the agents use, built so I can see and stop what they do on the web.</p><p data-l="zh" lang="zh-CN">代理们用的浏览器，让我能看见、也能拦住它们在网页上做的事。</p>
+        <ul data-l="en"><li>Confirmation cards before outward steps</li><li>An audit log of every step</li><li>A read-only mirror in the work panel</li></ul><ul data-l="zh" lang="zh-CN"><li>对外的步骤先弹确认卡</li><li>每一步写进审计日志</li><li>工作面板里的只读镜像</li></ul>
+      </section>
+      <section class="piece" id="reading" aria-labelledby="reading-h">
+        <h3 id="reading-h"><span data-l="en">Reading workspace</span><span data-l="zh" lang="zh-CN">阅读区</span></h3>
+        <p data-l="en">Papers and notes beside the conversation, so reading doesn’t mean switching apps.</p><p data-l="zh" lang="zh-CN">论文和笔记就在对话旁边，读东西不用切换应用。</p>
+        <ul data-l="en"><li>My Zotero library</li><li>My Obsidian notes</li><li>PDF highlights and notes saved back to Zotero</li></ul><ul data-l="zh" lang="zh-CN"><li>Zotero 文献库</li><li>Obsidian 笔记</li><li>PDF 上的高亮和批注写回 Zotero</li></ul>
+      </section>
+      <section class="piece" id="agents" aria-labelledby="agents-h">
+        <h3 id="agents-h"><span data-l="en">Coding agents</span><span data-l="zh" lang="zh-CN">编码代理</span></h3>
+        <p data-l="en">Claude Code and Codex. They write everyday code with me, and most of PI’s own changes go through them too.</p><p data-l="zh" lang="zh-CN">Claude Code 和 Codex。日常的代码和它们一起写，PI 自己的改动也大多经过它们。</p>
+      </section>
+      <section class="piece" id="rules" aria-labelledby="rules-h">
+        <h3 id="rules-h"><span data-l="en">State &amp; release rules</span><span data-l="zh" lang="zh-CN">状态与发布的规矩</span> <span class="state"><span data-l="en">house rule</span><span data-l="zh" lang="zh-CN">规矩</span></span></h3>
+        <p data-l="en">The unglamorous part that keeps the rest from breaking.</p><p data-l="zh" lang="zh-CN">不起眼，但让其他部分不出乱子的那一层。</p>
+        <ul data-l="en"><li>State files are read and written strictly</li><li>A new build is built, then checked</li><li>Only then does it replace the running one</li></ul><ul data-l="zh" lang="zh-CN"><li>状态文件严格读写</li><li>新版本先构建、再检查</li><li>确认无误，才替换正在用的那一版</li></ul>
+      </section>
+    </section>
+
+    <section class="part" id="day" aria-labelledby="day-h">
+      <h2 id="day-h"><span data-l="en">How a day runs</span><span data-l="zh" lang="zh-CN">一天，大概这样过</span></h2>
+      <p class="note" data-l="en">Not a schedule, just the usual order of things. Lyra is around all day.</p><p class="note" data-l="zh" lang="zh-CN">不是精确的日程表，只是平常的顺序。Lyra 全天都在。</p>
+      <ol class="day">
+        <li><span class="when"><span data-l="en">Early</span><span data-l="zh" lang="zh-CN">清晨</span></span><div><h3><span data-l="en">The digests arrive first</span><span data-l="zh" lang="zh-CN">摘要先到</span></h3><p data-l="en">The day starts with what the jobs have collected: the paper digest, the GitHub report, and what happened in the group chats. Lyra puts today’s reminders next to them.</p><p data-l="zh" lang="zh-CN">一天从定时任务收集来的东西开始：论文摘要、GitHub 报告，还有群聊里聊了些什么。Lyra 把今天的提醒一起摆出来。</p></div></li>
+        <li><span class="when"><span data-l="en">Morning</span><span data-l="zh" lang="zh-CN">上午</span></span><div><h3><span data-l="en">Reading first</span><span data-l="zh" lang="zh-CN">先读</span></h3><p data-l="en">A few papers from the digest, read in the side panel next to the conversation. Highlights and notes go back to Zotero.</p><p data-l="zh" lang="zh-CN">从摘要里挑几篇论文，在对话旁边的侧栏里读；高亮和批注写回 Zotero。</p></div></li>
+        <li><span class="when"><span data-l="en">Daytime</span><span data-l="zh" lang="zh-CN">白天</span></span><div><h3><span data-l="en">Making things</span><span data-l="zh" lang="zh-CN">动手</span></h3><p data-l="en">Writing code with Claude Code and Codex, including changes to PI itself. Steps that need the web go through PI Chrome.</p><p data-l="zh" lang="zh-CN">和 Claude Code、Codex 一起写代码，PI 自己的改动也在其中。需要上网的步骤交给 PI Chrome。</p></div></li>
+        <li><span class="when"><span data-l="en">When it’s big</span><span data-l="zh" lang="zh-CN">遇到大问题</span></span><div><h3><span data-l="en">Hand it to the institution</span><span data-l="zh" lang="zh-CN">交给研究院</span></h3><p data-l="en">Focused questions go through research mode; bigger ones are run by the director, reviewers and council.</p><p data-l="zh" lang="zh-CN">聚焦的问题用研究模式；更大的，交给主持、评审和评审会分角色来跑。</p></div></li>
+        <li><span class="when"><span data-l="en">Evening</span><span data-l="zh" lang="zh-CN">晚上</span></span><div><h3><span data-l="en">Tie off the threads</span><span data-l="zh" lang="zh-CN">收线</span></h3><p data-l="en">Memory distillation gathers what the day left behind, so tomorrow can pick up from there.</p><p data-l="zh" lang="zh-CN">记忆整理把一天留下的线索归拢好，明天从这里接着走。</p></div></li>
+        <li><span class="when"><span data-l="en">Weekly</span><span data-l="zh" lang="zh-CN">每周</span></span><div><h3><span data-l="en">A check-up</span><span data-l="zh" lang="zh-CN">体检</span></h3><p data-l="en">A health check runs once a week. New PI builds get the same care: built and checked before they replace the running one.</p><p data-l="zh" lang="zh-CN">每周跑一次健康检查。PI 有新版本时也一样：先构建、检查，确认无误再替换。</p></div></li>
+      </ol>
+    </section>
+
+    <section class="part" id="principles" aria-labelledby="principles-h">
+      <h2 id="principles-h"><span data-l="en">Three rules they all keep</span><span data-l="zh" lang="zh-CN">它们都守的三条</span></h2>
+      <ol class="rules" data-l="en"><li><strong>Do what can be done without me.</strong> Not everything needs a question.</li><li><strong>Ask before the irreversible or outward.</strong> Permanent deletion, spending, or messaging someone needs my yes.</li><li><strong>Leave a record of every step.</strong> Audit logs and receipts, so it can be checked later.</li></ol><ol class="rules" data-l="zh" lang="zh-CN"><li><strong>能自己做的，就自己做。</strong>不必事事来问我。</li><li><strong>不可逆或对外的，先问。</strong>永久删除、花钱、对外发消息，都要我点头。</li><li><strong>每一步都留记录。</strong>审计日志和回执，事后能查。</li></ol>
+    </section>
+
+    <section class="part" id="public" aria-labelledby="public-h">
+      <h2 id="public-h"><span data-l="en">Public, and not public yet</span><span data-l="zh" lang="zh-CN">哪些公开，哪些还没有</span></h2>
+      <dl class="split">
+        <div><dt><span data-l="en">Public</span><span data-l="zh" lang="zh-CN">公开的</span></dt><dd><p data-l="en">This site and <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">its source</a>; <a href="/contributions/">every merged upstream PR</a>; and <a href="https://github.com/AR307/PI-Desktop" rel="noopener">PI Desktop</a> itself, which belongs to its own authors.</p><p data-l="zh" lang="zh-CN">这个网站和<a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">它的源码</a>；<a href="/contributions/">每一个合并到上游的 PR</a>；以及 <a href="https://github.com/AR307/PI-Desktop" rel="noopener">PI Desktop</a> 本身，它属于自己的作者。</p></dd></div>
+        <div><dt><span data-l="en">Not yet</span><span data-l="zh" lang="zh-CN">还没有</span></dt><dd><p data-l="en">My PI build, with everything on this page inside it. It is wired to my own machine and accounts, with no installer, docs or support. Memory, digests and job output are personal and stay that way. The drawing above is a diagram, not a screenshot.</p><p data-l="zh" lang="zh-CN">我的 PI 构建，以及这一页上的所有部分。它连着我自己的机器和账号，没有安装包、文档或支持。记忆、摘要和任务产出是私人的，不会放上来。上面那张图是示意，不是界面截图。</p><p data-l="en">If a piece becomes something other people can use, it will show up here first.</p><p data-l="zh" lang="zh-CN">如果哪一部分变成别人也能用的东西，会先出现在这里。</p></dd></div>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="site-foot col">
+    <div class="inner">
+      <nav aria-label="Elsewhere">
+        <a href="mailto:kenny@kojoo.co">kenny@kojoo.co</a>
+        <a href="https://github.com/KennyMcSimpson" rel="me noopener">GitHub</a>
+        <a href="/uses/"><span data-l="en">Uses</span><span data-l="zh" lang="zh-CN">工具</span></a>
+        <a href="/feed.xml">RSS</a>
+      </nav>
+      <div class="theme" role="group" aria-label="Theme">
+        <span><span data-l="en">Theme</span><span data-l="zh" lang="zh-CN">主题</span></span>
+        <button type="button" data-theme-set="auto" aria-pressed="true"><span data-l="en">auto</span><span data-l="zh" lang="zh-CN">自动</span></button>
+        <button type="button" data-theme-set="light" aria-pressed="false"><span data-l="en">light</span><span data-l="zh" lang="zh-CN">浅色</span></button>
+        <button type="button" data-theme-set="dark" aria-pressed="false"><span data-l="en">dark</span><span data-l="zh" lang="zh-CN">深色</span></button>
+      </div>
+      <p class="meta-line"><span data-l="en">Updated 2026-11-03 · plain HTML, no trackers · <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">source</a></span><span data-l="zh" lang="zh-CN">更新于 2026-11-03 · 纯 HTML，无统计 · <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">源码</a></span></p>
+    </div>
+  </footer>
+</body>
+</html>

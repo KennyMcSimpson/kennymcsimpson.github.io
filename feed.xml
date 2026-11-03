@@ -1,8 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Kenny · 实验手记 / Field notes</title><link>https://kennymcsimpson.github.io/notes/</link><description>科研、代码与长期记忆。Research, code, and lasting context.</description><language>zh-CN</language><lastBuildDate>Sat, 31 Oct 2026 06:30:00 GMT</lastBuildDate><atom:link href="https://kennymcsimpson.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <item><title>Ecosystem、PI 与 Lyra，各自在做什么？ / How do they fit?</title><link>https://kennymcsimpson.github.io/notes/ecosystem/</link><guid isPermaLink="true">https://kennymcsimpson.github.io/notes/ecosystem/</guid><pubDate>Sat, 31 Oct 2026 06:30:00 GMT</pubDate><description>一套工作方式、一个桌面工作区，以及其中正在完善的搭档。A way of working, a desktop workspace, and the companion taking shape inside it.</description></item>
-    <item><title>一个小修复，也能成为一条连接。 / A small fix can be a connection.</title><link>https://kennymcsimpson.github.io/notes/upstream/</link><guid isPermaLink="true">https://kennymcsimpson.github.io/notes/upstream/</guid><pubDate>Sat, 31 Oct 2026 06:30:00 GMT</pubDate><description>四个已合并的改动，以及 Contributor 标签意味着什么。Four merged changes and what the Contributor label means.</description></item>
+    <title>Kenny — Notes / 手记</title>
+    <link>https://kennymcsimpson.github.io/notes/</link>
+    <description>Research, code, and an AI workbench used every day. 研究、代码，以及一个每天在用的 AI 工作台。</description>
+    <language>en</language>
+    <lastBuildDate>Tue, 03 Nov 2026 08:00:00 GMT</lastBuildDate>
+    <atom:link href="https://kennymcsimpson.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Ecosystem, PI and Lyra: how do they fit? / Ecosystem、PI 与 Lyra，各自在做什么？</title>
+      <link>https://kennymcsimpson.github.io/notes/ecosystem/</link>
+      <guid isPermaLink="true">https://kennymcsimpson.github.io/notes/ecosystem/</guid>
+      <pubDate>Sat, 31 Oct 2026 06:30:00 GMT</pubDate>
+      <description>A workbench used every day, the habits that grew around it, and the assistant who lives inside (revised Nov 3, 2026). 一个每天在用的工作台，围着它长出来的一圈习惯，以及住在里面的助手（2026-11-03 修订）。</description>
+    </item>
+    <item>
+      <title>A small fix can be a connection. / 一个小修复，也能成为一条连接。</title>
+      <link>https://kennymcsimpson.github.io/notes/upstream/</link>
+      <guid isPermaLink="true">https://kennymcsimpson.github.io/notes/upstream/</guid>
+      <pubDate>Sat, 31 Oct 2026 06:30:00 GMT</pubDate>
+      <description>Four merged changes and what the Contributor label means. 四个已合并的改动，以及 Contributor 标签意味着什么。</description>
+    </item>
   </channel>
 </rss>

@@ -1,57 +1,79 @@
 <!doctype html>
-<html lang="zh-CN" data-theme="dark">
+<html lang="en" data-lang="en" data-title-en="Ecosystem, PI and Lyra: how do they fit? · Kenny" data-title-zh="Ecosystem、PI 与 Lyra，各自在做什么？· Kenny">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark light"><meta name="theme-color" content="#091b22">
-  <title>Ecosystem、PI 与 Lyra · Kenny</title><meta name="description" content="一套工作方式、一个桌面工作区，以及其中正在完善的搭档。Ecosystem、PI 与 Lyra 的简短说明。">
-  <link rel="canonical" href="https://kennymcsimpson.github.io/notes/ecosystem/"><meta property="og:type" content="article"><meta property="og:title" content="Ecosystem、PI 与 Lyra，各自在做什么？"><meta property="og:description" content="一套工作方式、一个桌面工作区，以及其中正在完善的搭档。"><meta property="og:url" content="https://kennymcsimpson.github.io/notes/ecosystem/">
-  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml"><link rel="alternate" type="application/rss+xml" title="Kenny · 实验手记" href="/feed.xml">
-  <script src="/preferences.js"></script><link rel="stylesheet" href="/styles.css"><link rel="stylesheet" href="/enhancements.css"><script src="/reading.js" type="module"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ecosystem, PI and Lyra: how do they fit? · Kenny</title>
+  <meta name="description" content="A workbench used every day, the habits that grew around it, and the assistant who lives inside. 一个每天在用的工作台，围着它长出来的习惯，以及住在里面的助手。">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#faf8f4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#171513" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://kennymcsimpson.github.io/notes/ecosystem/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ecosystem, PI and Lyra: how do they fit? · Kenny">
+  <meta property="og:description" content="A workbench used every day, the habits that grew around it, and the assistant who lives inside. 一个每天在用的工作台，围着它长出来的习惯，以及住在里面的助手。">
+  <meta property="og:url" content="https://kennymcsimpson.github.io/notes/ecosystem/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="Kenny — Notes" href="/feed.xml">
+  <script src="/prefs.js"></script>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/site.js" defer></script>
 </head>
-<body data-page="ecosystem">
-  <div class="reading-progress" aria-hidden="true"></div><a class="skip-link" href="#main" data-i18n="skip">跳到正文</a>
-  <header class="site-header wrap"><a class="brand" href="/" aria-label="Kenny — home"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2v28M2 16h28M6 6l20 20M26 6 6 26"/><circle cx="16" cy="16" r="6"/></svg><span>KENNY<span class="brand-dot">.</span></span></a><nav class="main-nav" aria-label="主导航" data-label="nav"><a href="/#ecosystem">Ecosystem</a><a href="/notes/" data-i18n="nav.notes">手记</a><a href="/#contributions" data-i18n="nav.contributions">开源足迹</a></nav><div class="preferences"><button class="search-trigger js-control" data-search-open type="button" aria-label="搜索与快速跳转" data-label="search.open"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><kbd>K</kbd></button><button class="text-button js-control" id="language-toggle" type="button" aria-label="Switch to English">EN</button><span class="preference-divider" aria-hidden="true"></span><button class="theme-button js-control" id="theme-toggle" type="button" aria-label="切换到浅色主题"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg></button></div></header>
-  <main id="main" class="reader-page wrap">
-    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Kenny</a><span aria-hidden="true">/</span><a href="/notes/" data-i18n="notes.back">全部手记</a><span aria-hidden="true">/</span><span>01</span></nav>
-    <header class="reading-head"><div class="reading-meta"><span data-i18n="notes.eco.category">项目说明</span><span aria-hidden="true">·</span><time datetime="2026-10-31" data-i18n="reader.updated">写于 2026.10.31</time></div><h1 data-i18n="notes.eco.title">Ecosystem、PI 与 Lyra，各自在做什么？</h1><p class="page-lede" data-i18n="notes.eco.description">一套工作方式、一个桌面工作区，以及其中正在完善的搭档。把这几个名字放回它们的位置。</p></header>
-    <div class="reading-layout">
-      <div>
-        <article class="reading-body" data-language="zh-CN" lang="zh-CN" aria-label="项目说明正文">
-          <h2 id="why-connect">先从工作里那些断掉的线说起</h2>
-          <p>一个问题可能始于论文，接着变成笔记、代码和实验。隔一段时间再回来，最费劲的往往是找回上下文：上次为什么选这个方案，试过哪些办法，那个结果又来自哪里。</p>
-          <p>Ecosystem 从这些日常的断点出发。它把项目记忆、科研、编码和工具连接放在同一套工作方式里，让一次任务产生的线索，能在下一次继续派上用场。</p>
-          <div class="reading-map" aria-label="Ecosystem 包含 PI 工作区，Lyra 是其中的搭档"><strong>Ecosystem</strong><span aria-hidden="true">→</span><strong>PI-Ecosystem</strong><span aria-hidden="true">↔</span><strong>Lyra</strong></div>
-          <h2 id="three-names">三个名字，三个位置</h2>
-          <p><strong>Ecosystem 是整体的组织方式。</strong>项目记忆保留状态、决定和来源；科研与独立评审分别组织研究和评价；编码执行让具体改动与检查发生；技能和工具连接把外部能力接进来。</p>
-          <p><strong>PI-Ecosystem 是桌面工作区。</strong>它为这些模块提供一个共同的落脚处，让不同工作流程能在一个环境里相遇。名字相近，是因为 PI 承载着这套 Ecosystem 的具体实现。</p>
-          <p><strong>Lyra 是其中正在完善的管家与搭档。</strong>她是人与这个工作环境之间的一个入口，也给工具多一点可以相处的性格。</p>
-          <h2 id="one-day">落到一天的工作里</h2>
-          <p>做研究时，问题和证据一路走向方案、实验和验证，再交给独立的评价。写代码时，先读懂现有实现，做一块范围清楚的改动，再运行相关检查。隔天接着做时，先找回状态，再核对眼前的文件和结果。</p>
-          <p>这些流程都需要一些共同的东西：能找回的上下文，能回到的来源，以及足够具体的下一步。首页的星图试着把这些联系画出来。</p>
-          <h2 id="still-growing">现在到哪一步了</h2>
-          <div class="reading-callout"><p>截至 2026 年 10 月 31 日，PI-Ecosystem 仍在本地开发，源码尚未公开。各模块和 Lyra 都在继续完善。</p></div>
-          <p>这个网站先把结构和想法摆出来。等 PI 适合公开时，这里会接上源码、实际界面和更完整的使用记录。现在可以先<a href="/?star=memory">从记忆这颗星开始</a>，或者<a href="/?star=lyra">去看看 Lyra</a>。</p>
-        </article>
-        <article class="reading-body" data-language="en" lang="en" aria-label="Project guide" hidden>
-          <h2 id="why-connect-en">Start with the loose threads</h2>
-          <p>A question might start in a paper, become a note, then turn into code and an experiment. Coming back later often means reconstructing the context: why this approach, what has already been tried, and where that result came from.</p>
-          <p>Ecosystem starts with those everyday gaps. It brings project memory, research, coding, and tool connections into a shared way of working, so a thread left by one task can still be useful in the next.</p>
-          <div class="reading-map" aria-label="Ecosystem includes the PI workspace, with Lyra as its companion"><strong>Ecosystem</strong><span aria-hidden="true">→</span><strong>PI-Ecosystem</strong><span aria-hidden="true">↔</span><strong>Lyra</strong></div>
-          <h2 id="three-names-en">Three names, three places</h2>
-          <p><strong>Ecosystem is the overall organization.</strong> Project memory retains state, decisions, and sources. Research and independent review organize the work and its evaluation separately. Coding and execution make concrete changes and checks happen. Skills and tool integrations connect outside capabilities.</p>
-          <p><strong>PI-Ecosystem is the desktop workspace.</strong> It gives those modules a common home, where different workflows can meet. The names are close because PI carries the concrete implementation of this Ecosystem.</p>
-          <p><strong>Lyra is the companion taking shape inside it.</strong> She offers an entry point between a person and this working environment, with a little personality along the way.</p>
-          <h2 id="one-day-en">In the course of a day</h2>
-          <p>Research moves from a question and its evidence toward a plan, an experiment, validation, and independent evaluation. Coding starts with the existing implementation, makes a scoped change, and runs the relevant checks. Picking up tomorrow starts by recovering the state and checking the actual files and results.</p>
-          <p>These workflows share a few needs: context that can be recovered, sources that can be revisited, and a concrete next step. The constellation on the homepage tries to draw those connections.</p>
-          <h2 id="still-growing-en">Where it stands</h2>
-          <div class="reading-callout"><p>As of October 31, 2026, PI-Ecosystem is in local development and its source is not public yet. The modules and Lyra are still evolving.</p></div>
-          <p>This website is a first look at the structure and the ideas. When PI is ready to share, it will link to the source, actual interface, and a fuller account of using it. For now, <a href="/?star=memory">start with the memory star</a>, or <a href="/?star=lyra">meet Lyra</a>.</p>
-        </article>
-        <nav class="reading-end" aria-label="More notes"><p class="eyebrow" data-i18n="reader.next">接着读</p><a class="next-note" href="/notes/upstream/"><span data-i18n="notes.open.title">一个小修复，也能成为一条连接。</span> ↗</a><br><a class="quiet-link" href="/" data-i18n="reader.home">回到星图</a></nav>
-      </div>
-      <aside class="reading-sidebar"><p class="eyebrow" data-i18n="reader.toc">这篇里有什么</p><ol class="reading-toc" id="reading-toc"><li><a href="#why-connect">先从工作里那些断掉的线说起</a></li><li><a href="#three-names">三个名字，三个位置</a></li><li><a href="#one-day">落到一天的工作里</a></li><li><a href="#still-growing">现在到哪一步了</a></li></ol><button class="share-reading js-control" type="button"><span data-i18n="notes.share">复制链接</span><span aria-hidden="true">↗</span></button><p class="copy-status" role="status"></p></aside>
+<body>
+  <a class="skip" href="#main"><span data-l="en">Skip to content</span><span data-l="zh" lang="zh-CN">跳到正文</span></a>
+  <div class="progress" aria-hidden="true"></div>
+  <header class="site-head col">
+    <a class="wordmark" href="/"><svg class="seal" viewBox="4 4 56 56" aria-hidden="true"><rect x="4" y="4" width="56" height="56" rx="7"/><path d="M20 17h10v1.8l-3 .6v11.3l11.6-11.2-2.6-.7V17h10v1.8l-2.6.6-10.1 9.7 11 15.3 2.6.7V47H36.7v-1.8l2-.6-8.4-11.9-3.3 3.1v8.8l3 .6V47H20v-1.8l3-.6V19.4l-3-.6z"/></svg>Kenny</a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="/ecosystem/">Ecosystem</a>
+      <a href="/contributions/"><span data-l="en">Open source</span><span data-l="zh" lang="zh-CN">开源</span></a>
+      <a href="/now/"><span data-l="en">Now</span><span data-l="zh" lang="zh-CN">此刻</span></a>
+      <a href="/notes/" aria-current="page"><span data-l="en">Notes</span><span data-l="zh" lang="zh-CN">手记</span></a>
+    </nav>
+    <button class="lang" type="button" data-lang-toggle aria-label="切换到中文"><span data-l="en" lang="zh-CN">中文</span><span data-l="zh" lang="en">EN</span></button>
+  </header>
+
+  <main id="main" class="col">
+    <article>
+    <header class="page-head">
+      <p class="kicker"><span data-l="en">Note</span><span data-l="zh" lang="zh-CN">手记</span> <span class="mono">· 2026-10-31 · <span data-l="en">revised</span><span data-l="zh" lang="zh-CN">修订</span> 2026-11-03</span></p>
+      <h1 class="title"><span data-l="en">Ecosystem, PI and Lyra: how do they fit?</span><span data-l="zh" lang="zh-CN">Ecosystem、PI 与 Lyra，各自在做什么？</span></h1>
+      <p class="lede" data-l="en">A workbench I use every day, the habits that grew around it, and the assistant who lives inside.</p><p class="lede" data-l="zh" lang="zh-CN">一个每天在用的工作台，围着它长出来的一圈习惯，以及住在里面的助手。</p>
+    </header>
+    <div class="prose">
+      <h2><span data-l="en">Start with the loose threads</span><span data-l="zh" lang="zh-CN">先从断掉的线说起</span></h2>
+      <p data-l="en">A question might start in a paper, become a note, then turn into code and an experiment. Coming back later often means reconstructing the context: why this approach, what has already been tried, and where that result came from.</p><p data-l="zh" lang="zh-CN">一个问题可能始于论文，接着变成笔记、代码和实验。隔一段时间再回来，最费劲的往往是找回上下文：上次为什么选这个方案，试过哪些办法，那个结果又是从哪里来的。</p>
+      <p data-l="en">The Ecosystem starts with those everyday gaps. It isn’t a product. It is a set of habits I built, bit by bit, around one workbench.</p><p data-l="zh" lang="zh-CN">Ecosystem 从这些日常的断点出发。它不是一个产品，而是我围着一个工作台，一点点搭出来的一套习惯。</p>
+      <h2><span data-l="en">Three names, three places</span><span data-l="zh" lang="zh-CN">三个名字，三个位置</span></h2>
+      <p data-l="en"><strong>PI is the workbench.</strong> It is my own build of the open-source <a href="https://github.com/AR307/PI-Desktop" rel="noopener">PI Desktop</a>, an Electron AI workbench, and it is open all day.</p><p data-l="zh" lang="zh-CN"><strong>PI 是工作台。</strong>它是我基于开源项目 <a href="https://github.com/AR307/PI-Desktop" rel="noopener">PI Desktop</a>（一个 Electron AI 桌面工作台）改出来的个人版本，每天都开着。</p>
+      <p data-l="en"><strong>The Ecosystem is what grew around it.</strong> Scheduled jobs deliver a daily paper digest, a GitHub report and a group-chat digest, distill memory, and run a health check once a week. Research mode handles focused questions; bigger ones go to the “institution”, run by separate roles: a director, reviewers and a council. PI Chrome is a controlled browser for the agents. The reading workspace puts Zotero and Obsidian next to the conversation. Claude Code and Codex write code. Holding it together is a set of rules about state files and releases.</p><p data-l="zh" lang="zh-CN"><strong>Ecosystem 是围着它长出来的一圈。</strong>定时任务按时送来每日论文摘要、GitHub 报告和群聊摘要，做记忆整理，每周再做一次健康检查；研究模式处理聚焦的问题，更大的交给“研究院”，由主持、评审和评审会分角色来跑；PI Chrome 是给代理用的受控浏览器；阅读区把 Zotero 和 Obsidian 放到对话旁边；Claude Code 和 Codex 负责写代码。把它们串起来的，是一套关于状态文件和发布的规矩。</p>
+      <p data-l="en"><strong>Lyra is the assistant who lives inside.</strong> She has her own window, memory notebook and reminders, and she acts on my behalf. Only irreversible or outward actions, such as permanent deletion, spending, or messaging someone, wait for my yes.</p><p data-l="zh" lang="zh-CN"><strong>Lyra 是住在里面的助手。</strong>她有自己的窗口、记忆本和提醒，可以替我动手。只有不可逆或对外的操作，比如永久删除、花钱、对外发消息，她会先问我。</p>
+      <h2><span data-l="en">In the course of a day</span><span data-l="zh" lang="zh-CN">落到一天的工作里</span></h2>
+      <p data-l="en">The digests arrive early; papers get read in the side panel in the morning; daytime is for writing code with the agents, with web steps going through PI Chrome; big questions go to the institution; in the evening, memory distillation tidies up the day’s threads. <a href="/ecosystem/#day">How a day runs</a> draws that line.</p><p data-l="zh" lang="zh-CN">清晨，摘要先到；上午在侧栏里读论文；白天和编码代理一起写代码，需要上网的步骤交给 PI Chrome；遇到大问题，交给研究院；晚上，记忆整理把一天的线索收好。<a href="/ecosystem/#day">“一天”</a>把这条线画了出来。</p>
+      <h2><span data-l="en">Where it stands</span><span data-l="zh" lang="zh-CN">现在到哪一步了</span></h2>
+      <p data-l="en">As of 2026-11-03: PI, Lyra, the scheduled jobs, PI Chrome and the reading workspace are in daily use; the institution is still being built. My PI build is not released. It is wired to my own machine and accounts, with no installer or docs. PI Desktop itself is open source.</p><p data-l="zh" lang="zh-CN">截至 2026-11-03：PI、Lyra、定时任务、PI Chrome 和阅读区每天都在用；研究院还在建设中。我的 PI 构建没有公开发布，它连着我自己的机器和账号，没有安装包和文档。PI Desktop 本身是开源的。</p>
+      <p data-l="en">If a piece becomes something other people can use, it will show up here first. For now, there is <a href="/ecosystem/">a drawing of the whole thing</a>.</p><p data-l="zh" lang="zh-CN">如果哪一部分变成别人也能用的东西，会先出现在这里。现在可以先看看<a href="/ecosystem/">整张图</a>。</p>
     </div>
+    <p class="next"><span class="kicker"><span data-l="en">Read next</span><span data-l="zh" lang="zh-CN">接着读</span></span><a class="more" href="/notes/upstream/"><span data-l="en">A small fix can be a connection.</span><span data-l="zh" lang="zh-CN">一个小修复，也能成为一条连接。</span></a></p>
+    </article>
   </main>
-  <footer class="site-footer wrap"><div><a class="footer-wordmark" href="/">Kenny<span>✳</span></a><p data-i18n="footer.note">这里会随着 PI 一起长大。</p></div><div class="footer-links"><a href="/feed.xml">RSS ↗</a><a href="https://github.com/KennyMcSimpson" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" target="_blank" rel="noopener noreferrer" data-i18n="footer.source">本站源码 ↗</a><span>© 2026 Kenny</span></div></footer><a class="back-to-top js-control" href="#" aria-label="回到顶部" data-label="top">↑</a>
+
+  <footer class="site-foot col">
+    <div class="inner">
+      <nav aria-label="Elsewhere">
+        <a href="mailto:kenny@kojoo.co">kenny@kojoo.co</a>
+        <a href="https://github.com/KennyMcSimpson" rel="me noopener">GitHub</a>
+        <a href="/uses/"><span data-l="en">Uses</span><span data-l="zh" lang="zh-CN">工具</span></a>
+        <a href="/feed.xml">RSS</a>
+      </nav>
+      <div class="theme" role="group" aria-label="Theme">
+        <span><span data-l="en">Theme</span><span data-l="zh" lang="zh-CN">主题</span></span>
+        <button type="button" data-theme-set="auto" aria-pressed="true"><span data-l="en">auto</span><span data-l="zh" lang="zh-CN">自动</span></button>
+        <button type="button" data-theme-set="light" aria-pressed="false"><span data-l="en">light</span><span data-l="zh" lang="zh-CN">浅色</span></button>
+        <button type="button" data-theme-set="dark" aria-pressed="false"><span data-l="en">dark</span><span data-l="zh" lang="zh-CN">深色</span></button>
+      </div>
+      <p class="meta-line"><span data-l="en">Updated 2026-11-03 · plain HTML, no trackers · <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">source</a></span><span data-l="zh" lang="zh-CN">更新于 2026-11-03 · 纯 HTML，无统计 · <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">源码</a></span></p>
+    </div>
+  </footer>
 </body>
 </html>

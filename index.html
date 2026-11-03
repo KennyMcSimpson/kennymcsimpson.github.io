@@ -1,158 +1,141 @@
 <!doctype html>
-<html lang="zh-CN" data-theme="dark">
+<html lang="en" data-lang="en" data-title-en="Kenny" data-title-zh="Kenny">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="dark light">
-  <meta name="theme-color" content="#091b22">
-  <title>Kenny · 想法的引力</title>
-  <meta name="description" content="Kenny 的个人实验室。科研、代码与长期记忆，在 Ecosystem 里慢慢连成星图。PI-Ecosystem 本地开发中。">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Kenny · A small universe of things I build">
-  <meta property="og:description" content="Research, code, and lasting context. Exploring a personal Ecosystem, one connection at a time.">
-  <meta property="og:url" content="https://kennymcsimpson.github.io/">
+  <title>Kenny</title>
+  <meta name="description" content="Kenny does research and writes code in PI, a desktop AI workbench he has made his own, and sends small fixes upstream. 研究、代码，以及一个每天在用的 AI 工作台。">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#faf8f4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#171513" media="(prefers-color-scheme: dark)">
   <link rel="canonical" href="https://kennymcsimpson.github.io/">
-  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-  <link rel="alternate" type="application/rss+xml" title="Kenny · 实验手记" href="feed.xml">
-  <script src="preferences.js"></script>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="enhancements.css">
-  <script src="app.js" type="module"></script>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Kenny">
+  <meta property="og:description" content="Kenny does research and writes code in PI, a desktop AI workbench he has made his own, and sends small fixes upstream. 研究、代码，以及一个每天在用的 AI 工作台。">
+  <meta property="og:url" content="https://kennymcsimpson.github.io/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="Kenny — Notes" href="/feed.xml">
+  <script src="/prefs.js"></script>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/site.js" defer></script>
 </head>
-<body>
-  <a class="skip-link" href="#main" data-i18n="skip">跳到正文</a>
-  <header class="site-header wrap">
-    <a class="brand" href="#" aria-label="Kenny — home">
-      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 2v28M2 16h28M6 6l20 20M26 6 6 26"/><circle cx="16" cy="16" r="6"/></svg>
-      <span>KENNY<span class="brand-dot">.</span></span>
-    </a>
-    <nav class="main-nav" aria-label="主导航" data-label="nav">
-      <a href="#ecosystem">Ecosystem</a>
-      <a href="notes/" data-i18n="nav.notes">手记</a>
-      <a href="#contributions" data-i18n="nav.contributions">开源足迹</a>
-      <a class="nav-github" href="https://github.com/KennyMcSimpson" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+<body data-page="home">
+  <a class="skip" href="#main"><span data-l="en">Skip to content</span><span data-l="zh" lang="zh-CN">跳到正文</span></a>
+  <header class="site-head col">
+    <a class="wordmark" href="/"><svg class="seal" viewBox="4 4 56 56" aria-hidden="true"><rect x="4" y="4" width="56" height="56" rx="7"/><path d="M20 17h10v1.8l-3 .6v11.3l11.6-11.2-2.6-.7V17h10v1.8l-2.6.6-10.1 9.7 11 15.3 2.6.7V47H36.7v-1.8l2-.6-8.4-11.9-3.3 3.1v8.8l3 .6V47H20v-1.8l3-.6V19.4l-3-.6z"/></svg>Kenny</a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="/ecosystem/">Ecosystem</a>
+      <a href="/contributions/"><span data-l="en">Open source</span><span data-l="zh" lang="zh-CN">开源</span></a>
+      <a href="/now/"><span data-l="en">Now</span><span data-l="zh" lang="zh-CN">此刻</span></a>
+      <a href="/notes/"><span data-l="en">Notes</span><span data-l="zh" lang="zh-CN">手记</span></a>
     </nav>
-    <div class="preferences">
-      <button class="search-trigger js-control" data-search-open type="button" aria-label="搜索与快速跳转" data-label="search.open"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><kbd>K</kbd></button>
-      <button class="text-button js-control" id="language-toggle" type="button" aria-label="Switch to English">EN</button>
-      <span class="preference-divider" aria-hidden="true"></span>
-      <button class="theme-button js-control" id="theme-toggle" type="button" aria-label="切换到浅色主题" title="切换到浅色主题"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg></button>
-    </div>
+    <button class="lang" type="button" data-lang-toggle aria-label="切换到中文"><span data-l="en" lang="zh-CN">中文</span><span data-l="zh" lang="en">EN</span></button>
   </header>
 
-  <main id="main">
-    <section class="hero wrap" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="tiny-star" aria-hidden="true">✳</span> A PERSONAL LAB, ALWAYS IN PROGRESS</p>
-        <h1 id="hero-title" data-i18n="hero.title">把想法，
-连成星图。</h1>
-        <p class="hero-description" data-i18n="hero.description">我是 Kenny。写代码、做研究，也在搭一个让知识、工具与长期记忆彼此相连的工作环境。</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#ecosystem"><span data-i18n="hero.explore">走进 Ecosystem</span><span aria-hidden="true">↗</span></a>
-          <a class="quiet-link" href="#contributions"><span data-i18n="hero.contributions">看看开源足迹</span><span aria-hidden="true">↓</span></a>
-        </div>
-        <a class="hero-footnote" href="#now"><span class="small-orbit" aria-hidden="true"></span><span data-i18n="hero.footnote">还在生长。看看我最近在做什么 ↗</span></a>
-      </div>
-
-      <div class="atlas" aria-label="Ecosystem 交互星图" data-label="atlas">
-        <div class="atlas-canvas">
-          <div class="atlas-coordinate" aria-hidden="true">FIG. 01 <span>THE ECOSYSTEM</span></div>
-          <svg class="orbit-lines" viewBox="0 0 600 500" fill="none" aria-hidden="true">
-            <ellipse class="orbit" cx="300" cy="250" rx="242" ry="180" transform="rotate(-24 300 250)"/>
-            <ellipse class="orbit orbit-inner" cx="300" cy="250" rx="155" ry="110" transform="rotate(24 300 250)"/>
-            <path class="connection" d="M300 250 162 95M300 250 438 95M300 250 510 270M300 250 396 410M300 250 156 390M300 250 78 240"/>
-            <path class="selected-connection" id="selected-connection" d="M300 250 162 95"/>
-            <path class="constellation" d="m162 95 276 0 72 175-114 140-240-20L78 240Z"/>
-            <g class="stars"><circle cx="63" cy="73" r="2"/><circle cx="532" cy="116" r="2.2"/><circle cx="330" cy="48" r="1.8"/><circle cx="478" cy="426" r="1.7"/><circle cx="72" cy="398" r="1.6"/><circle cx="280" cy="441" r="2"/><circle cx="560" cy="349" r="1.5"/><circle cx="220" cy="167" r="1.3"/></g>
-            <path class="cross-star" d="M523 190v12m-6-6h12M219 438v10m-5-5h10"/>
-          </svg>
-          <a class="atlas-core" href="#ecosystem"><span class="core-mark" aria-hidden="true">✳</span><strong>Ecosystem</strong><small data-i18n="atlas.core">一个相连的工作环境</small></a>
-          <button class="map-node node-memory is-active" data-module="memory" type="button" aria-pressed="true" aria-controls="module-detail"><span class="node-point" aria-hidden="true"></span><span class="node-label" data-i18n="module.memory.name">项目记忆</span><small>MEMORY</small></button>
-          <button class="map-node node-research" data-module="research" type="button" aria-pressed="false" aria-controls="module-detail"><span class="node-point" aria-hidden="true"></span><span class="node-label" data-i18n="module.research.name">科研与评审</span><small>RESEARCH</small></button>
-          <button class="map-node node-code" data-module="code" type="button" aria-pressed="false" aria-controls="module-detail"><span class="node-point" aria-hidden="true"></span><span class="node-label" data-i18n="module.code.name">编码与执行</span><small>BUILD</small></button>
-          <button class="map-node node-tools" data-module="tools" type="button" aria-pressed="false" aria-controls="module-detail"><span class="node-point" aria-hidden="true"></span><span class="node-label" data-i18n="module.tools.name">技能与工具</span><small>CONNECT</small></button>
-          <button class="map-node node-pi" data-module="pi" type="button" aria-pressed="false" aria-controls="module-detail"><span class="node-point" aria-hidden="true"></span><span class="node-label">PI-Ecosystem</span><small>WORKSPACE</small></button>
-          <button class="map-node node-lyra" data-module="lyra" type="button" aria-pressed="false" aria-controls="module-detail"><span class="node-point lyra-point" aria-hidden="true"></span><span class="node-label">Lyra</span><small>COMPANION</small></button>
-          <p class="atlas-hint" data-i18n="atlas.hint">选一颗星，看看它在做什么。</p>
-        </div>
-        <div class="module-detail" id="module-detail" aria-live="polite" aria-atomic="true">
-          <span class="detail-index" id="module-index" aria-hidden="true">01 / 06</span>
-          <div><h2 id="module-title">项目记忆</h2><p id="module-description">让下一次工作接得上：保留项目上下文、已经做过的决定，以及它们的来源。</p></div>
-          <button class="module-share js-control" id="module-share" type="button" aria-label="复制这颗星的链接" data-label="atlas.share" title="复制这颗星的链接"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m10 14 4-4m-6 2-3 3a4 4 0 0 0 6 6l3-3m-2-12 3-3a4 4 0 0 1 6 6l-3 3"/></svg></button>
-        </div>
-        <p class="copy-status" id="copy-status" role="status"></p>
-      </div>
+  <main id="main" class="col">
+    <section class="intro" aria-labelledby="intro-title">
+      <h1 class="title" id="intro-title"><span data-l="en">I do research and write code in a workbench I’ve made my own.</span><span data-l="zh" lang="zh-CN">在自己改造的工作台里，<br>做研究，写代码。</span></h1>
+      <p class="lede" data-l="en">When I hit a bug in someone else’s project, I fix it and send it back upstream. Forty-one of those fixes have been merged so far.</p><p class="lede" data-l="zh" lang="zh-CN">在别人的项目里碰到 bug，就修好，交回上游。到现在，合并了 41 个。</p>
+      <p class="status"><span class="dot" aria-hidden="true"></span><span><span data-l="en">Now: getting the research institution through its first real run.</span><span data-l="zh" lang="zh-CN">此刻：让研究院完整地跑通第一轮真实研究。</span> <a href="/now/"><span data-l="en">More</span><span data-l="zh" lang="zh-CN">详情</span></a></span></p>
     </section>
 
-    <div class="section-rule wrap"><span>01 — ECOSYSTEM</span><span data-i18n="divider">FROM SCATTERED TO CONNECTED</span></div>
-
-    <section class="ecosystem-section wrap" id="ecosystem" aria-labelledby="ecosystem-title">
-      <div class="section-intro">
-        <div><p class="eyebrow" data-i18n="eco.eyebrow">给每天的工作，留一条线索</p><h2 id="ecosystem-title" data-i18n="eco.title">事情很多，
-可以在同一个世界里。</h2></div>
-        <p class="section-description" data-i18n="eco.description">论文、代码、笔记和工具常常散在不同地方。我在做的 Ecosystem，是把它们串起来：知道从哪里开始，做过什么，下次又该从哪里接着走。</p>
-      </div>
-
-      <div class="workflow">
-        <div class="workflow-heading"><p class="eyebrow" data-i18n="workflow.label">三种日常，试着走一遍</p><div class="workflow-tabs js-control" role="tablist" aria-label="工作流程" data-label="workflow">
-          <button id="tab-research" class="is-active" type="button" role="tab" data-workflow="research" aria-selected="true" aria-controls="workflow-panel" tabindex="0" data-i18n="workflow.research">做研究</button>
-          <button id="tab-build" type="button" role="tab" data-workflow="build" aria-selected="false" aria-controls="workflow-panel" tabindex="-1" data-i18n="workflow.build">写代码</button>
-          <button id="tab-return" type="button" role="tab" data-workflow="return" aria-selected="false" aria-controls="workflow-panel" tabindex="-1" data-i18n="workflow.return">接着做</button>
-        </div></div>
-        <div id="workflow-panel" class="workflow-panel" role="tabpanel" aria-labelledby="tab-research" tabindex="0">
-          <ol id="workflow-steps" class="workflow-steps"><li><span class="step-number">01</span><h3>带着问题找证据</h3><p>从资料和文献出发，把问题、依据与仍然不确定的部分留下来。</p></li><li><span class="step-number">02</span><h3>把方案交给实验</h3><p>让设计、执行和验证有各自的位置，用真实结果修正想法。</p></li><li><span class="step-number">03</span><h3>让评价独立发生</h3><p>研究和评审分开组织，再把结论与下一步接回项目上下文。</p></li></ol>
-        </div>
-        <p class="workflow-caption"><span aria-hidden="true">↳</span><span data-i18n="workflow.caption">这是我组织工作的方式；各模块仍在持续完善。</span></p>
-      </div>
-
-      <div class="workspace-story">
-        <div class="workspace-index" aria-hidden="true"><span>π</span><small>THE WORKSPACE</small></div>
-        <div class="workspace-copy"><p class="status-label"><span aria-hidden="true"></span><span data-i18n="pi.status">本地开发中 · 源码尚未公开</span></p><h3>PI-Ecosystem</h3><p data-i18n="pi.description">承载这张星图的桌面工作区。把记忆、技能、工具连接和不同的工作流程放到一起，也为 Lyra 留一个位置。</p><p class="muted" data-i18n="pi.release">等它准备好，我会在这里放上源码与更完整的故事。</p></div>
-        <div class="workspace-margin"><span aria-hidden="true">UNDER<br>CONSTRUCTION<br>WITH CARE.</span><a class="quiet-link" href="https://github.com/KennyMcSimpson" target="_blank" rel="noopener noreferrer"><span data-i18n="pi.follow">在 GitHub 找到我</span> <span aria-hidden="true">↗</span></a></div>
-      </div>
-
-      <aside class="lyra-note" aria-labelledby="lyra-title">
-        <svg class="lyra-sigil" viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="m19 38-2-24 25 17a45 45 0 0 1 17 0l24-17-2 25c8 9 9 25-1 36-12 13-49 13-61-1-9-11-8-25 0-36Z"/><path d="M21 17 31 34m48-17L68 34M36 61h28M48 71l3 2 3-2M78 85l10-6 4-12"/><circle cx="34" cy="56" r="13"/><circle cx="68" cy="56" r="13"/><path d="M30 56h8m26 0h8M47 53h8M90 24v10m-5-5h10"/></svg>
-        <div class="lyra-copy"><p class="eyebrow" id="lyra-title">A NOTE FROM LYRA <span data-i18n="lyra.name">/ 来自 Lyra 的便签</span></p><blockquote id="lyra-quote" aria-live="polite">“星图可以很大，今天先点亮一颗就好。”</blockquote><p class="lyra-context" data-i18n="lyra.context">Lyra 是 PI 里正在完善的管家与搭档。这里是她的一小叠预写便签。</p></div>
-        <button class="note-next js-control" id="note-next" type="button"><span data-i18n="lyra.next">换张便签</span><span aria-hidden="true">↻</span></button>
-      </aside>
+    <section class="sec" id="ecosystem" aria-labelledby="eco-label">
+      <h2 class="label" id="eco-label"><span data-l="en">What I’m building</span><span data-l="zh" lang="zh-CN">在做的东西</span></h2>
+      <h3 class="sec-title"><span data-l="en">The Ecosystem</span><span data-l="zh" lang="zh-CN">Ecosystem</span></h3>
+      <p data-l="en">PI is my fork of <a href="https://github.com/AR307/PI-Desktop" rel="noopener">PI Desktop</a>, an open-source Electron AI workbench, and it is open all day. The Ecosystem is what grew around it:</p><p data-l="zh" lang="zh-CN">PI 是我基于开源项目 <a href="https://github.com/AR307/PI-Desktop" rel="noopener">PI Desktop</a>（一个 Electron AI 桌面工作台）改出来的个人版本，整天开着。Ecosystem 指的是围着它长出来的这一圈：</p>
+      <dl class="index">
+        <div><dt><span data-l="en">PI</span><span data-l="zh" lang="zh-CN">PI</span></dt><dd><span data-l="en">The workbench everything else lives in.</span><span data-l="zh" lang="zh-CN">工作台，其余部分都住在里面。</span></dd></div>
+        <div><dt><span data-l="en">Lyra</span><span data-l="zh" lang="zh-CN">Lyra</span></dt><dd><span data-l="en">An always-on assistant; asks before anything irreversible.</span><span data-l="zh" lang="zh-CN">常驻的助手；不可逆的事先问我。</span></dd></div>
+        <div><dt><span data-l="en">Jobs</span><span data-l="zh" lang="zh-CN">定时任务</span></dt><dd><span data-l="en">Digests, memory distillation, a weekly health check.</span><span data-l="zh" lang="zh-CN">各类摘要、记忆整理、每周健康检查。</span></dd></div>
+        <div><dt><span data-l="en">Institution</span><span data-l="zh" lang="zh-CN">研究院</span></dt><dd><span data-l="en">Multi-role research runs with a director, reviewers and a council.</span><span data-l="zh" lang="zh-CN">主持、评审、评审会分角色来跑的研究。</span><span class="tag"><span data-l="en">being built</span><span data-l="zh" lang="zh-CN">建设中</span></span></dd></div>
+        <div><dt><span data-l="en">PI Chrome</span><span data-l="zh" lang="zh-CN">PI Chrome</span></dt><dd><span data-l="en">A controlled browser for the agents.</span><span data-l="zh" lang="zh-CN">给代理用的受控浏览器。</span></dd></div>
+        <div><dt><span data-l="en">Reading</span><span data-l="zh" lang="zh-CN">阅读区</span></dt><dd><span data-l="en">Zotero and Obsidian beside the conversation.</span><span data-l="zh" lang="zh-CN">Zotero 和 Obsidian 就在对话旁边。</span></dd></div>
+      </dl>
+      <p class="note" data-l="en"><strong>Not public yet.</strong> My PI build is wired to my own machine and accounts, with no installer or docs. What is public: this site, and every fix I’ve sent upstream.</p><p class="note" data-l="zh" lang="zh-CN"><strong>还没有公开。</strong>我的 PI 构建连着自己的机器和账号，没有安装包，也没有文档。公开的是这个网站，以及每一个交回上游的修复。</p>
+      <a class="more" href="/ecosystem/"><span data-l="en">The Ecosystem, drawn out</span><span data-l="zh" lang="zh-CN">看 Ecosystem 的全图</span></a>
     </section>
 
-    <div class="section-rule wrap"><span>02 — THE PRESENT</span><span>ONE THING AT A TIME</span></div>
-    <section class="present-section wrap" id="now" aria-labelledby="present-title">
-      <div class="present-intro"><p class="eyebrow">A SMALL NOW PAGE</p><h2 id="present-title" data-i18n="now.title">最近，在这几件事里。</h2><p data-i18n="now.description">科研、工具和自己的工作环境，总有一些地方值得再琢磨一下。</p><time datetime="2026-10-31" data-i18n="now.date">更新于 2026.10.31</time></div>
-      <ol class="present-list">
-        <li><span class="present-marker" aria-hidden="true">↗</span><div><h3 data-i18n="now.pi.title">让 PI 慢慢长成自己的工作台</h3><p data-i18n="now.pi.body">把散落的记忆、技能和工作流程接起来，继续完善 Lyra。还在本地折腾，等适合公开时再分享。</p><a href="notes/ecosystem/" class="quiet-link"><span data-i18n="now.pi.link">先读读这张星图的说明</span> <span aria-hidden="true">↗</span></a></div></li>
-        <li><span class="present-marker" aria-hidden="true">✳</span><div><h3 data-i18n="now.research.title">在研究与实际问题之间来回走</h3><p data-i18n="now.research.body">读资料、写代码、做实验，也给过程留下能接续的线索。想让工具真正帮上日常的工作。</p></div></li>
-        <li><span class="present-marker" aria-hidden="true">+</span><div><h3 data-i18n="now.open.title">遇到能修的小问题，就试着交回上游</h3><p data-i18n="now.open.body">从文件解码到工具连接，贡献不一定很大，但解决的都是具体问题。</p><a href="#contributions" class="quiet-link"><span data-i18n="now.open.link">看看已经合并的改动</span> <span aria-hidden="true">↗</span></a></div></li>
+    <section class="sec" id="contributions" aria-labelledby="oss-label">
+      <h2 class="label" id="oss-label"><span data-l="en">Selected contributions</span><span data-l="zh" lang="zh-CN">开源贡献 · 节选</span><span class="mono"><span data-l="en">41 merged · 37 repos</span><span data-l="zh" lang="zh-CN">已合并 41 · 37 个仓库</span></span></h2>
+      <ol class="rows">
+        <li><a class="row" href="https://github.com/pillarjs/iconv-lite/pull/427" rel="noopener">
+          <span class="where">pillarjs/<b>iconv-lite</b> #427</span>
+          <time datetime="2026-10-25">2026-10-25</time>
+          <span class="what"><span data-l="en">UTF-16/32 auto encoders stop writing defaults into the caller’s options, so a later UTF-8 encode no longer gains a BOM.</span><span data-l="zh" lang="zh-CN">UTF-16/32 自动编码器不再把默认值写进调用方的 options，之后的 UTF-8 编码不会凭空多出 BOM。</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/HKUDS/nanobot/pull/6013" rel="noopener">
+          <span class="where">HKUDS/<b>nanobot</b> #6013</span>
+          <time datetime="2026-10-18">2026-10-18</time>
+          <span class="what"><span data-l="en">Tool-argument enum validation compares JSON values, so <code>true</code> no longer passes for <code>1</code>.</span><span data-l="zh" lang="zh-CN">工具参数的 enum 校验改成 JSON 值比较，<code>true</code> 不再能冒充 <code>1</code>。</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/microsoft/SkillOpt/pull/304" rel="noopener">
+          <span class="where">microsoft/<b>SkillOpt</b> #304</span>
+          <time datetime="2026-10-17">2026-10-17</time>
+          <span class="what"><span data-l="en">Config is read as UTF-8 first, and a file that can’t be read fails loudly instead of silently dropping existing limits.</span><span data-l="zh" lang="zh-CN">配置先按 UTF-8 读；读不了就明确报错，不再悄悄丢掉原有的限制。</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/Tencent/WeKnora/pull/3930" rel="noopener">
+          <span class="where">Tencent/<b>WeKnora</b> #3930</span>
+          <time datetime="2026-10-07">2026-10-07</time>
+          <span class="what"><span data-l="en">The legacy MCP client closes its streamed response before raising an HTTP error.</span><span data-l="zh" lang="zh-CN">旧版 MCP 客户端遇到 HTTP 错误时，先关闭流式响应，再把错误抛出去。</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/huggingface/datasets/pull/8737" rel="noopener">
+          <span class="where">huggingface/<b>datasets</b> #8737</span>
+          <time datetime="2026-10-05">2026-10-05</time>
+          <span class="what"><span data-l="en">Remote NIfTI files decode through the bytes path, so <code>.nii</code> and <code>.nii.gz</code> over HTTP no longer raise a TypeError.</span><span data-l="zh" lang="zh-CN">远程 NIfTI 文件改走字节解码路径，HTTP 上的 <code>.nii</code> / <code>.nii.gz</code> 不再报 TypeError。</span></span>
+        </a></li>
+        <li><a class="row" href="https://github.com/bytedance/deer-flow/pull/6194" rel="noopener">
+          <span class="where">bytedance/<b>deer-flow</b> #6194</span>
+          <time datetime="2026-10-04">2026-10-04</time>
+          <span class="what"><span data-l="en">Indented bold lines stay out of uploaded-document outlines, so real sections aren’t pushed past the 50-entry limit.</span><span data-l="zh" lang="zh-CN">缩进的粗体行不再混进上传文档的大纲，真正的章节不会被 50 条上限挤掉。</span></span>
+        </a></li>
+      </ol>
+      <a class="more" href="/contributions/"><span data-l="en">All 41 merged pull requests</span><span data-l="zh" lang="zh-CN">全部 41 个已合并的 PR</span></a>
+    </section>
+
+    <section class="sec" id="now" aria-labelledby="now-label">
+      <h2 class="label" id="now-label"><span data-l="en">Now</span><span data-l="zh" lang="zh-CN">此刻</span><span class="mono">2026-11-03</span></h2>
+      <ul class="items">
+        <li><h3><span data-l="en">The institution, from built to running</span><span data-l="zh" lang="zh-CN">研究院：从建好到跑通</span></h3><p data-l="en">Most of it is built and covered by offline tests. Next is one complete, real research run, to see whether it holds up on an actual question.</p><p data-l="zh" lang="zh-CN">大部分零件已经建好，也有离线测试覆盖。接下来要完整地跑一轮真实的研究，看它在真问题上站不站得住。</p></li>
+        <li><h3><span data-l="en">New in Lyra and PI Chrome</span><span data-l="zh" lang="zh-CN">Lyra 和 PI Chrome 的新东西</span></h3><p data-l="en">Lyra’s window now holds several chats that share one Lyra, her notes and to-dos. PI Chrome got a read-only mirror in the work panel.</p><p data-l="zh" lang="zh-CN">Lyra 的窗口可以开多个对话，共用同一个 Lyra、她的笔记和待办；PI Chrome 在工作面板里有了只读镜像。</p></li>
+        <li><h3><span data-l="en">More small fixes upstream</span><span data-l="zh" lang="zh-CN">继续往上游送小修复</span></h3><p data-l="en">October was the busiest month so far, with forty merged. The first one in November was CodeGraph-Rust #5.</p><p data-l="zh" lang="zh-CN">十月是交 PR 最密的一个月，合并了 40 个；十一月的第一个是 CodeGraph-Rust #5。</p></li>
+      </ul>
+      <a class="more" href="/now/"><span data-l="en">The now page</span><span data-l="zh" lang="zh-CN">完整的此刻页</span></a>
+    </section>
+
+    <section class="sec" id="notes" aria-labelledby="notes-label">
+      <h2 class="label" id="notes-label"><span data-l="en">Notes</span><span data-l="zh" lang="zh-CN">手记</span></h2>
+      <ol class="rows dated">
+        <li><a class="row" href="/notes/ecosystem/"><time datetime="2026-10-31">2026-10-31</time><span class="what"><span data-l="en">Ecosystem, PI and Lyra: how do they fit?</span><span data-l="zh" lang="zh-CN">Ecosystem、PI 与 Lyra，各自在做什么？</span></span><span class="why"><span data-l="en">A workbench I use every day, the habits that grew around it, and the assistant who lives inside.</span><span data-l="zh" lang="zh-CN">一个每天在用的工作台，围着它长出来的一圈习惯，以及住在里面的助手。</span></span></a></li>
+        <li><a class="row" href="/notes/upstream/"><time datetime="2026-10-31">2026-10-31</time><span class="what"><span data-l="en">A small fix can be a connection.</span><span data-l="zh" lang="zh-CN">一个小修复，也能成为一条连接。</span></span><span class="why"><span data-l="en">A few merged changes, what they leave behind, and what the Contributor label actually means.</span><span data-l="zh" lang="zh-CN">几个已合并的改动，它们留下了什么，以及 Contributor 这个标签意味着什么。</span></span></a></li>
       </ol>
     </section>
 
-    <div class="section-rule wrap"><span>03 — FIELD NOTES</span><span>IDEAS, WITH A LITTLE CONTEXT</span></div>
-    <section class="notes-section wrap" id="notes" aria-labelledby="notes-title">
-      <div class="notes-heading"><div><p class="eyebrow" data-i18n="notes.eyebrow">给星图留一点注解</p><h2 id="notes-title" data-i18n="notes.title">从这里读起。</h2></div><a class="quiet-link" href="notes/"><span data-i18n="notes.all">全部手记</span> <span aria-hidden="true">↗</span></a></div>
-      <div class="note-grid">
-        <a class="note-card" href="notes/ecosystem/"><div class="note-card-top"><span data-i18n="notes.eco.category">项目说明</span><time datetime="2026-10-31">2026.10.31</time></div><span class="note-card-symbol" aria-hidden="true">✳</span><h3 data-i18n="notes.eco.title">Ecosystem、PI 与 Lyra，各自在做什么？</h3><p data-i18n="notes.eco.description">一套工作方式、一个桌面工作区，以及其中正在完善的搭档。把这几个名字放回它们的位置。</p><span class="note-card-bottom"><span data-i18n="notes.read">打开手记</span><span aria-hidden="true">↗</span></span></a>
-        <a class="note-card" href="notes/upstream/"><div class="note-card-top"><span data-i18n="notes.open.category">开源记录</span><time datetime="2026-10-31">2026.10.31</time></div><span class="note-card-symbol note-card-code" aria-hidden="true">↗</span><h3 data-i18n="notes.open.title">一个小修复，也能成为一条连接。</h3><p data-i18n="notes.open.description">从四个已合并的改动出发，聊聊贡献留下了什么，以及 Contributor 这个标签意味着什么。</p><span class="note-card-bottom"><span data-i18n="notes.read">打开手记</span><span aria-hidden="true">↗</span></span></a>
-      </div>
+    <section class="sec" id="elsewhere" aria-labelledby="else-label">
+      <h2 class="label" id="else-label"><span data-l="en">Elsewhere</span><span data-l="zh" lang="zh-CN">找到我</span></h2>
+      <dl class="links">
+        <div><dt><span data-l="en">Email</span><span data-l="zh" lang="zh-CN">邮件</span></dt><dd><a href="mailto:kenny@kojoo.co">kenny@kojoo.co</a></dd></div>
+        <div><dt>GitHub</dt><dd><a href="https://github.com/KennyMcSimpson" rel="me noopener">@KennyMcSimpson</a></dd></div>
+        <div><dt>RSS</dt><dd><a href="/feed.xml"><span data-l="en">Notes feed</span><span data-l="zh" lang="zh-CN">手记订阅</span></a></dd></div>
+      </dl>
     </section>
-
-    <div class="section-rule wrap"><span>04 — OPEN SOURCE</span><span data-i18n="contrib.divider">SMALL FIXES, SHARED TOOLS</span></div>
-
-    <section class="contributions-section wrap" id="contributions" aria-labelledby="contributions-title">
-      <div class="contributions-top"><div><p class="eyebrow" data-i18n="contrib.eyebrow">也在别人的星图里，补过几条线</p><h2 id="contributions-title" data-i18n="contrib.title">一点开源足迹。</h2><p class="contributions-description" data-i18n="contrib.description">从遇到的小问题开始，修好它、补上测试，再交回上游。这里选了四次已经合并的贡献。</p></div><div class="contribution-stats"><div><strong>40</strong><span data-i18n="contrib.prs">已合并公开 PR</span></div><span class="stats-slash" aria-hidden="true">/</span><div><strong>36</strong><span data-i18n="contrib.repos">上游仓库</span></div></div></div>
-      <div class="contribution-list">
-        <a class="contribution-row" href="https://github.com/huggingface/datasets/pull/8737" target="_blank" rel="noopener noreferrer"><span class="contribution-number">01</span><div class="contribution-project"><h3>Hugging Face</h3><span>datasets <span class="pr-number">#8737</span></span></div><p data-i18n="pr.datasets">修复远程 NIfTI 文件的解码路径，并补上回归测试。</p><span class="merged">MERGED</span><span class="row-arrow" aria-hidden="true">↗</span></a>
-        <a class="contribution-row" href="https://github.com/microsoft/SkillOpt/pull/304" target="_blank" rel="noopener noreferrer"><span class="contribution-number">02</span><div class="contribution-project"><h3>Microsoft</h3><span>SkillOpt <span class="pr-number">#304</span></span></div><p data-i18n="pr.skillopt">兼容旧编码配置，避免读取失败时丢失原有限制。</p><span class="merged">MERGED</span><span class="row-arrow" aria-hidden="true">↗</span></a>
-        <a class="contribution-row" href="https://github.com/Tencent/WeKnora/pull/3930" target="_blank" rel="noopener noreferrer"><span class="contribution-number">03</span><div class="contribution-project"><h3>Tencent</h3><span>WeKnora <span class="pr-number">#3930</span></span></div><p data-i18n="pr.weknora">关闭 HTTP 错误后遗留的 MCP SSE 响应。</p><span class="merged">MERGED</span><span class="row-arrow" aria-hidden="true">↗</span></a>
-        <a class="contribution-row" href="https://github.com/opensandbox-group/OpenSandbox/pull/2226" target="_blank" rel="noopener noreferrer"><span class="contribution-number">04</span><div class="contribution-project"><h3>OpenSandbox</h3><span>OpenSandbox <span class="pr-number">#2226</span></span></div><p data-i18n="pr.sandbox">保留带 UTF-8 BOM 的第一个 SSE 事件。</p><span class="merged">MERGED</span><span class="row-arrow" aria-hidden="true">↗</span></a>
-      </div>
-      <div class="contributions-footnote"><p data-i18n="contrib.snapshot">统计截至 2026.10.31 · 仅含公开、已合并的上游 PR</p><a class="quiet-link" href="https://github.com/search?q=author%3AKennyMcSimpson+is%3Apr+is%3Amerged+is%3Apublic+-user%3AKennyMcSimpson&amp;type=pullrequests" target="_blank" rel="noopener noreferrer"><span data-i18n="contrib.all">查看全部贡献</span><span aria-hidden="true">↗</span></a></div>
-    </section>
-
-    <aside class="waypoints wrap" aria-labelledby="waypoints-title"><div><p class="eyebrow" id="waypoints-title" data-i18n="waypoints.title">沿路遇见的小站</p><p data-i18n="waypoints.description">这次装修时，从这些个人空间里得到了一些灵感。</p></div><div class="waypoint-links"><a href="https://www.theslowmo.com/" target="_blank" rel="noopener noreferrer">SlowMo <span aria-hidden="true">↗</span></a><a href="https://xtower.site/" target="_blank" rel="noopener noreferrer">Xtower <span aria-hidden="true">↗</span></a><a href="https://blog.illsky.com/" target="_blank" rel="noopener noreferrer" data-i18n="waypoints.cloud">云端的杂货铺 ↗</a><a href="https://yantao.wiki/" target="_blank" rel="noopener noreferrer">YanTao <span aria-hidden="true">↗</span></a></div></aside>
-    <footer class="site-footer wrap"><div><a class="footer-wordmark" href="#">Kenny<span>✳</span></a><p data-i18n="footer.note">这里会随着 PI 一起长大。</p></div><div class="footer-links"><a href="feed.xml">RSS ↗</a><a href="https://github.com/KennyMcSimpson" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" target="_blank" rel="noopener noreferrer" data-i18n="footer.source">本站源码 ↗</a><span>© 2026 Kenny</span></div></footer>
   </main>
-  <a class="back-to-top js-control" href="#" aria-label="回到顶部" data-label="top">↑</a>
+
+  <footer class="site-foot col">
+    <div class="inner">
+      <nav aria-label="Elsewhere">
+        <a href="mailto:kenny@kojoo.co">kenny@kojoo.co</a>
+        <a href="https://github.com/KennyMcSimpson" rel="me noopener">GitHub</a>
+        <a href="/uses/"><span data-l="en">Uses</span><span data-l="zh" lang="zh-CN">工具</span></a>
+        <a href="/feed.xml">RSS</a>
+      </nav>
+      <div class="theme" role="group" aria-label="Theme">
+        <span><span data-l="en">Theme</span><span data-l="zh" lang="zh-CN">主题</span></span>
+        <button type="button" data-theme-set="auto" aria-pressed="true"><span data-l="en">auto</span><span data-l="zh" lang="zh-CN">自动</span></button>
+        <button type="button" data-theme-set="light" aria-pressed="false"><span data-l="en">light</span><span data-l="zh" lang="zh-CN">浅色</span></button>
+        <button type="button" data-theme-set="dark" aria-pressed="false"><span data-l="en">dark</span><span data-l="zh" lang="zh-CN">深色</span></button>
+      </div>
+      <p class="meta-line"><span data-l="en">Updated 2026-11-03 · plain HTML, no trackers · <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">source</a></span><span data-l="zh" lang="zh-CN">更新于 2026-11-03 · 纯 HTML，无统计 · <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">源码</a></span></p>
+    </div>
+  </footer>
 </body>
 </html>
