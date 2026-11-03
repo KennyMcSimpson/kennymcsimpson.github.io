@@ -35,8 +35,8 @@
   <main id="main" class="col">
     <header class="page-head">
       <p class="kicker"><span data-l="en">Open source</span><span data-l="zh" lang="zh-CN">开源</span> <span class="mono">· <span data-l="en">snapshot</span><span data-l="zh" lang="zh-CN">快照</span> 2026-11-03</span></p>
-      <h1 class="title"><span data-l="en">Small fixes, sent upstream.</span><span data-l="zh" lang="zh-CN">小修复，交回上游。</span></h1>
-      <p class="lede" data-l="en">Every pull request I’ve had merged into a public repository I don’t own: 41 of them, in 37 repositories. Each one starts the same way — reproduce the problem, add a test that fails, fix it, send it back.</p><p class="lede" data-l="zh" lang="zh-CN">合并进别人公开仓库的 PR，全部在这里：41 个，37 个仓库。每一个的做法都一样——先复现问题，补一个会失败的测试，修好，交回去。</p>
+      <h1 class="title"><span data-l="en">Small changes, sent upstream.</span><span data-l="zh" lang="zh-CN">小改动，交回上游。</span></h1>
+      <p class="lede" data-l="en">Every pull request I’ve had merged into a public repository I don’t own: 41 of them, in 37 repositories. Most of them start the same way — reproduce the problem, add a test that fails, fix it, send it back. A few are a different kind of change (docs, a test, a CI job, one feature), and those carry a small label.</p><p class="lede" data-l="zh" lang="zh-CN">合并进别人公开仓库的 PR，全部在这里：41 个，37 个仓库。大多数的做法都一样——先复现问题，补一个会失败的测试，修好，交回去。也有几个是别的改动（文档、测试、CI、一个新功能），条目旁边标了出来。</p>
       <ul class="facts">
         <li><strong>41</strong><span><span data-l="en">merged PRs</span><span data-l="zh" lang="zh-CN">已合并 PR</span></span></li>
         <li><strong>37</strong><span><span data-l="en">repositories</span><span data-l="zh" lang="zh-CN">个仓库</span></span></li>
@@ -46,8 +46,8 @@
 
     <section class="part prose first" aria-labelledby="contrib-h">
       <h2 id="contrib-h"><span data-l="en">What being a contributor means</span><span data-l="zh" lang="zh-CN">“Contributor” 意味着什么</span></h2>
-      <p data-l="en">A merged pull request puts a “Contributor” label next to my name in that repository. It means the project accepted a change from me. It doesn’t mean maintainer rights, and it isn’t a job there. The useful part is behind each link: the problem, how to reproduce it, the change, and the test that keeps it fixed.</p><p data-l="zh" lang="zh-CN">PR 被合并后，我在那个仓库里会带上 “Contributor” 的标记。它说明项目接收了我的一次改动，不代表维护权限，也不是在那里任职。真正有用的在每条链接后面：问题是什么、怎么复现、改了什么、哪个测试让它不再坏掉。</p>
-      <p data-l="en">Merged between 2026-10-04 and 2026-11-02. Titles are the PRs’ own, with commit prefixes like <code>fix:</code> trimmed. Anything newer shows up in <a href="https://github.com/search?q=author%3AKennyMcSimpson+is%3Apr+is%3Amerged+is%3Apublic+-user%3AKennyMcSimpson&amp;type=pullrequests" rel="noopener">this GitHub search</a>.</p><p data-l="zh" lang="zh-CN">合并时间在 2026-10-04 到 2026-11-02 之间。标题沿用 PR 原文（英文），只去掉了 <code>fix:</code> 这类前缀。之后的新 PR 可以在 <a href="https://github.com/search?q=author%3AKennyMcSimpson+is%3Apr+is%3Amerged+is%3Apublic+-user%3AKennyMcSimpson&amp;type=pullrequests" rel="noopener">GitHub 检索</a>里看到。</p>
+      <p data-l="en">A merged pull request puts a “Contributor” label next to my name in that repository. It means the project accepted a change from me. It doesn’t mean maintainer rights, and it isn’t a job there. The useful part is behind each link: for most of them, the problem, how to reproduce it, the change, and the test that keeps it fixed.</p><p data-l="zh" lang="zh-CN">PR 被合并后，我在那个仓库里会带上 “Contributor” 的标记。它说明项目接收了我的一次改动，不代表维护权限，也不是在那里任职。真正有用的在每条链接后面；大多数都写清了问题是什么、怎么复现、改了什么、哪个测试让它不再坏掉。</p>
+      <p data-l="en">Merged between 2026-10-04 and 2026-11-02. Titles are the PRs’ own, with prefixes like <code>fix:</code> trimmed; a PR that isn’t a code fix keeps its kind as a label instead. Anything newer shows up in <a href="https://github.com/search?q=author%3AKennyMcSimpson+is%3Apr+is%3Amerged+is%3Apublic+-user%3AKennyMcSimpson&amp;type=pullrequests" rel="noopener">this GitHub search</a>.</p><p data-l="zh" lang="zh-CN">合并时间在 2026-10-04 到 2026-11-02 之间。标题沿用 PR 原文（英文），只去掉了 <code>fix:</code> 这类前缀；不是代码修复的 PR，用小标签注明类别。之后的新 PR 可以在 <a href="https://github.com/search?q=author%3AKennyMcSimpson+is%3Apr+is%3Amerged+is%3Apublic+-user%3AKennyMcSimpson&amp;type=pullrequests" rel="noopener">GitHub 检索</a>里看到。</p>
     </section>
 
     <section class="group" aria-labelledby="g-apps">
@@ -76,7 +76,7 @@
         <li><a class="row" href="https://github.com/latent-spaces/brag/pull/55" rel="noopener">
           <span class="where">latent-spaces/<b>brag</b> #55</span>
           <time datetime="2026-10-23">2026-10-23</time>
-          <span class="what"><span lang="en">Require contrast audit coverage before rendering</span></span>
+          <span class="what"><span lang="en">Require contrast audit coverage before rendering</span> <span class="kind"><span data-l="en">docs</span><span data-l="zh" lang="zh-CN">文档</span></span></span>
         </a></li>
         <li><a class="row" href="https://github.com/HKUDS/nanobot/pull/6013" rel="noopener">
           <span class="where">HKUDS/<b>nanobot</b> #6013</span>
@@ -141,7 +141,7 @@
         <li><a class="row" href="https://github.com/latent-spaces/brag/pull/48" rel="noopener">
           <span class="where">latent-spaces/<b>brag</b> #48</span>
           <time datetime="2026-10-06">2026-10-06</time>
-          <span class="what"><span lang="en">Quote optional audio map in poster command</span></span>
+          <span class="what"><span lang="en">Quote optional audio map in poster command</span> <span class="kind"><span data-l="en">docs</span><span data-l="zh" lang="zh-CN">文档</span></span></span>
         </a></li>
         <li><a class="row" href="https://github.com/HKUDS/RAG-Anything/pull/379" rel="noopener">
           <span class="where">HKUDS/<b>RAG-Anything</b> #379</span>
@@ -182,7 +182,7 @@
         <li><a class="row" href="https://github.com/axuno/SmartFormat/pull/536" rel="noopener">
           <span class="where">axuno/<b>SmartFormat</b> #536</span>
           <time datetime="2026-10-25">2026-10-25</time>
-          <span class="what"><span lang="en">Add Uzbek and Kyrgyz plural rules</span></span>
+          <span class="what"><span lang="en">Add Uzbek and Kyrgyz plural rules</span> <span class="kind"><span data-l="en">feature</span><span data-l="zh" lang="zh-CN">新功能</span></span></span>
         </a></li>
         <li><a class="row" href="https://github.com/stefankoegl/python-json-patch/pull/238" rel="noopener">
           <span class="where">stefankoegl/<b>python-json-patch</b> #238</span>
@@ -223,7 +223,7 @@
         <li><a class="row" href="https://github.com/tox-dev/filelock/pull/875" rel="noopener">
           <span class="where">tox-dev/<b>filelock</b> #875</span>
           <time datetime="2026-10-28">2026-10-28</time>
-          <span class="what"><span lang="en">Check a closed descriptor by errno</span></span>
+          <span class="what"><span lang="en">Check a closed descriptor by errno</span> <span class="kind"><span data-l="en">test</span><span data-l="zh" lang="zh-CN">测试</span></span></span>
         </a></li>
         <li><a class="row" href="https://github.com/tox-dev/platformdirs/pull/640" rel="noopener">
           <span class="where">tox-dev/<b>platformdirs</b> #640</span>
@@ -248,7 +248,7 @@
         <li><a class="row" href="https://github.com/python-poetry/tomlkit/pull/681" rel="noopener">
           <span class="where">python-poetry/<b>tomlkit</b> #681</span>
           <time datetime="2026-10-27">2026-10-27</time>
-          <span class="what"><span lang="en">Keep the Python 3.9 Linux job on Ubuntu 24.04</span></span>
+          <span class="what"><span lang="en">Keep the Python 3.9 Linux job on Ubuntu 24.04</span> <span class="kind"><span data-l="en">CI</span><span data-l="zh" lang="zh-CN">CI</span></span></span>
         </a></li>
         <li><a class="row" href="https://github.com/jmespath-community/typescript-jmespath/pull/110" rel="noopener">
           <span class="where">jmespath-community/<b>typescript-jmespath</b> #110</span>
@@ -268,7 +268,7 @@
         <li><a class="row" href="https://github.com/jmespath-community/typescript-jmespath/pull/100" rel="noopener">
           <span class="where">jmespath-community/<b>typescript-jmespath</b> #100</span>
           <time datetime="2026-10-24">2026-10-24</time>
-          <span class="what"><span lang="en">Run CLI artifact checks without shell quoting</span></span>
+          <span class="what"><span lang="en">Run CLI artifact checks without shell quoting</span> <span class="kind"><span data-l="en">test</span><span data-l="zh" lang="zh-CN">测试</span></span></span>
         </a></li>
       </ol>
     </section>

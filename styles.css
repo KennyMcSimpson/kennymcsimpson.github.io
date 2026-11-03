@@ -10,6 +10,7 @@
   --ink-3: #6b655c;
   --rule: #e6e0d5;
   --rule-2: #cdc5b6;
+  --line: #8e877b; /* lines that carry meaning in a drawing: ≥ 3:1 on paper */
   --accent: #b1381e;
   --seal: #b1381e;
   --wash: rgb(177 56 30 / 0.07);
@@ -35,6 +36,7 @@
     --ink-3: #978f83;
     --rule: #2b2824;
     --rule-2: #46403a;
+    --line: #756d63;
     --accent: #e8876b;
     --seal: #c4442a;
     --wash: rgb(232 135 107 / 0.09);
@@ -49,6 +51,7 @@
   --ink-3: #978f83;
   --rule: #2b2824;
   --rule-2: #46403a;
+  --line: #756d63;
   --accent: #e8876b;
   --seal: #c4442a;
   --wash: rgb(232 135 107 / 0.09);
@@ -421,6 +424,18 @@ p { margin: 0 0 1.1em; }
   text-underline-offset: 0.22em;
   text-decoration-color: var(--accent);
 }
+.row .kind {
+  display: inline-block; /* keeps the hover underline off the label */
+  margin-left: 0.55rem;
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  vertical-align: 0.14em;
+  white-space: nowrap;
+}
+.row .kind :lang(zh-CN) { font-family: var(--sans); font-size: 0.74rem; letter-spacing: 0.06em; }
 .row:focus-visible { outline-offset: 2px; }
 
 /* Notes rows: date in a left column on wide screens */
@@ -639,21 +654,20 @@ p { margin: 0 0 1.1em; }
 }
 .eco .ring {
   fill: none;
-  stroke: var(--rule-2);
-  stroke-width: 1;
-  stroke-dasharray: 1.5 6;
+  stroke: var(--line);
+  stroke-width: 2;
+  stroke-dasharray: 0.01 6; /* round dots */
   stroke-linecap: round;
 }
 .eco .spoke {
   fill: none;
-  stroke: var(--ink-3);
+  stroke: var(--line);
   stroke-width: 1;
   stroke-linecap: round;
-  opacity: 0.55;
-  transition: stroke 0.2s ease, opacity 0.2s ease;
+  transition: stroke 0.2s ease;
 }
 .eco .spoke.dashed { stroke-dasharray: 3 5; }
-.eco .spoke.is-on { stroke: var(--accent); opacity: 1; }
+.eco .spoke.is-on { stroke: var(--accent); }
 .eco .pen {
   fill: none;
   stroke: var(--ink);
@@ -738,7 +752,7 @@ p { margin: 0 0 1.1em; }
   left: var(--spine);
   top: 0;
   bottom: 0;
-  border-left: 1px solid var(--rule-2);
+  border-left: 1px solid var(--line);
 }
 .fig-list > li:last-child::before { bottom: auto; height: 1.5rem; }
 .fig-list > li.outside::before { border-left-style: dashed; }

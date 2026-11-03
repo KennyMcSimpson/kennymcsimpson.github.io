@@ -4,9 +4,18 @@
 (function () {
   var d = document.documentElement;
   var read = function (k) { try { return localStorage.getItem(k); } catch (e) { return null; } };
+  /* Carry choices over from the previous site's keys once, then drop them. */
+  [['kenny-theme', 'theme'], ['kenny-language', 'lang']].forEach(function (p) {
+    try {
+      var v = localStorage.getItem(p[0]);
+      if (v === null) return;
+      if (localStorage.getItem(p[1]) === null) localStorage.setItem(p[1], p[1] === 'lang' && v.indexOf('zh') === 0 ? 'zh' : v);
+      localStorage.removeItem(p[0]);
+    } catch (e) {}
+  });
   d.className += ' js';
   var m = /[?&]lang=(zh|en)/i.exec(location.search);
-  var lang = m ? m[1].toLowerCase() : (read('lang') || read('kenny-language'));
+  var lang = m ? m[1].toLowerCase() : read('lang');
   if (m) { try { localStorage.setItem('lang', lang); } catch (e) {} }
   if (lang && lang.indexOf('zh') === 0) lang = 'zh';
   if (lang !== 'zh' && lang !== 'en') {

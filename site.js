@@ -8,13 +8,18 @@
   };
   var $$ = function (sel, el) { return Array.prototype.slice.call((el || document).querySelectorAll(sel)); };
 
-  /* Old links from the previous version of the site. */
+  /* Old links. The previous site shared parts of its map as /?star=<key>;
+     those keys now land on the matching part of the Ecosystem page.
+     A few part names also work as hashes on the home page (/#lyra). */
   if (document.body.getAttribute('data-page') === 'home') {
-    var old = { day: 'day', public: 'public', atlas: '', lyra: 'lyra', jobs: 'jobs', research: 'research', chrome: 'chrome', reading: 'reading', agents: 'agents', safety: 'rules' };
+    var stars = { pi: '', lyra: 'lyra', memory: 'jobs', research: 'research', code: 'agents', tools: 'chrome' };
+    var parts = { lyra: 'lyra', jobs: 'jobs', research: 'research', chrome: 'chrome', reading: 'reading', agents: 'agents', rules: 'rules', safety: 'rules', day: 'day', public: 'public' };
     var star = null;
     try { star = new URLSearchParams(location.search).get('star'); } catch (e) {}
     var hash = location.hash.slice(1);
-    var target = star && old.hasOwnProperty(star) ? old[star] : (old.hasOwnProperty(hash) ? old[hash] : null);
+    var target = star !== null
+      ? (stars.hasOwnProperty(star) ? stars[star] : '')
+      : (parts.hasOwnProperty(hash) ? parts[hash] : null);
     if (target !== null) {
       location.replace('/ecosystem/' + (target ? '#' + target : ''));
       return;
