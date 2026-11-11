@@ -1,5 +1,5 @@
 /* Small things only: the language and theme switches, forwarding a few old links,
-   the Ecosystem map, and the contributor logos. */
+   and the Ecosystem map. */
 (function () {
   var d = document.documentElement;
   var store = {
@@ -101,61 +101,5 @@
     if (narrow.addEventListener) narrow.addEventListener('change', place);
     var first = location.hash.slice(1);
     select(document.getElementById('about-' + first) ? first : 'pi');
-  }
-
-  /* Contributor logos: hover or focus shows the PRs; a tap pins them open. */
-  var logos = $$('.logo');
-  if (logos.length) {
-    var fit = function (li) {
-      var pop = li.querySelector('.pop');
-      li.style.setProperty('--shift', '0px');
-      var r = pop.getBoundingClientRect();
-      var vw = document.documentElement.clientWidth;
-      var s = 0;
-      if (r.left < 10) s = 10 - r.left;
-      else if (r.right > vw - 10) s = vw - 10 - r.right;
-      li.style.setProperty('--shift', Math.round(s) + 'px');
-    };
-    /* A first guess from each logo's position, so a popover never opens off-screen. */
-    var guess = function () {
-      var vw = document.documentElement.clientWidth;
-      var w = Math.min(330, vw * 0.86);
-      logos.forEach(function (li) {
-        var r = li.getBoundingClientRect();
-        var c = r.left + r.width / 2, s = 0;
-        if (c - w / 2 < 10) s = 10 - (c - w / 2);
-        else if (c + w / 2 > vw - 10) s = vw - 10 - (c + w / 2);
-        li.style.setProperty('--shift', Math.round(s) + 'px');
-      });
-    };
-    guess();
-    window.addEventListener('resize', guess);
-    var closeAll = function (except) {
-      logos.forEach(function (li) {
-        if (li === except) return;
-        li.classList.remove('open');
-        li.querySelector('button').setAttribute('aria-expanded', 'false');
-      });
-    };
-    logos.forEach(function (li) {
-      var btn = li.querySelector('button');
-      li.addEventListener('mouseenter', function () { fit(li); });
-      li.addEventListener('focusin', function () { fit(li); });
-      btn.addEventListener('click', function () {
-        var open = !li.classList.contains('open');
-        closeAll(li);
-        li.classList.toggle('open', open);
-        btn.setAttribute('aria-expanded', String(open));
-        if (open) fit(li);
-      });
-    });
-    document.addEventListener('click', function (e) { if (!e.target.closest || !e.target.closest('.logo')) closeAll(null); });
-    document.addEventListener('keydown', function (e) {
-      if (e.key !== 'Escape') return;
-      var li = document.activeElement && document.activeElement.closest && document.activeElement.closest('.logo');
-      closeAll(null);
-      if (li) { li.querySelector('button').focus(); li.classList.add('quiet'); }
-    });
-    logos.forEach(function (li) { li.addEventListener('focusout', function () { li.classList.remove('quiet'); }); });
   }
 })();

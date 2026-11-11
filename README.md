@@ -1,23 +1,19 @@
 # kennymcsimpson.github.io
 
-[Visit the site](https://kennymcsimpson.github.io/) · [The Ecosystem](https://kennymcsimpson.github.io/ecosystem/) · [Open source](https://kennymcsimpson.github.io/contributions/) · [Now](https://kennymcsimpson.github.io/now/) · [Notes](https://kennymcsimpson.github.io/notes/) · [RSS](https://kennymcsimpson.github.io/feed.xml)
+[Visit the site](https://kennymcsimpson.github.io/) · [The Ecosystem](https://kennymcsimpson.github.io/ecosystem/) · [Now](https://kennymcsimpson.github.io/now/) · [Notes](https://kennymcsimpson.github.io/notes/) · [RSS](https://kennymcsimpson.github.io/feed.xml)
 
-Kenny’s personal site, in English and Chinese, drawn rather than written: an illustrated workbench, a clickable map of the Ecosystem (PI, his fork of the open-source [PI Desktop](https://github.com/AR307/PI-Desktop), and what grew around it), a wall of the upstream projects his fixes landed in, a now page and a few notes. His PI build is not released.
+Kenny’s personal site, in English and Chinese: an illustrated workbench, a map of the Ecosystem, a now page and a few notes. PI is his personal fork of the open-source [PI Desktop](https://github.com/AR307/PI-Desktop); his build is not released.
 
-Plain HTML, CSS and a little JavaScript. No framework, build step, web font or dependency; every picture is inline SVG. The only outside requests are contributor avatars from GitHub. GitHub Pages publishes `main` from the repository root; to preview, serve this directory with any static server.
+Plain HTML, CSS and a little JavaScript. No framework, build step, web font or dependency; illustrations use inline SVG. GitHub Pages publishes `main` from the repository root. To preview, serve this directory with any static server.
 
 | File | What it holds |
 | :-- | :-- |
-| `index.html` | Home: the workbench scene (jobs on a line, a bookcase beside the desk), Ecosystem tiles, contributions wall and timeline, now, notes, a postcard |
-| `ecosystem/` | The Ecosystem map: select a part to read about it (caption beside the map on wide screens, under the chosen row on narrow ones); a day; public vs. not yet |
-| `contributions/` | Big numbers, the owner wall (hover, focus or tap for the PRs), merges by day, and every merged upstream PR (a dated snapshot) |
-| `now/`, `uses/`, `notes/` | Now page; tools and colophon; field notes |
+| `index.html` | Home: the workbench, Ecosystem tiles, now, notes and contact links |
+| `ecosystem/` | The Ecosystem map, an ordinary day, and which parts are public |
+| `now/`, `uses/`, `notes/` | Current work, tools and field notes |
 | `assets/` | Favicon |
-| `styles.css` | All styles: colour tokens for day (paper and ink) and night (night blue), the drawing classes, motion (off under reduced motion) |
-| `prefs.js` | Language and theme, applied before first paint |
-| `site.js` | Language and theme switches, forwarding of old links, the map, the contributor popovers |
-| `404.html`, `feed.xml`, `sitemap.xml` | Not-found page, RSS, sitemap |
+| `styles.css` | Layout, drawing styles, day and night colours, and reduced motion |
+| `prefs.js`, `site.js` | Language, theme, legacy links and the Ecosystem map |
+| `404.html`, `feed.xml`, `sitemap.xml` | Not-found page, RSS and sitemap |
 
-Both languages live in the same page as `data-l="en"` / `data-l="zh"` pairs; CSS shows the half that matches `<html data-lang>`. The language follows the browser unless chosen with the switch or `?lang=en` / `?lang=zh`; the theme follows the system unless chosen at the bottom of the page. Old links such as `/#day` and `/?star=lyra` forward to the matching place on `/ecosystem/`.
-
-Contribution counts are a dated snapshot (2026-11-03) from `gh search prs --author KennyMcSimpson --merged`, excluding his own repositories.
+Both languages live in the same page as `data-l="en"` / `data-l="zh"` pairs. Language follows the browser unless chosen with the switch or `?lang=en` / `?lang=zh`; theme follows the system unless chosen at the bottom of the page.
