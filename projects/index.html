@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en" data-lang="en" data-title-en="Projects · Kenny" data-title-zh="开源与研究 · Kenny">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects · Kenny</title>
+  <meta name="description" content="Open-source multi-agent tooling, quiet offline desktop apps, public research archives, and upcoming lab releases by Kenny. 开源多代理工具、离线桌面软件、公开研究归档与孵化清单。">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f6efe2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d1628" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://kennymcsimpson.github.io/projects/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Projects · Kenny">
+  <meta property="og:description" content="Open-source multi-agent tooling, quiet offline desktop apps, public research archives, and upcoming lab releases by Kenny. 开源多代理工具、离线桌面软件、公开研究归档与孵化清单。">
+  <meta property="og:url" content="https://kennymcsimpson.github.io/projects/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="Kenny — Notes" href="/feed.xml">
+  <script src="/prefs.js"></script>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/site.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main"><span data-l="en">Skip to content</span><span data-l="zh" lang="zh-CN">跳到正文</span></a>
+  <header class="site-head wrap">
+    <a class="wordmark" href="/"><svg class="seal" viewBox="4 4 56 56" aria-hidden="true" focusable="false"><rect x="4" y="4" width="56" height="56" rx="12"/><path d="M20 17h10v1.8l-3 .6v11.3l11.6-11.2-2.6-.7V17h10v1.8l-2.6.6-10.1 9.7 11 15.3 2.6.7V47H36.7v-1.8l2-.6-8.4-11.9-3.3 3.1v8.8l3 .6V47H20v-1.8l3-.6V19.4l-3-.6z"/></svg>Kenny</a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="/projects/" aria-current="page"><span data-l="en">Projects</span><span data-l="zh" lang="zh-CN">开源</span></a>
+      <a href="/ecosystem/">Ecosystem</a>
+      <a href="/now/"><span data-l="en">Now</span><span data-l="zh" lang="zh-CN">此刻</span></a>
+      <a href="/notes/"><span data-l="en">Notes</span><span data-l="zh" lang="zh-CN">手记</span></a>
+    </nav>
+    <button class="lang" type="button" data-lang-toggle aria-label="切换到中文"><span data-l="en" lang="zh-CN">中文</span><span data-l="zh" lang="en">EN</span></button>
+  </header>
+
+  <main id="main" class="wrap">
+    <header class="page-head">
+      <div>
+        <p class="kicker"><span data-l="en">Projects &amp; Lab</span><span data-l="zh" lang="zh-CN">开源作品与实验室</span> · 2026-11-25</p>
+        <h1><span data-l="en">Quiet tools built for real daily work.</span><span data-l="zh" lang="zh-CN">从真实日常里长出来的安静工具。</span></h1>
+        <p data-l="en">Everything below started on my own desk inside <a href="/ecosystem/">Ecosystem 1.0</a>. Once a piece proved itself under daily use, I stripped out personal wiring and shipped it standalone — zero dependencies where possible, offline by default, no telemetry.</p><p data-l="zh" lang="zh-CN">下面每一件作品，最初都是为了解决 <a href="/ecosystem/">Ecosystem 1.0</a> 日常里的真实痛点。经受住高强度日用验证后，我剥离了私人配置与本地绑定，做成零依赖、默认离线、无遥测的独立开源软件。</p>
+      </div>
+      <svg viewBox="0 0 64 64" class="art" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-amber-soft"/><rect x="12" y="22" width="40" height="26" rx="6" class="f-card o2"/><path d="M22 22v-5a4 4 0 0 1 4-4h12a4 4 0 0 1 4 4v5" class="nf s-out" stroke-width="2.6"/><path d="M12 33h40" class="nf s-out" stroke-width="2"/><rect x="27" y="29" width="10" height="8" rx="2.5" class="f-amber o2"/></svg>
+    </header>
+
+    <section aria-labelledby="agents-h">
+      <div class="sec-head">
+        <div class="t"><svg viewBox="0 0 64 64" class="art sticker" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-lav-soft"/><ellipse cx="32" cy="32" rx="18" ry="12" class="f-desk3 o2"/><circle cx="32" cy="12" r="5" class="f-amber o2"/><circle cx="52" cy="32" r="5" class="f-teal o2"/><circle cx="32" cy="52" r="5" class="f-verm o2"/><circle cx="12" cy="32" r="5" class="f-lav o2"/></svg><h2 id="agents-h"><span data-l="en">Multi-agent infrastructure</span><span data-l="zh" lang="zh-CN">多代理协作与基础设施</span></h2></div>
+        <p data-l="en">Coordination, local observability, and register calibration for coding agents you already run.</p><p data-l="zh" lang="zh-CN">围绕现成编码代理的协作房间、本地账本与语域校准。</p>
+      </div>
+      <ul class="projects">
+        <li class="proj" id="agentroundtable" style="--c:var(--amber);--c-soft:var(--amber-soft)">
+          <div class="mini"><svg viewBox="0 0 200 112" class="art" aria-hidden="true" focusable="false">
+            <ellipse cx="100" cy="58" rx="52" ry="30" class="f-desk3 o2"/>
+            <rect x="83" y="42" width="34" height="32" rx="4" class="f-paper o2"/>
+            <rect x="89" y="50" width="22" height="3" rx="1.5" class="f-uil"/><rect x="89" y="57" width="18" height="3" rx="1.5" class="f-uil"/><rect x="89" y="64" width="20" height="3" rx="1.5" class="f-teal" opacity=".7"/>
+            <path d="M100 22v14M100 84v10M42 58h12M146 58h12" class="nf s-out" stroke-width="2" stroke-dasharray="2 4" stroke-linecap="round"/>
+            <circle cx="100" cy="18" r="10" class="f-amber o2"/><circle cx="164" cy="58" r="10" class="f-teal o2"/><circle cx="100" cy="96" r="10" class="f-verm o2"/><circle cx="36" cy="58" r="10" class="f-lav o2"/>
+            <circle cx="100" cy="18" r="3" class="f-card"/><circle cx="164" cy="58" r="3" class="f-card"/><circle cx="100" cy="96" r="3" class="f-card"/><circle cx="36" cy="58" r="3" class="f-card"/>
+          </svg><span class="chip">v0.2.0</span></div>
+          <div class="body">
+            <h3>AgentRoundtable</h3>
+            <p data-l="en">Governed multi-agent roundtable for Claude Code, Codex, Antigravity, and other CLI/desktop coding agents. Non-intrusive <code>JOIN.md</code> seat protocol, artifact freeze gates, SSE multi-room daemon, and group-chat / Arena UI.</p>
+            <p data-l="zh" lang="zh-CN">面向 Claude Code、Codex、Antigravity 等现成编码代理的受治理圆桌房间。非侵入式 <code>JOIN.md</code> 席位协议、产物冻结闸门、SSE 多房间守护进程，以及群聊与竞技场界面。</p>
+            <p class="tags">Node.js · 0 dependencies · zh-CN / EN · MIT</p>
+            <div class="actions">
+              <a href="https://github.com/KennyMcSimpson/AgentRoundtable" rel="noopener">GitHub</a>
+              <a class="sub" href="https://github.com/KennyMcSimpson/AgentRoundtable/releases/tag/v0.2.0" rel="noopener"><span data-l="en">Release v0.2.0</span><span data-l="zh" lang="zh-CN">v0.2.0 发布页</span></a>
+            </div>
+          </div>
+        </li>
+
+        <li class="proj" id="agenttokenmeter" style="--c:var(--teal);--c-soft:var(--teal-soft)">
+          <div class="mini"><svg viewBox="0 0 200 112" class="art" aria-hidden="true" focusable="false">
+            <rect x="16" y="12" width="168" height="88" rx="9" class="f-screen o2"/>
+            <path d="M25 12h150a9 9 0 0 1 9 9v9h-168v-9a9 9 0 0 1 9-9z" class="f-ui1"/>
+            <rect x="16" y="12" width="168" height="88" rx="9" class="nf o2"/>
+            <circle cx="26" cy="21" r="2.6" class="f-verm"/><circle cx="34" cy="21" r="2.6" class="f-amber"/><circle cx="42" cy="21" r="2.6" class="f-teal"/>
+            <rect x="122" y="17" width="50" height="8" rx="4" class="f-teal-soft"/>
+            <rect x="30" y="64" width="18" height="26" rx="3" class="f-teal"/><rect x="30" y="54" width="18" height="9" rx="3" class="f-amber"/>
+            <rect x="58" y="56" width="18" height="34" rx="3" class="f-teal"/><rect x="58" y="45" width="18" height="10" rx="3" class="f-lav"/>
+            <rect x="86" y="48" width="18" height="42" rx="3" class="f-teal"/><rect x="86" y="38" width="18" height="9" rx="3" class="f-amber"/>
+            <rect x="114" y="58" width="18" height="32" rx="3" class="f-teal"/><rect x="114" y="46" width="18" height="11" rx="3" class="f-verm"/>
+            <rect x="142" y="44" width="18" height="46" rx="3" class="f-teal"/><rect x="142" y="34" width="18" height="9" rx="3" class="f-amber"/>
+            <path d="M39 48L67 40L95 34L123 41L151 31" class="nf s-out" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="39" cy="48" r="3" class="f-card o2"/><circle cx="95" cy="34" r="3" class="f-card o2"/><circle cx="151" cy="31" r="3" class="f-amber o2"/>
+          </svg><span class="chip teal">v2.1.0</span></div>
+          <div class="body">
+            <h3>AgentTokenMeter</h3>
+            <p data-l="en">Zero-dependency local token usage, prompt cache hit/write analytics, top sessions, CSV export, and official multi-provider equivalent API cost tracking across Antigravity, Claude Code, and Codex — with a local web dashboard.</p>
+            <p data-l="zh" lang="zh-CN">跨 Antigravity、Claude Code 与 Codex 的零依赖本地用量账本：每日 Token、提示缓存命中率与写入占比、高耗会话排行、CSV 导出、多厂商官方 API 折算成本与本地看板。</p>
+            <p class="tags">Node.js · 0 dependencies · Local Dashboard · MIT</p>
+            <div class="actions">
+              <a href="https://github.com/KennyMcSimpson/AgentTokenMeter" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="proj" id="unarmored" style="--c:var(--lav);--c-soft:var(--lav-soft)">
+          <div class="mini"><svg viewBox="0 0 200 112" class="art" aria-hidden="true" focusable="false">
+            <path d="M52 24l22 8v18c0 15-10 26-22 32c-12-6-22-17-22-32V32z" class="f-card o2" opacity=".75"/>
+            <path d="M52 24v58M44 40l16 14" class="nf s-verm" stroke-width="2.2" stroke-dasharray="3 3" stroke-linecap="round"/>
+            <path d="M84 56h18m-5-5l5 5l-5 5" class="nf s-out" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="110" y="18" width="74" height="76" rx="8" class="f-paper o2"/>
+            <rect x="120" y="30" width="52" height="5" rx="2.5" class="f-ink2" opacity=".75"/>
+            <rect x="120" y="42" width="44" height="4" rx="2" class="f-uil"/><rect x="120" y="51" width="50" height="4" rx="2" class="f-uil"/><rect x="120" y="60" width="38" height="4" rx="2" class="f-uil"/>
+            <circle cx="122" cy="78" r="4" class="f-amber"/><circle cx="133" cy="78" r="4" class="f-teal"/><circle cx="144" cy="78" r="4" class="f-verm"/><circle cx="155" cy="78" r="4" class="f-lav"/><circle cx="166" cy="78" r="4" class="f-plant"/>
+          </svg><span class="chip lav">v0.6.0</span></div>
+          <div class="body">
+            <h3>Unarmored</h3>
+            <p data-l="en">Cross-family register de-armoring, grounded peer voice, and edge-triggered multi-turn calibration hooks for Claude Code, Codex CLI, Antigravity, and DeepSeek Harness — honesty-aware across 6 frontier model families.</p>
+            <p data-l="zh" lang="zh-CN">适用于 Claude Code、Codex CLI、Antigravity 与 DeepSeek Harness 的跨家族语域去甲与多轮边沿校准插件——针对六大模型家族校准，保留诚实直白的同伴语气。</p>
+            <p class="tags">Python stdlib · 6 model families · Apache-2.0</p>
+            <div class="actions">
+              <a href="https://github.com/KennyMcSimpson/Unarmored" rel="noopener">GitHub</a>
+              <a class="sub" href="https://github.com/KennyMcSimpson/Unarmored/releases/tag/v0.6.0" rel="noopener"><span data-l="en">Release v0.6.0</span><span data-l="zh" lang="zh-CN">v0.6.0 发布页</span></a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="sec" aria-labelledby="desktop-h">
+      <div class="sec-head">
+        <div class="t"><svg viewBox="0 0 64 64" class="art sticker" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-teal-soft"/><rect x="10" y="14" width="44" height="30" rx="6" class="f-card o2"/><path d="M24 44v6M40 44v6M18 50h28" class="nf s-out" stroke-width="2.6" stroke-linecap="round"/><rect x="16" y="21" width="22" height="16" rx="3" class="f-paper o2"/><rect x="42" y="21" width="6" height="16" rx="2.5" class="f-teal"/></svg><h2 id="desktop-h"><span data-l="en">Offline desktop instruments</span><span data-l="zh" lang="zh-CN">安静的离线桌面软件</span></h2></div>
+        <p data-l="en">Small, single-purpose Windows apps that stay offline, keep out of the way, and do one job cleanly.</p><p data-l="zh" lang="zh-CN">单用途、不联网、不打扰的 Windows 小软件，只把一件事做到顺手。</p>
+      </div>
+      <ul class="projects two">
+        <li class="proj" id="inkglass" style="--c:var(--verm);--c-soft:var(--verm-soft)">
+          <div class="mini"><svg viewBox="0 0 200 112" class="art" aria-hidden="true" focusable="false">
+            <rect x="16" y="12" width="168" height="88" rx="9" class="f-screen o2"/>
+            <path d="M25 12h150a9 9 0 0 1 9 9v8h-168v-8a9 9 0 0 1 9-9z" class="f-ui1"/>
+            <rect x="16" y="12" width="168" height="88" rx="9" class="nf o2"/>
+            <circle cx="26" cy="20" r="2.4" class="f-verm"/><circle cx="34" cy="20" r="2.4" class="f-amber"/><circle cx="42" cy="20" r="2.4" class="f-teal"/>
+            <rect x="17" y="29" width="40" height="70" class="f-ui1"/>
+            <rect x="23" y="38" width="26" height="4" rx="2" class="f-uil"/><rect x="23" y="48" width="28" height="5" rx="2.5" class="f-amber" opacity=".75"/><rect x="23" y="59" width="22" height="4" rx="2" class="f-uil"/><rect x="23" y="69" width="25" height="4" rx="2" class="f-uil"/>
+            <rect x="65" y="35" width="108" height="58" rx="4" class="f-paper"/>
+            <rect x="68" y="43" width="3.5" height="14" rx="1" class="f-teal"/><rect x="76" y="43" width="66" height="6" rx="1.5" class="f-teal-soft"/>
+            <rect x="76" y="54" width="54" height="3.5" rx="1.5" class="f-uil"/>
+            <rect x="68" y="63" width="3.5" height="12" rx="1" class="f-verm"/><rect x="76" y="63" width="58" height="6" rx="1.5" class="f-verm-soft"/>
+            <rect x="76" y="75" width="44" height="3.5" rx="1.5" class="f-uil"/>
+            <circle cx="154" cy="72" r="14" class="f-amber-soft o2"/><path d="M164 82l11 11" class="nf s-out" stroke-width="3.6" stroke-linecap="round"/>
+          </svg><span class="chip verm">v2.3.0</span></div>
+          <div class="body">
+            <h3>Inkglass</h3>
+            <p data-l="en">Offline, read-only Windows Markdown reader built for living AI, research, and repository documents. Watches external edits live with inline diff bands, offers a read-only folder drawer, Quick Jump, and interactive KaTeX / Mermaid / table tools. Ships as both portable exe and installer with Open-With registration.</p>
+            <p data-l="zh" lang="zh-CN">专为活跃的 AI、科研与代码仓文档打造的离线只读 Windows Markdown 阅读器。实时监测外部修改并高亮行内差异，自带只读目录抽屉、Quick Jump 跳转以及交互式 KaTeX / Mermaid / 表格工具，提供便携版与带右键打开注册的安装版。</p>
+            <p class="tags">Electron · TypeScript · Windows portable &amp; installer · MIT</p>
+            <div class="actions">
+              <a href="https://github.com/KennyMcSimpson/Inkglass" rel="noopener">GitHub</a>
+              <a class="sub" href="https://github.com/KennyMcSimpson/Inkglass/releases/tag/v2.3.0" rel="noopener"><span data-l="en">Download v2.3.0</span><span data-l="zh" lang="zh-CN">下载 v2.3.0</span></a>
+            </div>
+          </div>
+        </li>
+
+        <li class="proj" id="edgewise" style="--c:var(--teal);--c-soft:var(--amber-soft)">
+          <div class="mini"><svg viewBox="0 0 200 112" class="art" aria-hidden="true" focusable="false">
+            <rect x="16" y="12" width="168" height="88" rx="9" class="f-screen o2"/>
+            <rect x="26" y="24" width="110" height="64" rx="6" class="f-ui1"/>
+            <rect x="34" y="34" width="52" height="7" rx="3.5" class="f-uil"/><rect x="34" y="48" width="90" height="5" rx="2.5" class="f-uil" opacity=".7"/><rect x="34" y="59" width="76" height="5" rx="2.5" class="f-uil" opacity=".7"/><rect x="34" y="70" width="60" height="5" rx="2.5" class="f-uil" opacity=".7"/>
+            <rect x="148" y="18" width="28" height="76" rx="8" class="f-teal o2"/>
+            <rect x="153" y="25" width="18" height="12" rx="4" class="f-amber o2 a-pulse"/>
+            <rect x="154" y="44" width="16" height="4" rx="2" class="f-paper"/><rect x="154" y="54" width="16" height="4" rx="2" class="f-paper" opacity=".8"/><rect x="154" y="64" width="16" height="4" rx="2" class="f-paper" opacity=".65"/>
+            <path d="M155 80q7-6 14 0q-7 6-14 0z" class="f-card"/><path d="M156 84l12-8" class="nf s-verm" stroke-width="2" stroke-linecap="round"/>
+          </svg><span class="chip teal">v1.4.0</span></div>
+          <div class="body">
+            <h3>Edgewise</h3>
+            <p data-l="en">Offline ambient deadline bar for Windows. Sits quietly as a 46 px edge strip with natural-language capture, screen-share stealth (hidden from captures and calls), ghost click-through, urgency colour bands, and a built-in 25-minute focus strip.</p>
+            <p data-l="zh" lang="zh-CN">安静贴在屏幕边缘的离线 Windows 截止日期栏。平时收束为 46 px 细条，支持自然语言快速录入、录屏与会议共享自动隐身、鼠标穿透、紧迫度色带与 25 分钟专注条。</p>
+            <p class="tags">Electron · 0 runtime deps · Windows portable &amp; installer · MIT</p>
+            <div class="actions">
+              <a href="https://github.com/KennyMcSimpson/Edgewise" rel="noopener">GitHub</a>
+              <a class="sub" href="https://github.com/KennyMcSimpson/Edgewise/releases/tag/v1.4.0" rel="noopener"><span data-l="en">Download v1.4.0</span><span data-l="zh" lang="zh-CN">下载 v1.4.0</span></a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section class="sec" id="lab" aria-labelledby="lab-h">
+      <div class="sec-head">
+        <div class="t"><svg viewBox="0 0 64 64" class="art sticker" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-lav-soft"/><rect x="12" y="16" width="40" height="32" rx="6" class="f-paper o2"/><path d="M16 26q4-6 8 0t8-1t8 4t8-3" class="nf s-out" stroke-width="2" stroke-linecap="round"/><path d="M16 34q5 5 10-2t10 3t12-2" class="nf s-teal" stroke-width="2" stroke-linecap="round"/><path d="M16 42q4-4 8 2t8-5t8 4t8-1" class="nf s-verm" stroke-width="2" stroke-linecap="round"/></svg><h2 id="lab-h"><span data-l="en">Research, upstream &amp; lab bench</span><span data-l="zh" lang="zh-CN">研究归档、上游修复与实验室</span></h2></div>
+        <p data-l="en">Public research code, upstream maintenance, and the next pieces being prepared for clean open release.</p><p data-l="zh" lang="zh-CN">已公开的研究归档、上游补丁维护，以及正在整理边界、准备公开发布的下一批工具。</p>
+      </div>
+
+      <ul class="cards two">
+        <li>
+          <div class="card">
+            <svg viewBox="0 0 64 64" class="art ic" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-teal-soft"/><polygon points="32,12 50,22 50,42 32,52 14,42 14,22" class="f-lav-soft o2"/><path d="M32 12v20m0 0l18-10m-18 10l-18-10m18 10v20" class="nf s-lav" stroke-width="2" stroke-dasharray="3 3"/><circle cx="32" cy="32" r="4.5" class="f-amber o2"/></svg>
+            <div class="txt">
+              <h3>measurement-scene-state <span class="chip lav"><span data-l="en">public</span><span data-l="zh" lang="zh-CN">已公开</span></span></h3>
+              <p data-l="en">Research archive for Measurement Scene State, inverse JEPA, and dynamic test-time training — reproducible evaluation code and companion site.</p>
+              <p data-l="zh" lang="zh-CN">Measurement Scene State、inverse JEPA 与动态测试时训练的公开研究归档，附带可复现代码与项目主页。</p>
+              <p class="meta"><a href="https://kennymcsimpson.github.io/measurement-scene-state/" rel="noopener"><span data-l="en">Project site</span><span data-l="zh" lang="zh-CN">研究主页</span></a> · <a href="https://github.com/KennyMcSimpson/measurement-scene-state" rel="noopener">GitHub</a> · MIT</p>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="card">
+            <svg viewBox="0 0 64 64" class="art ic" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-verm-soft"/><path d="M22 14v36M22 26c0 10 20 4 20 16" class="nf s-out" stroke-width="3" stroke-linecap="round"/><circle cx="22" cy="14" r="5" class="f-card o2"/><circle cx="22" cy="50" r="5" class="f-card o2"/><circle cx="42" cy="44" r="5" class="f-verm o2"/></svg>
+            <div class="txt">
+              <h3><span data-l="en">Upstream open-source fixes</span><span data-l="zh" lang="zh-CN">上游开源修复</span></h3>
+              <p data-l="en">When a library I rely on breaks on Windows, edge cases, or concurrency, I send back minimal, regression-tested pull requests across Python, TypeScript, and Rust repositories.</p>
+              <p data-l="zh" lang="zh-CN">日常依赖的开源库在 Windows、边界条件或并发下出错时，我会顺手补上带回归测试的最小修复 PR（覆盖 Python、TypeScript 与 Rust 生态）。</p>
+              <p class="meta"><a href="https://github.com/pulls?q=is%3Apr+author%3AKennyMcSimpson+is%3Amerged+is%3Apublic+-user%3AKennyMcSimpson" rel="noopener"><span data-l="en">Browse merged PRs on GitHub</span><span data-l="zh" lang="zh-CN">在 GitHub 查看已合并 PR</span></a></p>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="card muted">
+            <svg viewBox="0 0 64 64" class="art ic" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-amber-soft"/><rect x="14" y="14" width="36" height="36" rx="7" class="f-paper o2"/><path d="M22 26h20M22 33h14M22 40h18" class="nf s-uil" stroke-width="2.4" stroke-linecap="round"/><circle cx="44" cy="40" r="7" class="f-teal o2"/><path d="M41 40l2 2l4-4" class="nf" stroke="#fffaf1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div class="txt">
+              <h3>agent-institutions <span class="chip"><span data-l="en">ready locally</span><span data-l="zh" lang="zh-CN">本地定稿</span></span></h3>
+              <p data-l="en">Reference architecture extracted from Ecosystem 1.0: department charters, ticket-lock concurrency, critical file locks, deterministic command-unpacking guards, and safe recycle-bin tooling — zero personal state, Apache-2.0.</p>
+              <p data-l="zh" lang="zh-CN">从 Ecosystem 1.0 完整剥离的开源治理参考模板：机构章程、工单并发锁、关键文件锁、确定性命令解包守卫与安全回收站工具链，零私人状态，Apache-2.0。</p>
+              <p class="meta"><span data-l="en">v1.0.0 sanitized · preparing public repository</span><span data-l="zh" lang="zh-CN">v1.0.0 脱敏定稿 · 筹备公开建仓</span></p>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="card muted">
+            <svg viewBox="0 0 64 64" class="art ic" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-teal-soft"/><path d="M18 46V20m0 14c0-10 24-6 24-16" class="nf s-out" stroke-width="3" stroke-linecap="round"/><circle cx="18" cy="46" r="4.5" class="f-card o2"/><circle cx="18" cy="20" r="4.5" class="f-amber o2"/><circle cx="42" cy="18" r="4.5" class="f-teal o2"/><path d="M34 38l14 0" class="nf s-verm" stroke-width="3" stroke-linecap="round"/></svg>
+            <div class="txt">
+              <h3>Context Relay (/fork) <span class="chip"><span data-l="en">ready locally</span><span data-l="zh" lang="zh-CN">本地就绪</span></span></h3>
+              <p data-l="en">Zero-LLM conversation pruning, clean cross-project relaunch, and cumulative token-savings stats for long coding-agent threads — pairs with AgentTokenMeter and Unarmored.</p>
+              <p data-l="zh" lang="zh-CN">无需消耗模型配额的长会话去噪、跨项目干净分叉与累计省流统计插件，与 AgentTokenMeter、Unarmored 组成编码代理三件套。</p>
+              <p class="meta"><span data-l="en">v0.2.1 · finalizing docs before public push</span><span data-l="zh" lang="zh-CN">v0.2.1 · 整理文档后公开发布</span></p>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="bench">
+        <p data-l="en"><strong>On the research &amp; governance bench (incubating):</strong> <code>eeg-split-auditor</code> (subject-disjoint EEG leakage checker), <code>blind-council-gate</code> (isolated multi-reviewer verdict harness with rubber-stamp checks), and <code>bare-eeg-probe</code> (minimal reproducible linear-probe baseline). Published only once clean, documented, and independently reproducible.</p>
+        <p data-l="zh" lang="zh-CN"><strong>科研与治理孵化位（筹备中）：</strong><code>eeg-split-auditor</code>（脑电跨被试数据划分泄漏审计）、<code>blind-council-gate</code>（隔离盲审与橡皮图章熔断框架）以及 <code>bare-eeg-probe</code>（极简可复现脑电线性探针基线）。全部坚持先跑通、写清文档、独立复现后再公开。</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="inner wrap">
+      <nav aria-label="Elsewhere">
+        <a href="mailto:kenny@kojoo.co">kenny@kojoo.co</a>
+        <a href="https://github.com/KennyMcSimpson" rel="me noopener">GitHub</a>
+        <a href="/projects/"><span data-l="en">Projects</span><span data-l="zh" lang="zh-CN">开源</span></a>
+        <a href="/uses/"><span data-l="en">Uses</span><span data-l="zh" lang="zh-CN">工具</span></a>
+        <a href="/feed.xml">RSS</a>
+      </nav>
+      <div class="theme" role="group" aria-label="Theme">
+        <span><span data-l="en">Theme</span><span data-l="zh" lang="zh-CN">主题</span></span>
+        <button type="button" data-theme-set="auto" aria-pressed="true"><span data-l="en">auto</span><span data-l="zh" lang="zh-CN">自动</span></button>
+        <button type="button" data-theme-set="light" aria-pressed="false"><span data-l="en">light</span><span data-l="zh" lang="zh-CN">浅色</span></button>
+        <button type="button" data-theme-set="dark" aria-pressed="false"><span data-l="en">dark</span><span data-l="zh" lang="zh-CN">深色</span></button>
+      </div>
+      <p class="meta-line"><span data-l="en">Updated 2026-11-25 · drawn by hand in SVG · no trackers · <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">source</a></span><span data-l="zh" lang="zh-CN">更新于 2026-11-25 · SVG 手绘 · 无统计 · <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">源码</a></span></p>
+    </div>
+  </footer>
+</body>
+</html>

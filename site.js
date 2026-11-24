@@ -12,8 +12,8 @@
      those keys land on the matching part of the Ecosystem page.
      A few part names also work as hashes on the home page (/#lyra). */
   if (document.body.getAttribute('data-page') === 'home') {
-    var stars = { pi: '', lyra: 'lyra', memory: 'jobs', research: 'research', code: 'agents', tools: 'chrome' };
-    var parts = { lyra: 'lyra', jobs: 'jobs', research: 'research', chrome: 'chrome', reading: 'reading', agents: 'agents', rules: 'rules', safety: 'rules', day: 'day', public: 'public' };
+    var stars = { pi: '', lyra: 'lyra', memory: 'memory', research: 'research', code: 'agents', tools: 'chrome' };
+    var parts = { lyra: 'lyra', roundtable: 'roundtable', jobs: 'jobs', research: 'research', chrome: 'chrome', reading: 'reading', memory: 'memory', agents: 'agents', rules: 'rules', oss: 'oss', safety: 'rules', day: 'day', public: 'public' };
     var star = null;
     try { star = new URLSearchParams(location.search).get('star'); } catch (e) {}
     var hash = location.hash.slice(1);

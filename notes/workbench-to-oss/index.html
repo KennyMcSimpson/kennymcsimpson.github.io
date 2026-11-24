@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en" data-lang="en" data-title-en="Spinning quiet tools out of a private workbench · Kenny" data-title-zh="从私有工作台里拆出安静的开源工具 · Kenny">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spinning quiet tools out of a private workbench · Kenny</title>
+  <meta name="description" content="Why five parts of Ecosystem 1.0 became zero-dependency, offline-first open-source releases, while the workbench itself stays personal. 为什么把 Ecosystem 1.0 里的五块拆成零依赖的离线开源软件。">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f6efe2" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0d1628" media="(prefers-color-scheme: dark)">
+  <link rel="canonical" href="https://kennymcsimpson.github.io/notes/workbench-to-oss/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Spinning quiet tools out of a private workbench · Kenny">
+  <meta property="og:description" content="Why five parts of Ecosystem 1.0 became zero-dependency, offline-first open-source releases, while the workbench itself stays personal. 为什么把 Ecosystem 1.0 里的五块拆成零依赖的离线开源软件。">
+  <meta property="og:url" content="https://kennymcsimpson.github.io/notes/workbench-to-oss/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="alternate" type="application/rss+xml" title="Kenny — Notes" href="/feed.xml">
+  <script src="/prefs.js"></script>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/site.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main"><span data-l="en">Skip to content</span><span data-l="zh" lang="zh-CN">跳到正文</span></a>
+  <header class="site-head wrap">
+    <a class="wordmark" href="/"><svg class="seal" viewBox="4 4 56 56" aria-hidden="true" focusable="false"><rect x="4" y="4" width="56" height="56" rx="12"/><path d="M20 17h10v1.8l-3 .6v11.3l11.6-11.2-2.6-.7V17h10v1.8l-2.6.6-10.1 9.7 11 15.3 2.6.7V47H36.7v-1.8l2-.6-8.4-11.9-3.3 3.1v8.8l3 .6V47H20v-1.8l3-.6V19.4l-3-.6z"/></svg>Kenny</a>
+    <nav class="site-nav" aria-label="Site">
+      <a href="/projects/"><span data-l="en">Projects</span><span data-l="zh" lang="zh-CN">开源</span></a>
+      <a href="/ecosystem/">Ecosystem</a>
+      <a href="/now/"><span data-l="en">Now</span><span data-l="zh" lang="zh-CN">此刻</span></a>
+      <a href="/notes/" aria-current="page"><span data-l="en">Notes</span><span data-l="zh" lang="zh-CN">手记</span></a>
+    </nav>
+    <button class="lang" type="button" data-lang-toggle aria-label="切换到中文"><span data-l="en" lang="zh-CN">中文</span><span data-l="zh" lang="en">EN</span></button>
+  </header>
+
+  <main id="main" class="narrow">
+    <article class="article">
+      <header style="padding-top:clamp(1.5rem,4vw,3rem)">
+        <p class="kicker"><span data-l="en">Note</span><span data-l="zh" lang="zh-CN">手记</span> <span class="mono">· 2026-11-25</span></p>
+        <h1 style="font-size:clamp(2.2rem,5.4vw,3.6rem);letter-spacing:-.035em"><span data-l="en">Spinning quiet tools out of a private workbench</span><span data-l="zh" lang="zh-CN">从私有工作台里拆出安静的开源工具</span></h1>
+        <p class="lede" data-l="en">A personal workbench is full of local habits, accounts, and history. The parts worth sharing are the sharp instruments inside it.</p><p class="lede" data-l="zh" lang="zh-CN">私人工作台里装满了个人习惯、账号和历史记录；真正值得拿出来共享的，是里面打磨顺手的一件件单用途工具。</p>
+        <div class="cover" style="--c-soft:var(--amber-soft)"><svg viewBox="0 0 200 72" preserveAspectRatio="xMidYMid meet" class="art" aria-hidden="true" focusable="false">
+          <rect x="20" y="14" width="52" height="44" rx="8" class="f-card o2"/><circle cx="46" cy="36" r="12" class="f-amber o2"/><text x="46" y="40" text-anchor="middle" class="f-ink" font-family="ui-rounded,'Segoe UI',system-ui,sans-serif" font-size="10" font-weight="900">1.0</text>
+          <path d="M78 36h24m-5-5l5 5l-5 5" class="nf s-out" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="110" y="14" width="22" height="20" rx="5" class="f-amber o2"/><rect x="138" y="14" width="22" height="20" rx="5" class="f-teal o2"/><rect x="166" y="14" width="22" height="20" rx="5" class="f-lav o2"/>
+          <rect x="124" y="40" width="22" height="20" rx="5" class="f-verm o2"/><rect x="152" y="40" width="22" height="20" rx="5" class="f-teal-soft o2"/>
+        </svg></div>
+      </header>
+      <div class="prose">
+        <h2><span data-l="en">Why not open-source the whole desk?</span><span data-l="zh" lang="zh-CN">为什么不直接把整张工作台打包开源？</span></h2>
+        <p data-l="en">A real daily workbench accumulates private wiring fast: memory files, credentials, local machine conventions, unpublished research notes. Publishing the whole thing as a monolith would either leak what should stay private or turn into a fragile template nobody else can actually run.</p><p data-l="zh" lang="zh-CN">一个每天真的在用的工作台，很快就会长满私人脉络：个人记忆、本机约定、账号配置和未发表的研究草稿。如果硬把整座房子打包扔上 GitHub，要么漏掉不该公开的东西，要么变成别人根本跑不起来的脆弱大杂烩。</p>
+        <p data-l="en">What travels well instead are the individual instruments — small tools forged by real friction, stripped down to one clear boundary.</p><p data-l="zh" lang="zh-CN">真正能跨出我这张书桌的，是里面被真实痛点逼出来的单用途工具——边界干净、拿去就能用。</p>
+
+        <h2><span data-l="en">Five pieces that earned their own repositories</span><span data-l="zh" lang="zh-CN">五个长出独立仓库的零件</span></h2>
+        <ul>
+          <li><span data-l="en"><strong><a href="/projects/#agentroundtable">AgentRoundtable</a></strong> grew when Claude Code, Codex, and Antigravity needed to sit at the same table without wrapping them in another bloated framework. Zero dependencies, plain <code>JOIN.md</code> seats, and artifact freeze gates.</span><span data-l="zh" lang="zh-CN"><strong><a href="/projects/#agentroundtable">AgentRoundtable</a></strong> 源于让 Claude Code、Codex 与 Antigravity 同桌协作的需求——不套重型框架，零依赖、纯 <code>JOIN.md</code> 席位协议加产物冻结闸门。</span></li>
+          <li><span data-l="en"><strong><a href="/projects/#agenttokenmeter">AgentTokenMeter</a></strong> came from wanting to know where prompt cache hits, cache writes, and equivalent API costs actually went across all three coding agents — locally, without shipping logs anywhere.</span><span data-l="zh" lang="zh-CN"><strong><a href="/projects/#agenttokenmeter">AgentTokenMeter</a></strong> 源于想知道三端编码代理的缓存命中、写入开销和官方折算成本究竟花在了哪——全在本地算，不把日志发往任何服务器。</span></li>
+          <li><span data-l="en"><strong><a href="/projects/#unarmored">Unarmored</a></strong> began as lightweight hooks to strip boilerplate theatre and keep six different frontier model families speaking like honest peers across long turns.</span><span data-l="zh" lang="zh-CN"><strong><a href="/projects/#unarmored">Unarmored</a></strong> 起初是一组轻巧钩子，用来去掉套话与表演腔，让六大前沿模型家族在长对话里保持平视、诚实的同伴语气。</span></li>
+          <li><span data-l="en"><strong><a href="/projects/#inkglass">Inkglass</a></strong> solved a specific frustration: agents edit Markdown specs and research notes constantly, and opening them in a full editor risks accidental overwrites. A read-only offline reader with live diff-watch turned out to be something I open dozens of times a day.</span><span data-l="zh" lang="zh-CN"><strong><a href="/projects/#inkglass">Inkglass</a></strong> 解决的是一个很具体的烦恼：代理频繁改写方案和研究文档，用编辑器打开总怕手误覆盖。一个只读、离线、带实时差异高亮的阅读器，成了我每天打开几十次的软件。</span></li>
+          <li><span data-l="en"><strong><a href="/projects/#edgewise">Edgewise</a></strong> started because full calendar apps were either noisy or invisible when sharing my screen. A 46 px offline edge strip that vanishes from screen captures and lets clicks pass through stays out of the way until a deadline actually approaches.</span><span data-l="zh" lang="zh-CN"><strong><a href="/projects/#edgewise">Edgewise</a></strong> 来自对臃肿日程软件的厌倦：一条 46 px 的离线贴边栏，共享屏幕时自动隐身、支持点击穿透，平时几乎不存在，临近截止才会安静提醒。</span></li>
+        </ul>
+
+        <h2><span data-l="en">Three rules they all share</span><span data-l="zh" lang="zh-CN">它们共同守着的三条底线</span></h2>
+        <p data-l="en">Looking back across all five releases, the same habits carried over from Ecosystem 1.0: <strong>offline by default</strong> (nothing phones home), <strong>minimal dependencies</strong> (standard library or zero runtime deps wherever practical), and <strong>predictable boundaries</strong> (read-only where reading is intended, explicit approval before irreversible steps).</p><p data-l="zh" lang="zh-CN">回头看这五款软件，其实带着同一套来自 Ecosystem 1.0 的癖好：<strong>默认离线</strong>（绝不偷偷联网上报）、<strong>极简依赖</strong>（能用标准库或零运行依赖绝不堆包）、<strong>边界清楚</strong>（只读就是只读，不可逆动作必先确认）。</p>
+        <div class="aside">
+          <p data-l="en">Next on the bench: releasing <code>agent-institutions</code> (the sanitized Apache-2.0 governance &amp; file-lock architecture behind Ecosystem 1.0) and <code>Context Relay (/fork)</code>. Follow progress on <a href="/projects/">Projects</a> or <a href="/now/">Now</a>.</p><p data-l="zh" lang="zh-CN">接下来在实验台上排队公开的是 <code>agent-institutions</code>（Ecosystem 1.0 背后的 Apache-2.0 脱敏治理与文件锁模板）和 <code>Context Relay (/fork)</code>。最新进展可以看<a href="/projects/">开源页</a>或<a href="/now/">此刻页</a>。</p>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-foot">
+    <div class="inner wrap">
+      <nav aria-label="Elsewhere">
+        <a href="mailto:kenny@kojoo.co">kenny@kojoo.co</a>
+        <a href="https://github.com/KennyMcSimpson" rel="me noopener">GitHub</a>
+        <a href="/projects/"><span data-l="en">Projects</span><span data-l="zh" lang="zh-CN">开源</span></a>
+        <a href="/uses/"><span data-l="en">Uses</span><span data-l="zh" lang="zh-CN">工具</span></a>
+        <a href="/feed.xml">RSS</a>
+      </nav>
+      <div class="theme" role="group" aria-label="Theme">
+        <span><span data-l="en">Theme</span><span data-l="zh" lang="zh-CN">主题</span></span>
+        <button type="button" data-theme-set="auto" aria-pressed="true"><span data-l="en">auto</span><span data-l="zh" lang="zh-CN">自动</span></button>
+        <button type="button" data-theme-set="light" aria-pressed="false"><span data-l="en">light</span><span data-l="zh" lang="zh-CN">浅色</span></button>
+        <button type="button" data-theme-set="dark" aria-pressed="false"><span data-l="en">dark</span><span data-l="zh" lang="zh-CN">深色</span></button>
+      </div>
+      <p class="meta-line"><span data-l="en">Updated 2026-11-25 · drawn by hand in SVG · no trackers · <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">source</a></span><span data-l="zh" lang="zh-CN">更新于 2026-11-25 · SVG 手绘 · 无统计 · <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">源码</a></span></p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -4,14 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kenny</title>
-  <meta name="description" content="Kenny does research and writes code in PI, a desktop AI workbench he has made his own. 研究、代码，以及一个每天在用的 AI 工作台。">
+  <meta name="description" content="Multi-agent tooling, quiet offline software, research archives, and Ecosystem 1.0 — an illustrated workbench by Kenny. 多代理工具、离线桌面软件、研究归档，以及每天在用的 Ecosystem 1.0 工作台。">
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#f6efe2" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0d1628" media="(prefers-color-scheme: dark)">
   <link rel="canonical" href="https://kennymcsimpson.github.io/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Kenny">
-  <meta property="og:description" content="Kenny does research and writes code in PI, a desktop AI workbench he has made his own. 研究、代码，以及一个每天在用的 AI 工作台。">
+  <meta property="og:description" content="Multi-agent tooling, quiet offline software, research archives, and Ecosystem 1.0 — an illustrated workbench by Kenny. 多代理工具、离线桌面软件、研究归档，以及每天在用的 Ecosystem 1.0 工作台。">
   <meta property="og:url" content="https://kennymcsimpson.github.io/">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="alternate" type="application/rss+xml" title="Kenny — Notes" href="/feed.xml">
@@ -24,8 +24,8 @@
   <header class="site-head wrap">
     <a class="wordmark" href="/"><svg class="seal" viewBox="4 4 56 56" aria-hidden="true" focusable="false"><rect x="4" y="4" width="56" height="56" rx="12"/><path d="M20 17h10v1.8l-3 .6v11.3l11.6-11.2-2.6-.7V17h10v1.8l-2.6.6-10.1 9.7 11 15.3 2.6.7V47H36.7v-1.8l2-.6-8.4-11.9-3.3 3.1v8.8l3 .6V47H20v-1.8l3-.6V19.4l-3-.6z"/></svg>Kenny</a>
     <nav class="site-nav" aria-label="Site">
+      <a href="/projects/"><span data-l="en">Projects</span><span data-l="zh" lang="zh-CN">开源</span></a>
       <a href="/ecosystem/">Ecosystem</a>
-
       <a href="/now/"><span data-l="en">Now</span><span data-l="zh" lang="zh-CN">此刻</span></a>
       <a href="/notes/"><span data-l="en">Notes</span><span data-l="zh" lang="zh-CN">手记</span></a>
     </nav>
@@ -37,7 +37,7 @@
       <div class="hero-grid">
         <div class="scene-title">
           <h1 id="hero-title">Kenny<span class="hi">.</span></h1>
-          <p data-l="en">Research and code, at a workbench I’ve made my own.</p><p data-l="zh" lang="zh-CN">在自己改造的工作台里，做研究，写代码。</p>
+          <p data-l="en">Research, agents, and quiet tools — at a desk of my own.</p><p data-l="zh" lang="zh-CN">多代理、离线工具与研究——在自己改造的工作台里。</p>
         </div>
         <figure class="scene">
           <svg class="scene-svg" viewBox="0 0 1200 760" preserveAspectRatio="xMidYMid meet" aria-hidden="true" focusable="false">
@@ -99,7 +99,7 @@
   <circle cx="1122" cy="94" r="4" class="f-verm"/>
 </g>
 
-<!-- clothesline for the jobs -->
+<!-- clothesline -->
 <g class="wide-only"><path d="M18 244Q249 292 480 248" class="nf s-out" stroke-width="2.5"/>
 <circle cx="18" cy="244" r="6" class="f-frame o2"/><circle cx="480" cy="248" r="6" class="f-frame o2"/></g>
 
@@ -124,7 +124,7 @@
   <path d="M30 486h52" class="nf s-out" stroke-width="2" opacity=".35"/>
 </g>
 
-<!-- PI Chrome, on a tablet -->
+<!-- tablet: AgentTokenMeter + PI Chrome confirmation gate -->
 <g>
   <ellipse cx="200" cy="556" rx="112" ry="5" class="f-shadow"/>
   <path d="M236 552l22-96l18 2l-12 94z" class="f-bezel o2"/>
@@ -136,10 +136,14 @@
     <rect x="126" y="418" width="170" height="12" rx="6" class="f-card"/>
     <path d="M133 427v-3.5a3 3 0 0 1 6 0V427" class="nf s-teal" stroke-width="1.6"/><rect x="131.5" y="424.5" width="9" height="6" rx="1.5" class="f-teal"/>
     <rect x="146" y="422" width="70" height="4" rx="2" class="f-uil"/>
-    <rect x="98" y="444" width="74" height="8" rx="4" class="f-ink2" opacity=".55"/>
-    <rect x="98" y="458" width="60" height="5" rx="2.5" class="f-uil"/><rect x="98" y="468" width="66" height="5" rx="2.5" class="f-uil"/><rect x="98" y="478" width="48" height="5" rx="2.5" class="f-uil"/>
-    <rect x="98" y="492" width="62" height="40" rx="5" class="f-teal-soft"/>
-    <path d="M104 526l14-14l10 9l8-6l18 11z" class="f-teal" opacity=".7"/>
+    <rect x="98" y="444" width="44" height="7" rx="3.5" class="f-teal" opacity=".75"/><circle cx="152" cy="447.5" r="3" class="f-amber"/>
+    <rect x="98" y="457" width="60" height="4" rx="2" class="f-uil"/><rect x="98" y="465" width="48" height="4" rx="2" class="f-uil"/>
+    <rect x="96" y="476" width="66" height="56" rx="6" class="f-ui1"/>
+    <rect x="103" y="510" width="9" height="16" rx="2" class="f-teal"/><rect x="103" y="502" width="9" height="7" rx="2" class="f-amber"/>
+    <rect x="117" y="504" width="9" height="22" rx="2" class="f-teal"/><rect x="117" y="495" width="9" height="8" rx="2" class="f-lav"/>
+    <rect x="131" y="498" width="9" height="28" rx="2" class="f-teal"/><rect x="131" y="488" width="9" height="9" rx="2" class="f-amber"/>
+    <rect x="145" y="502" width="9" height="24" rx="2" class="f-teal"/><rect x="145" y="492" width="9" height="9" rx="2" class="f-verm"/>
+    <path d="M107 498L121 491L135 484L149 488" class="nf s-lav" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
     <rect x="170" y="454" width="130" height="78" rx="9" class="f-card o2"/>
     <rect x="180" y="464" width="66" height="7" rx="3.5" class="f-ink2" opacity=".7"/>
     <rect x="180" y="477" width="104" height="4" rx="2" class="f-uil"/><rect x="180" y="486" width="86" height="4" rx="2" class="f-uil"/>
@@ -165,7 +169,7 @@
   <path d="M338 532h22" class="nf" stroke="#fffaf1" stroke-width="3" stroke-linecap="round" opacity=".7"/>
 </g>
 
-<!-- the monitor: PI -->
+<!-- the monitor: PI Ecosystem 1.0 + Lyra + Roundtable + Inkglass + Edgewise -->
 <g transform="translate(652 560) scale(.82) translate(-590 -560)">
   <rect x="570" y="540" width="40" height="18" class="f-bezel o2"/>
   <rect x="526" y="550" width="128" height="10" rx="5" class="f-bezel o2"/>
@@ -174,33 +178,44 @@
     <rect x="394" y="306" width="392" height="222" class="f-screen"/>
     <rect x="394" y="306" width="392" height="18" class="f-ui1"/>
     <circle cx="406" cy="315" r="3.4" class="f-verm"/><circle cx="417" cy="315" r="3.4" class="f-amber"/><circle cx="428" cy="315" r="3.4" class="f-teal"/>
-    <text x="590" y="319" text-anchor="middle" class="f-ink2" font-family="ui-rounded,'Segoe UI',system-ui,sans-serif" font-size="11" font-weight="800">PI</text>
+    <text x="590" y="319" text-anchor="middle" class="f-ink2" font-family="ui-rounded,'Segoe UI',system-ui,sans-serif" font-size="10.5" font-weight="800">PI · Ecosystem 1.0</text>
     <rect x="394" y="324" width="82" height="204" class="f-ui1"/>
-    <rect x="402" y="334" width="66" height="12" rx="6" class="f-amber" opacity=".7"/>
-    <rect x="402" y="354" width="58" height="8" rx="4" class="f-uil"/><rect x="402" y="370" width="62" height="8" rx="4" class="f-uil"/><rect x="402" y="386" width="48" height="8" rx="4" class="f-uil"/><rect x="402" y="402" width="56" height="8" rx="4" class="f-uil"/>
+    <rect x="402" y="334" width="66" height="12" rx="6" class="f-amber" opacity=".75"/>
+    <circle cx="406" cy="358" r="2.6" class="f-amber"/><rect x="413" y="354" width="47" height="8" rx="4" class="f-uil"/>
+    <circle cx="406" cy="374" r="2.6" class="f-teal"/><rect x="413" y="370" width="51" height="8" rx="4" class="f-uil"/>
+    <circle cx="406" cy="390" r="2.6" class="f-verm"/><rect x="413" y="386" width="39" height="8" rx="4" class="f-uil"/>
+    <circle cx="406" cy="406" r="2.6" class="f-lav"/><rect x="413" y="402" width="45" height="8" rx="4" class="f-uil"/>
     <circle cx="412" cy="508" r="11" class="f-lav"/><path d="M408.26 503.38L412.44 501.84M408.26 503.38L411.34 506.68M412.44 501.84L411.34 506.68M411.34 506.68L416.4 508.88M416.4 508.88L414.64 514.16M414.64 514.16L409.58 512.18M409.58 512.18L411.34 506.68" class="nf s-star" stroke-width="0.7" stroke-linecap="round" opacity=".7"/><path d="M408.26 500.74Q408.26 503.38 410.9 503.38Q408.26 503.38 408.26 506.02Q408.26 503.38 405.62 503.38Q408.26 503.38 408.26 500.74z" class="f-star"/><circle cx="408.26" cy="503.38" r="0.77" class="f-star"/><circle cx="412.44" cy="501.84" r="0.82" class="f-star"/><circle cx="411.34" cy="506.68" r="0.94" class="f-star"/><circle cx="416.4" cy="508.88" r="0.94" class="f-star"/><circle cx="414.64" cy="514.16" r="1.04" class="f-star"/><circle cx="409.58" cy="512.18" r="1.04" class="f-star"/>
     <rect x="428" y="504" width="38" height="7" rx="3.5" class="f-uil"/>
-    <!-- chat -->
+    <!-- chat + 4-agent Roundtable seats -->
     <rect x="590" y="334" width="92" height="24" rx="10" class="f-ui2"/><rect x="600" y="343" width="64" height="6" rx="3" class="f-amber" opacity=".75"/>
-    <rect x="486" y="366" width="150" height="36" rx="10" class="f-ui3"/><rect x="496" y="375" width="118" height="6" rx="3" class="f-uil"/><rect x="496" y="387" width="86" height="6" rx="3" class="f-uil"/>
+    <rect x="486" y="364" width="160" height="38" rx="10" class="f-ui3"/>
+    <circle cx="497" cy="375" r="3.2" class="f-amber"/><circle cx="506" cy="375" r="3.2" class="f-teal"/><circle cx="515" cy="375" r="3.2" class="f-verm"/><circle cx="524" cy="375" r="3.2" class="f-lav"/>
+    <rect x="534" y="372" width="98" height="6" rx="3" class="f-uil"/><rect x="496" y="387" width="112" height="6" rx="3" class="f-uil"/>
     <rect x="486" y="410" width="196" height="60" rx="8" class="f-code"/>
     <rect x="496" y="420" width="28" height="6" rx="3" class="f-teal"/><rect x="530" y="420" width="54" height="6" rx="3" class="f-amber"/>
-    <rect x="506" y="432" width="14" height="6" rx="3" class="f-verm"/><rect x="526" y="432" width="86" height="6" rx="3" class="f-star" opacity=".8"/>
-    <rect x="506" y="444" width="62" height="6" rx="3" class="f-teal"/><rect x="574" y="444" width="40" height="6" rx="3" class="f-uil"/>
+    <rect x="490" y="432" width="3" height="6" rx="1" class="f-verm"/><rect x="504" y="432" width="14" height="6" rx="3" class="f-verm"/><rect x="524" y="432" width="88" height="6" rx="3" class="f-star" opacity=".8"/>
+    <rect x="490" y="444" width="3" height="6" rx="1" class="f-teal"/><rect x="504" y="444" width="62" height="6" rx="3" class="f-teal"/><rect x="572" y="444" width="42" height="6" rx="3" class="f-uil"/>
     <rect x="496" y="456" width="44" height="6" rx="3" class="f-amber"/>
     <rect x="486" y="478" width="46" height="18" rx="9" class="f-ui3"/>
     <circle cx="498" cy="487" r="3" class="f-ink2 a-dot"/><circle cx="509" cy="487" r="3" class="f-ink2 a-dot" style="animation-delay:.18s"/><circle cx="520" cy="487" r="3" class="f-ink2 a-dot" style="animation-delay:.36s"/>
     <rect x="484" y="502" width="200" height="20" rx="10" class="f-card s-uil" stroke-width="1.5"/>
     <rect x="494" y="509" width="50" height="6" rx="3" class="f-ink2" opacity=".6"/>
     <rect x="548" y="506" width="2.6" height="12" rx="1" class="f-verm a-blink"/>
-    <!-- reading panel -->
+    <!-- reading / Inkglass diff panel + Edgewise edge strip -->
     <rect x="692" y="324" width="94" height="204" class="f-ui1"/>
-    <rect x="700" y="334" width="78" height="104" rx="3" class="f-paper"/>
-    <rect x="706" y="344" width="62" height="3" rx="1.5" class="f-uil"/><rect x="706" y="352" width="54" height="3" rx="1.5" class="f-uil"/><rect x="706" y="360" width="64" height="3" rx="1.5" class="f-uil"/><rect x="706" y="368" width="58" height="3" rx="1.5" class="f-uil"/><rect x="706" y="376" width="46" height="3" rx="1.5" class="f-uil"/><rect x="706" y="384" width="62" height="3" rx="1.5" class="f-uil"/><rect x="706" y="392" width="60" height="3" rx="1.5" class="f-uil"/><rect x="706" y="400" width="50" height="3" rx="1.5" class="f-uil"/><rect x="706" y="408" width="64" height="3" rx="1.5" class="f-uil"/><rect x="706" y="416" width="40" height="3" rx="1.5" class="f-uil"/><rect x="706" y="424" width="56" height="3" rx="1.5" class="f-uil"/>
-    <rect x="704" y="357" width="54" height="7" rx="1" class="f-amber" opacity=".5"/><rect x="704" y="389" width="46" height="7" rx="1" class="f-teal" opacity=".45"/>
-    <path d="M754 364C770 400 744 420 740 448" class="nf s-lav" stroke-width="1.6" stroke-dasharray="3 3"/>
-    <rect x="700" y="448" width="78" height="70" rx="6" class="f-lav-soft"/>
-    <rect x="708" y="458" width="40" height="5" rx="2.5" class="f-lav"/><rect x="708" y="470" width="60" height="4" rx="2" class="f-lav" opacity=".55"/><rect x="708" y="480" width="52" height="4" rx="2" class="f-lav" opacity=".55"/><rect x="708" y="490" width="58" height="4" rx="2" class="f-lav" opacity=".55"/>
+    <rect x="698" y="334" width="74" height="104" rx="3" class="f-paper"/>
+    <rect x="706" y="344" width="58" height="3" rx="1.5" class="f-uil"/><rect x="706" y="352" width="50" height="3" rx="1.5" class="f-uil"/><rect x="706" y="360" width="60" height="3" rx="1.5" class="f-uil"/><rect x="706" y="368" width="54" height="3" rx="1.5" class="f-uil"/><rect x="706" y="376" width="44" height="3" rx="1.5" class="f-uil"/><rect x="706" y="384" width="58" height="3" rx="1.5" class="f-uil"/><rect x="706" y="392" width="56" height="3" rx="1.5" class="f-uil"/><rect x="706" y="400" width="46" height="3" rx="1.5" class="f-uil"/><rect x="706" y="408" width="60" height="3" rx="1.5" class="f-uil"/><rect x="706" y="416" width="38" height="3" rx="1.5" class="f-uil"/><rect x="706" y="424" width="52" height="3" rx="1.5" class="f-uil"/>
+    <rect x="700" y="357" width="3" height="14" rx="1" class="f-teal"/><rect x="705" y="357" width="52" height="7" rx="1" class="f-amber" opacity=".5"/>
+    <rect x="700" y="389" width="3" height="12" rx="1" class="f-verm"/><rect x="705" y="389" width="44" height="7" rx="1" class="f-teal" opacity=".45"/>
+    <path d="M752 364C766 400 742 420 738 448" class="nf s-lav" stroke-width="1.6" stroke-dasharray="3 3"/>
+    <rect x="698" y="448" width="74" height="70" rx="6" class="f-lav-soft"/>
+    <rect x="706" y="458" width="38" height="5" rx="2.5" class="f-lav"/><rect x="706" y="470" width="56" height="4" rx="2" class="f-lav" opacity=".55"/><rect x="706" y="480" width="48" height="4" rx="2" class="f-lav" opacity=".55"/><rect x="706" y="490" width="54" height="4" rx="2" class="f-lav" opacity=".55"/>
+    <rect x="777" y="346" width="8" height="84" rx="4" class="f-teal"/>
+    <circle cx="781" cy="358" r="2.2" class="f-amber a-pulse"/>
+    <rect x="779" y="372" width="4" height="2.2" rx="1" class="f-paper" opacity=".9"/>
+    <rect x="779" y="384" width="4" height="2.2" rx="1" class="f-paper" opacity=".7"/>
+    <rect x="779" y="396" width="4" height="2.2" rx="1" class="f-paper" opacity=".55"/>
   </g>
   <rect x="394" y="306" width="392" height="222" rx="6" class="nf o2"/>
 </g>
@@ -218,7 +233,7 @@
   <path d="M858 416q8 10 18 4" class="nf" stroke="#fff6dd" stroke-width="5" stroke-linecap="round"/>
 </g>
 
-<!-- a bookcase beside the desk, a tall plant on it, a print on the wall -->
+<!-- bookcase, plant, and framed 3-channel neural waveform print -->
 <g>
   <ellipse cx="1078" cy="704" rx="112" ry="6" class="f-shadow"/>
   <rect x="984" y="470" width="188" height="234" rx="8" class="f-desk o"/>
@@ -243,27 +258,187 @@
   <rect x="1002" y="408" width="60" height="11" rx="4" class="f-amber o2"/>
   <path d="M1116 292L1134 276L1152 292" class="nf s-out" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="1134" cy="276" r="2.6" class="f-out"/>
   <rect x="1098" y="292" width="72" height="88" rx="4" class="f-frame o2"/><rect x="1106" y="300" width="56" height="72" rx="2" class="f-paper"/>
-  <circle cx="1146" cy="318" r="7" class="f-amber"/>
-  <path d="M1106 362l16-24l10 12l12-18l18 30z" class="f-teal" opacity=".75"/>
-  <path d="M1106 372v-8q14-8 28-2q14 6 28-2v12z" class="f-plant" opacity=".8"/>
+  <path d="M1111 323h46M1111 341h46M1111 359h46" class="nf s-uil" stroke-width="1" opacity=".45"/>
+  <path d="M1111 323q4-7 8 0t8-1t7-5t7 6t8-1t8 1" class="nf s-out" stroke-width="2" stroke-linecap="round"/>
+  <path d="M1111 341q5 5 9-2t8 3t8-6t8 5t7-1t6 1" class="nf s-teal" stroke-width="2" stroke-linecap="round"/>
+  <path d="M1111 359q4-4 8 2t8-6t8 5t8-3t8 3t6-1" class="nf s-verm" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="1152" cy="310" r="3.2" class="f-amber"/>
 </g>
 </svg>
-          <figcaption class="sr-only"><span data-l="en">A drawing of my workbench: PI open on the monitor, PI Chrome asking for a confirmation on a tablet, scheduled jobs hung on a line, books under a lamp, a night sky with the Lyra constellation, and a bookcase with a tall plant beside the desk.</span><span data-l="zh" lang="zh-CN">我的工作台：显示器上开着 PI，平板上的 PI Chrome 正在等一张确认卡片，定时任务挂在一根绳上，台灯下是书，窗外是天琴座，桌边是书架和一盆高高的绿植。</span></figcaption>
+          <figcaption class="sr-only"><span data-l="en">A drawing of my workbench: PI Ecosystem 1.0 open on the monitor with Lyra, a 4-agent roundtable thread, an Inkglass diff-watch reading pane, and an Edgewise countdown strip on the edge; a tablet showing a local token meter and confirmation card; four pinned focus cards overhead; a framed neural waveform print on the wall; and a window looking out at the day sky or Lyra constellation at night.</span><span data-l="zh" lang="zh-CN">我的工作台：显示器上开着 PI Ecosystem 1.0、Lyra、四代理圆桌对话、带实时差异条的阅读面板与贴在屏边的 Edgewise 倒计时条；平板上是本地用量图表和确认卡片；绳上挂着四张主题卡片；墙上是三通道脑电波形挂画；窗外白昼晴空、入夜是天琴座。</span></figcaption>
         </figure>
-        <ul class="jobs" aria-label="Scheduled jobs">
-          <li style="--x:1.75;--y:34.7;--d:0s;--g:0s"><span class="job" style="--c:var(--amber)"><span class="band"></span><svg viewBox="0 0 32 32" class="art" aria-hidden="true"><path d="M7 3h13l6 6v20H7z" class="f-paper o2"/><path d="M20 3v6h6" class="nf o2"/><path d="M11 14h11M11 19h11M11 24h7" class="nf s-uil" stroke-width="2" stroke-linecap="round"/><rect x="10" y="12" width="9" height="4" rx="1" class="f-amber" opacity=".6"/></svg><b><span data-l="en">Paper digest</span><span data-l="zh" lang="zh-CN">论文速递</span></b><small><span data-l="en">daily · morning</span><span data-l="zh" lang="zh-CN">每天 · 清晨</span></small></span></li>
-          <li style="--x:11.42;--y:36.3;--d:-1.6s;--g:3s"><span class="job" style="--c:var(--teal)"><span class="band"></span><svg viewBox="0 0 32 32" class="art" aria-hidden="true"><path d="M10 5v22M10 12c0 7 12 4 12 12" class="nf s-out" stroke-width="2.6" stroke-linecap="round"/><circle cx="10" cy="5" r="3.4" class="f-card o2"/><circle cx="10" cy="27" r="3.4" class="f-card o2"/><circle cx="22" cy="24" r="3.4" class="f-teal o2"/></svg><b><span data-l="en">GitHub report</span><span data-l="zh" lang="zh-CN">GitHub 报告</span></b><small><span data-l="en">daily</span><span data-l="zh" lang="zh-CN">每天</span></small></span></li>
-          <li style="--x:21.08;--y:36.4;--d:-3.1s;--g:6s"><span class="job" style="--c:var(--verm)"><span class="band"></span><svg viewBox="0 0 32 32" class="art" aria-hidden="true"><path d="M3 6h18v12H11l-5 4v-4H3z" class="f-card o2"/><path d="M13 14h16v11h-3v4l-5-4h-8z" class="f-verm o2"/><path d="M7 11h10" class="nf s-uil" stroke-width="2" stroke-linecap="round"/></svg><b><span data-l="en">Chat digest</span><span data-l="zh" lang="zh-CN">群聊摘要</span></b><small><span data-l="en">daily</span><span data-l="zh" lang="zh-CN">每天</span></small></span></li>
-          <li style="--x:30.75;--y:35;--d:-4.4s;--g:9s"><span class="job" style="--c:var(--lav)"><span class="band"></span><svg viewBox="0 0 32 32" class="art" aria-hidden="true"><path d="M6 4h18a2 2 0 0 1 2 2v22H8a2 2 0 0 1-2-2z" class="f-lav o2"/><path d="M10 4v24" class="nf o2"/><path d="M20 10a5 5 0 1 0 3 8a4 4 0 0 1-3-8z" class="f-star o2"/></svg><b><span data-l="en">Memory distillation</span><span data-l="zh" lang="zh-CN">记忆整理</span></b><small><span data-l="en">nightly</span><span data-l="zh" lang="zh-CN">每晚</span></small></span></li>
+        <ul class="jobs" aria-label="Pinned workbench themes">
+          <li style="--x:1.75;--y:34.7;--d:0s;--g:0s"><a class="job" href="/projects/#agentroundtable" style="--c:var(--amber)"><span class="band"></span><svg viewBox="0 0 32 32" class="art" aria-hidden="true"><ellipse cx="16" cy="16" rx="9" ry="7" class="f-desk3 o2"/><rect x="13" y="13" width="6" height="6" rx="1.2" class="f-paper o2"/><circle cx="16" cy="5.5" r="3" class="f-amber o2"/><circle cx="26.5" cy="16" r="3" class="f-teal o2"/><circle cx="16" cy="26.5" r="3" class="f-verm o2"/><circle cx="5.5" cy="16" r="3" class="f-lav o2"/></svg><b><span data-l="en">Roundtable</span><span data-l="zh" lang="zh-CN">圆桌协同</span></b><small><span data-l="en">4-agent room</span><span data-l="zh" lang="zh-CN">多代理 · 零依赖</span></small></a></li>
+          <li style="--x:11.42;--y:36.3;--d:-1.6s;--g:3s"><a class="job" href="/projects/#agenttokenmeter" style="--c:var(--teal)"><span class="band"></span><svg viewBox="0 0 32 32" class="art" aria-hidden="true"><rect x="4" y="5" width="24" height="22" rx="4" class="f-paper o2"/><rect x="8" y="17" width="4" height="7" rx="1" class="f-teal"/><rect x="14" y="12" width="4" height="12" rx="1" class="f-amber"/><rect x="20" y="9" width="4" height="15" rx="1" class="f-verm"/><path d="M8 14l6-4l6-2" class="nf s-lav" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><b><span data-l="en">TokenMeter</span><span data-l="zh" lang="zh-CN">用量账本</span></b><small><span data-l="en">usage · cache</span><span data-l="zh" lang="zh-CN">缓存 · 成本</span></small></a></li>
+          <li style="--x:21.08;--y:36.4;--d:-3.1s;--g:6s"><a class="job" href="/projects/#inkglass" style="--c:var(--verm)"><span class="band"></span><svg viewBox="0 0 32 32" class="art" aria-hidden="true"><path d="M5 4h14l6 6v18H5z" class="f-paper o2"/><path d="M19 4v6h6" class="nf o2"/><rect x="8" y="13" width="12" height="3.2" rx="1" class="f-teal" opacity=".65"/><rect x="8" y="18.5" width="10" height="3.2" rx="1" class="f-verm" opacity=".55"/><path d="M9 24h8" class="nf s-uil" stroke-width="2" stroke-linecap="round"/><circle cx="22" cy="21" r="5" class="f-amber-soft o2"/><path d="M25.5 24.5l3.5 3.5" class="nf s-out" stroke-width="2.4" stroke-linecap="round"/></svg><b><span data-l="en">Inkglass</span><span data-l="zh" lang="zh-CN">离线阅读</span></b><small><span data-l="en">diff · reader</span><span data-l="zh" lang="zh-CN">差异 · 文档</span></small></a></li>
+          <li style="--x:30.75;--y:35;--d:-4.4s;--g:9s"><a class="job" href="/projects/#lab" style="--c:var(--lav)"><span class="band"></span><svg viewBox="0 0 32 32" class="art" aria-hidden="true"><rect x="3" y="5" width="26" height="22" rx="5" class="f-lav-soft o2"/><path d="M6 12q2.5-4 5 0t5 0t5-2.5t5 2.5" class="nf s-out" stroke-width="1.8" stroke-linecap="round"/><path d="M6 17q3 3.5 6-1t6 1t8-1" class="nf s-teal" stroke-width="1.8" stroke-linecap="round"/><path d="M6 22q3-2.5 5 1t5-3t5 3t5-1" class="nf s-verm" stroke-width="1.8" stroke-linecap="round"/></svg><b><span data-l="en">EEG &amp; Lab</span><span data-l="zh" lang="zh-CN">神经研究</span></b><small><span data-l="en">neural probes</span><span data-l="zh" lang="zh-CN">脑电 · 表征</span></small></a></li>
         </ul>
+      </div>
+    </section>
+
+    <section class="sec wrap" id="projects" aria-labelledby="proj-h">
+      <div class="sec-head">
+        <div class="t"><svg viewBox="0 0 64 64" class="art sticker" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-amber-soft"/><rect x="12" y="22" width="40" height="26" rx="6" class="f-card o2"/><path d="M22 22v-5a4 4 0 0 1 4-4h12a4 4 0 0 1 4 4v5" class="nf s-out" stroke-width="2.6"/><path d="M12 33h40" class="nf s-out" stroke-width="2"/><rect x="27" y="29" width="10" height="8" rx="2.5" class="f-amber o2"/></svg><h2 id="proj-h"><span data-l="en">Open source &amp; research</span><span data-l="zh" lang="zh-CN">开源作品与研究</span></h2></div>
+        <p data-l="en">Standalone tools extracted from daily use in Ecosystem 1.0 — zero-dependency, offline-first, and openly licensed — alongside public research archives.</p><p data-l="zh" lang="zh-CN">从 Ecosystem 1.0 日常使用中抽离出来的独立工具——零依赖、离线优先、开源发布——连同公开的研究归档。</p>
+        <a class="go" href="/projects/"><span data-l="en">All projects &amp; lab</span><span data-l="zh" lang="zh-CN">全部作品与实验室</span></a>
+      </div>
+
+      <ul class="projects">
+        <li class="proj" style="--c:var(--amber);--c-soft:var(--amber-soft)">
+          <div class="mini"><svg viewBox="0 0 200 112" class="art" aria-hidden="true" focusable="false">
+            <ellipse cx="100" cy="58" rx="52" ry="30" class="f-desk3 o2"/>
+            <rect x="83" y="42" width="34" height="32" rx="4" class="f-paper o2"/>
+            <rect x="89" y="50" width="22" height="3" rx="1.5" class="f-uil"/><rect x="89" y="57" width="18" height="3" rx="1.5" class="f-uil"/><rect x="89" y="64" width="20" height="3" rx="1.5" class="f-teal" opacity=".7"/>
+            <path d="M100 22v14M100 84v10M42 58h12M146 58h12" class="nf s-out" stroke-width="2" stroke-dasharray="2 4" stroke-linecap="round"/>
+            <circle cx="100" cy="18" r="10" class="f-amber o2"/><circle cx="164" cy="58" r="10" class="f-teal o2"/><circle cx="100" cy="96" r="10" class="f-verm o2"/><circle cx="36" cy="58" r="10" class="f-lav o2"/>
+            <circle cx="100" cy="18" r="3" class="f-card"/><circle cx="164" cy="58" r="3" class="f-card"/><circle cx="100" cy="96" r="3" class="f-card"/><circle cx="36" cy="58" r="3" class="f-card"/>
+          </svg><span class="chip">v0.2.0</span></div>
+          <div class="body">
+            <h3>AgentRoundtable</h3>
+            <p data-l="en">Governed multi-agent roundtable for coding agents you already run (Claude Code, Codex, Antigravity) — non-intrusive JOIN seats, SSE daemon, Arena UI.</p>
+            <p data-l="zh" lang="zh-CN">给现成编码代理用的受治理圆桌协作房间（Claude Code、Codex、Antigravity 等）——非侵入席位协议、SSE 守护、群聊与竞技场界面。</p>
+            <p class="tags">Node.js · 0 deps · MIT</p>
+            <div class="actions">
+              <a href="https://github.com/KennyMcSimpson/AgentRoundtable" rel="noopener">GitHub</a>
+              <a class="sub" href="https://github.com/KennyMcSimpson/AgentRoundtable/releases/tag/v0.2.0" rel="noopener"><span data-l="en">Release v0.2.0</span><span data-l="zh" lang="zh-CN">v0.2.0 版本</span></a>
+            </div>
+          </div>
+        </li>
+
+        <li class="proj" style="--c:var(--teal);--c-soft:var(--teal-soft)">
+          <div class="mini"><svg viewBox="0 0 200 112" class="art" aria-hidden="true" focusable="false">
+            <rect x="16" y="12" width="168" height="88" rx="9" class="f-screen o2"/>
+            <path d="M25 12h150a9 9 0 0 1 9 9v9h-168v-9a9 9 0 0 1 9-9z" class="f-ui1"/>
+            <rect x="16" y="12" width="168" height="88" rx="9" class="nf o2"/>
+            <circle cx="26" cy="21" r="2.6" class="f-verm"/><circle cx="34" cy="21" r="2.6" class="f-amber"/><circle cx="42" cy="21" r="2.6" class="f-teal"/>
+            <rect x="122" y="17" width="50" height="8" rx="4" class="f-teal-soft"/>
+            <rect x="30" y="64" width="18" height="26" rx="3" class="f-teal"/><rect x="30" y="54" width="18" height="9" rx="3" class="f-amber"/>
+            <rect x="58" y="56" width="18" height="34" rx="3" class="f-teal"/><rect x="58" y="45" width="18" height="10" rx="3" class="f-lav"/>
+            <rect x="86" y="48" width="18" height="42" rx="3" class="f-teal"/><rect x="86" y="38" width="18" height="9" rx="3" class="f-amber"/>
+            <rect x="114" y="58" width="18" height="32" rx="3" class="f-teal"/><rect x="114" y="46" width="18" height="11" rx="3" class="f-verm"/>
+            <rect x="142" y="44" width="18" height="46" rx="3" class="f-teal"/><rect x="142" y="34" width="18" height="9" rx="3" class="f-amber"/>
+            <path d="M39 48L67 40L95 34L123 41L151 31" class="nf s-out" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="39" cy="48" r="3" class="f-card o2"/><circle cx="95" cy="34" r="3" class="f-card o2"/><circle cx="151" cy="31" r="3" class="f-amber o2"/>
+          </svg><span class="chip teal">v2.1.0</span></div>
+          <div class="body">
+            <h3>AgentTokenMeter</h3>
+            <p data-l="en">Local token usage, prompt cache hit/write analytics, and official API cost tracker across Antigravity, Claude Code, and Codex.</p>
+            <p data-l="zh" lang="zh-CN">覆盖 Antigravity、Claude Code 与 Codex 的零依赖本地用量账本：缓存命中/写入分析、对话明细与官方定价折算。</p>
+            <p class="tags">Node.js · 0 deps · MIT</p>
+            <div class="actions">
+              <a href="https://github.com/KennyMcSimpson/AgentTokenMeter" rel="noopener">GitHub</a>
+              <a class="sub" href="/projects/#agenttokenmeter"><span data-l="en">Details</span><span data-l="zh" lang="zh-CN">详情</span></a>
+            </div>
+          </div>
+        </li>
+
+        <li class="proj" style="--c:var(--lav);--c-soft:var(--lav-soft)">
+          <div class="mini"><svg viewBox="0 0 200 112" class="art" aria-hidden="true" focusable="false">
+            <path d="M52 24l22 8v18c0 15-10 26-22 32c-12-6-22-17-22-32V32z" class="f-card o2" opacity=".75"/>
+            <path d="M52 24v58M44 40l16 14" class="nf s-verm" stroke-width="2.2" stroke-dasharray="3 3" stroke-linecap="round"/>
+            <path d="M84 56h18m-5-5l5 5l-5 5" class="nf s-out" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <rect x="110" y="18" width="74" height="76" rx="8" class="f-paper o2"/>
+            <rect x="120" y="30" width="52" height="5" rx="2.5" class="f-ink2" opacity=".75"/>
+            <rect x="120" y="42" width="44" height="4" rx="2" class="f-uil"/><rect x="120" y="51" width="50" height="4" rx="2" class="f-uil"/><rect x="120" y="60" width="38" height="4" rx="2" class="f-uil"/>
+            <circle cx="122" cy="78" r="4" class="f-amber"/><circle cx="133" cy="78" r="4" class="f-teal"/><circle cx="144" cy="78" r="4" class="f-verm"/><circle cx="155" cy="78" r="4" class="f-lav"/><circle cx="166" cy="78" r="4" class="f-plant"/>
+          </svg><span class="chip lav">v0.6.0</span></div>
+          <div class="body">
+            <h3>Unarmored</h3>
+            <p data-l="en">Cross-family register de-armoring and edge-triggered multi-turn calibration hooks for 6 frontier LLM families — grounded peer voice, zero roleplay.</p>
+            <p data-l="zh" lang="zh-CN">面向六大前沿模型家族的语域去甲与多轮边沿校准钩子：诚实、平视、克制，告别空话与表演腔。</p>
+            <p class="tags">Python stdlib · Apache-2.0</p>
+            <div class="actions">
+              <a href="https://github.com/KennyMcSimpson/Unarmored" rel="noopener">GitHub</a>
+              <a class="sub" href="https://github.com/KennyMcSimpson/Unarmored/releases/tag/v0.6.0" rel="noopener"><span data-l="en">Release v0.6.0</span><span data-l="zh" lang="zh-CN">v0.6.0 版本</span></a>
+            </div>
+          </div>
+        </li>
+
+        <li class="proj" style="--c:var(--verm);--c-soft:var(--verm-soft)">
+          <div class="mini"><svg viewBox="0 0 200 112" class="art" aria-hidden="true" focusable="false">
+            <rect x="16" y="12" width="168" height="88" rx="9" class="f-screen o2"/>
+            <path d="M25 12h150a9 9 0 0 1 9 9v8h-168v-8a9 9 0 0 1 9-9z" class="f-ui1"/>
+            <rect x="16" y="12" width="168" height="88" rx="9" class="nf o2"/>
+            <circle cx="26" cy="20" r="2.4" class="f-verm"/><circle cx="34" cy="20" r="2.4" class="f-amber"/><circle cx="42" cy="20" r="2.4" class="f-teal"/>
+            <rect x="17" y="29" width="40" height="70" class="f-ui1"/>
+            <rect x="23" y="38" width="26" height="4" rx="2" class="f-uil"/><rect x="23" y="48" width="28" height="5" rx="2.5" class="f-amber" opacity=".75"/><rect x="23" y="59" width="22" height="4" rx="2" class="f-uil"/><rect x="23" y="69" width="25" height="4" rx="2" class="f-uil"/>
+            <rect x="65" y="35" width="108" height="58" rx="4" class="f-paper"/>
+            <rect x="68" y="43" width="3.5" height="14" rx="1" class="f-teal"/><rect x="76" y="43" width="66" height="6" rx="1.5" class="f-teal-soft"/>
+            <rect x="76" y="54" width="54" height="3.5" rx="1.5" class="f-uil"/>
+            <rect x="68" y="63" width="3.5" height="12" rx="1" class="f-verm"/><rect x="76" y="63" width="58" height="6" rx="1.5" class="f-verm-soft"/>
+            <rect x="76" y="75" width="44" height="3.5" rx="1.5" class="f-uil"/>
+            <circle cx="154" cy="72" r="14" class="f-amber-soft o2"/><path d="M164 82l11 11" class="nf s-out" stroke-width="3.6" stroke-linecap="round"/>
+          </svg><span class="chip verm">v2.3.0</span></div>
+          <div class="body">
+            <h3>Inkglass</h3>
+            <p data-l="en">Offline, read-only Windows Markdown reader built for living AI and research documents — live diff-watch, folder drawer, KaTeX, Mermaid, Quick Jump.</p>
+            <p data-l="zh" lang="zh-CN">专为活跃 AI 与科研文档打造的离线只读 Windows Markdown 阅读器：实时差异监控、目录抽屉、KaTeX 与 Mermaid 渲染。</p>
+            <p class="tags">Electron · TypeScript · MIT</p>
+            <div class="actions">
+              <a href="https://github.com/KennyMcSimpson/Inkglass" rel="noopener">GitHub</a>
+              <a class="sub" href="https://github.com/KennyMcSimpson/Inkglass/releases/tag/v2.3.0" rel="noopener"><span data-l="en">Download v2.3.0</span><span data-l="zh" lang="zh-CN">下载 v2.3.0</span></a>
+            </div>
+          </div>
+        </li>
+
+        <li class="proj" style="--c:var(--teal);--c-soft:var(--amber-soft)">
+          <div class="mini"><svg viewBox="0 0 200 112" class="art" aria-hidden="true" focusable="false">
+            <rect x="16" y="12" width="168" height="88" rx="9" class="f-screen o2"/>
+            <rect x="26" y="24" width="110" height="64" rx="6" class="f-ui1"/>
+            <rect x="34" y="34" width="52" height="7" rx="3.5" class="f-uil"/><rect x="34" y="48" width="90" height="5" rx="2.5" class="f-uil" opacity=".7"/><rect x="34" y="59" width="76" height="5" rx="2.5" class="f-uil" opacity=".7"/><rect x="34" y="70" width="60" height="5" rx="2.5" class="f-uil" opacity=".7"/>
+            <rect x="148" y="18" width="28" height="76" rx="8" class="f-teal o2"/>
+            <rect x="153" y="25" width="18" height="12" rx="4" class="f-amber o2 a-pulse"/>
+            <rect x="154" y="44" width="16" height="4" rx="2" class="f-paper"/><rect x="154" y="54" width="16" height="4" rx="2" class="f-paper" opacity=".8"/><rect x="154" y="64" width="16" height="4" rx="2" class="f-paper" opacity=".65"/>
+            <path d="M155 80q7-6 14 0q-7 6-14 0z" class="f-card"/><path d="M156 84l12-8" class="nf s-verm" stroke-width="2" stroke-linecap="round"/>
+          </svg><span class="chip teal">v1.4.0</span></div>
+          <div class="body">
+            <h3>Edgewise</h3>
+            <p data-l="en">Offline ambient deadline bar for Windows — natural-language capture, screen-share stealth, ghost click-through, 46 px edge countdown, 25m focus strip.</p>
+            <p data-l="zh" lang="zh-CN">安静的离线 Windows 贴边截止日期栏：自然语言录入、录屏/共享隐身、穿透点击、46 px 边缘倒计时与专注计时条。</p>
+            <p class="tags">Electron · 0 deps · MIT</p>
+            <div class="actions">
+              <a href="https://github.com/KennyMcSimpson/Edgewise" rel="noopener">GitHub</a>
+              <a class="sub" href="https://github.com/KennyMcSimpson/Edgewise/releases/tag/v1.4.0" rel="noopener"><span data-l="en">Download v1.4.0</span><span data-l="zh" lang="zh-CN">下载 v1.4.0</span></a>
+            </div>
+          </div>
+        </li>
+
+        <li class="proj" style="--c:var(--lav);--c-soft:var(--teal-soft)">
+          <div class="mini"><svg viewBox="0 0 200 112" class="art" aria-hidden="true" focusable="false">
+            <rect x="16" y="16" width="84" height="80" rx="8" class="f-paper o2"/>
+            <path d="M24 38q8-12 16 0t16-2t16 6t18-4" class="nf s-out" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M24 56q10 10 18-4t16 6t16-8t16 6" class="nf s-teal" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M24 76q8-6 16 4t16-10t16 8t18-2" class="nf s-verm" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M104 56h18m-5-5l5 5l-5 5" class="nf s-out" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <polygon points="154,22 184,38 184,74 154,90 124,74 124,38" class="f-lav-soft o2"/>
+            <path d="M154 22v34m0 0l30-18m-30 18l-30-18m30 18v34" class="nf s-lav" stroke-width="2" stroke-dasharray="3 3"/>
+            <circle cx="154" cy="56" r="5" class="f-amber o2"/>
+          </svg><span class="chip lav"><span data-l="en">Archive</span><span data-l="zh" lang="zh-CN">研究归档</span></span></div>
+          <div class="body">
+            <h3>measurement-scene-state</h3>
+            <p data-l="en">Public research archive for Measurement Scene State, inverse JEPA, and dynamic test-time training — reproducible code and project page.</p>
+            <p data-l="zh" lang="zh-CN">面向 Measurement Scene State、inverse JEPA 与动态测试时训练的公开研究归档，包含可复现代码与项目页。</p>
+            <p class="tags">Python · Research · MIT</p>
+            <div class="actions">
+              <a href="https://kennymcsimpson.github.io/measurement-scene-state/" rel="noopener"><span data-l="en">Project site</span><span data-l="zh" lang="zh-CN">研究主页</span></a>
+              <a class="sub" href="https://github.com/KennyMcSimpson/measurement-scene-state" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="bench">
+        <p data-l="en"><strong>Preparing for release:</strong> <code>agent-institutions</code> (the open Apache-2.0 governance &amp; file-lock architecture template extracted from Ecosystem 1.0), <code>Context Relay (/fork)</code> (zero-LLM session denoising), plus upcoming EEG &amp; blind-review utilities.</p>
+        <p data-l="zh" lang="zh-CN"><strong>即将公开与孵化中：</strong><code>agent-institutions</code>（从 Ecosystem 1.0 抽离的 Apache-2.0 多代理治理与文件锁参考模板）、<code>Context Relay (/fork)</code>（零模型调用的长会话去噪分叉插件），以及筹备中的脑电划分审计与盲审工具。</p>
+        <a class="go" href="/projects/#lab"><span data-l="en">See the lab bench</span><span data-l="zh" lang="zh-CN">看实验室清单</span></a>
       </div>
     </section>
 
     <section class="sec wrap" id="ecosystem" aria-labelledby="eco-h">
       <div class="sec-head">
-        <div class="t"><svg viewBox="0 0 64 64" class="art sticker" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-lav-soft"/><path d="M32 32L14 20M32 32L50 18M32 32L50 46M32 32L16 46M32 32L32 10" class="nf s-out" stroke-width="2.2" stroke-dasharray="2 4" stroke-linecap="round"/><circle cx="32" cy="32" r="9" class="f-amber o2"/><circle cx="14" cy="20" r="5" class="f-lav o2"/><circle cx="50" cy="18" r="5" class="f-teal o2"/><circle cx="50" cy="46" r="5" class="f-verm o2"/><circle cx="16" cy="46" r="5" class="f-teal o2"/><circle cx="32" cy="10" r="4" class="f-card o2"/></svg><h2 id="eco-h"><span data-l="en">The Ecosystem</span><span data-l="zh" lang="zh-CN">Ecosystem</span></h2></div>
-        <p data-l="en">PI, my fork of the open-source PI Desktop, and what grew around it. Used every day, not released.</p><p data-l="zh" lang="zh-CN">PI 是我基于开源 PI Desktop 改的工作台，Ecosystem 是围着它长出来的一圈。每天在用，没有发布。</p>
-        <a class="go" href="/ecosystem/"><span data-l="en">Open the map</span><span data-l="zh" lang="zh-CN">看全图</span></a>
+        <div class="t"><svg viewBox="0 0 64 64" class="art sticker" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-lav-soft"/><path d="M32 32L14 20M32 32L50 18M32 32L50 46M32 32L16 46M32 32L32 10" class="nf s-out" stroke-width="2.2" stroke-dasharray="2 4" stroke-linecap="round"/><circle cx="32" cy="32" r="9" class="f-amber o2"/><circle cx="14" cy="20" r="5" class="f-lav o2"/><circle cx="50" cy="18" r="5" class="f-teal o2"/><circle cx="50" cy="46" r="5" class="f-verm o2"/><circle cx="16" cy="46" r="5" class="f-teal o2"/><circle cx="32" cy="10" r="4" class="f-card o2"/></svg><h2 id="eco-h"><span data-l="en">Ecosystem 1.0</span><span data-l="zh" lang="zh-CN">Ecosystem 1.0</span></h2></div>
+        <p data-l="en">PI, Lyra, 11 departments, a 4-agent roundtable, and a blind research council — used every day; five standalone tools above spun straight out of it.</p><p data-l="zh" lang="zh-CN">PI、Lyra、11 个分工机构、四代理圆桌与双盲评议会——每天在用的私有工作台，上面的五款开源软件都从这里长出来。</p>
+        <a class="go" href="/ecosystem/"><span data-l="en">Open the full map</span><span data-l="zh" lang="zh-CN">打开全景图</span></a>
       </div>
       <ul class="tiles">
         <li><a class="tile" href="/ecosystem/#pi" style="--c:var(--verm);--c-soft:var(--amber-soft)"><span class="mini"><svg viewBox="0 0 200 128" class="art" aria-hidden="true" focusable="false">
@@ -278,28 +453,27 @@
   <rect x="57" y="104" width="90" height="8" rx="4" class="f-card s-uil" stroke-width="1"/><rect x="92" y="105.5" width="1.6" height="5" rx="0.5" class="f-verm a-blink"/>
   <rect x="150" y="28" width="35" height="87" class="f-ui1"/><rect x="154" y="33" width="27" height="44" rx="2" class="f-paper"/><rect x="157" y="38" width="21" height="2" rx="1" class="f-uil"/><rect x="157" y="43" width="21" height="2" rx="1" class="f-uil"/><rect x="157" y="48" width="21" height="2" rx="1" class="f-uil"/><rect x="157" y="53" width="21" height="2" rx="1" class="f-uil"/><rect x="157" y="58" width="21" height="2" rx="1" class="f-uil"/><rect x="157" y="63" width="21" height="2" rx="1" class="f-uil"/><rect x="157" y="68" width="21" height="2" rx="1" class="f-uil"/><rect x="156" y="42" width="20" height="3.5" rx="0.5" class="f-amber" opacity=".55"/>
   <rect x="154" y="82" width="27" height="28" rx="3" class="f-lav-soft"/><rect x="157" y="87" width="16" height="2.5" rx="1" class="f-lav"/><rect x="157" y="93" width="20" height="2" rx="1" class="f-lav" opacity=".55"/>
-</svg></span><span class="name"><span data-l="en">PI</span><span data-l="zh" lang="zh-CN">PI</span></span><span class="hint"><span data-l="en">The workbench everything lives in.</span><span data-l="zh" lang="zh-CN">工作台，其余部分都住在里面。</span></span></a></li>
+</svg></span><span class="name"><span data-l="en">PI Workbench</span><span data-l="zh" lang="zh-CN">PI 工作台</span></span><span class="hint"><span data-l="en">The desktop home everything runs in.</span><span data-l="zh" lang="zh-CN">整天开着的桌面工作台。</span></span></a></li>
         <li><a class="tile" href="/ecosystem/#lyra" style="--c:var(--lav);--c-soft:var(--lav-soft)"><span class="mini"><svg viewBox="0 0 200 128" class="art" aria-hidden="true" focusable="false">
   <rect x="14" y="12" width="172" height="104" rx="9" class="f-screen o2"/><path d="M23 12h154a9 9 0 0 1 9 9v7h-172v-7a9 9 0 0 1 9-9z" class="f-lav-soft"/><rect x="14" y="12" width="172" height="104" rx="9" class="nf o2"/><circle cx="23" cy="20" r="2.4" class="f-verm"/><circle cx="30" cy="20" r="2.4" class="f-amber"/><circle cx="37" cy="20" r="2.4" class="f-teal"/>
   <circle cx="50" cy="56" r="29" class="f-lav o2"/><path d="M40.14 43.82L51.16 39.76M40.14 43.82L48.26 52.52M51.16 39.76L48.26 52.52M48.26 52.52L61.6 58.32M61.6 58.32L56.96 72.24M56.96 72.24L43.62 67.02M43.62 67.02L48.26 52.52" class="nf s-star" stroke-width="1.59" stroke-linecap="round" opacity=".7"/><path d="M40.14 36.86Q40.14 43.82 47.1 43.82Q40.14 43.82 40.14 50.78Q40.14 43.82 33.18 43.82Q40.14 43.82 40.14 36.86z" class="f-star"/><circle cx="40.14" cy="43.82" r="2.03" class="f-star"/><circle cx="51.16" cy="39.76" r="2.17" class="f-star"/><circle cx="48.26" cy="52.52" r="2.47" class="f-star"/><circle cx="61.6" cy="58.32" r="2.47" class="f-star"/><circle cx="56.96" cy="72.24" r="2.75" class="f-star"/><circle cx="43.62" cy="67.02" r="2.75" class="f-star"/>
   <rect x="26" y="92" width="48" height="14" rx="7" class="f-amber-soft o2"/><path d="M33 103a4 4 0 0 1 8 0zM37 95v1.5" class="f-amber s-out" stroke-width="1.4"/><rect x="45" y="97" width="22" height="4" rx="2" class="f-amber"/>
   <rect x="88" y="28" width="88" height="50" rx="5" class="f-paper o2"/>
-  <path d="M94 38h76" class="nf s-uil" stroke-width="1.2"/><path d="M94 46h76" class="nf s-uil" stroke-width="1.2"/><path d="M94 54h76" class="nf s-uil" stroke-width="1.2"/><path d="M94 62h76" class="nf s-uil" stroke-width="1.2"/><path d="M94 70h76" class="nf s-uil" stroke-width="1.2"/>
+  <path d="M94 38h76M94 46h76M94 54h76M94 62h76M94 70h76" class="nf s-uil" stroke-width="1.2"/>
   <rect x="96" y="34" width="40" height="3.5" rx="1.75" class="f-lav"/><rect x="96" y="42" width="62" height="2.5" rx="1.25" class="f-ink2" opacity=".55"/><rect x="96" y="50" width="50" height="2.5" rx="1.25" class="f-ink2" opacity=".55"/><rect x="96" y="58" width="58" height="2.5" rx="1.25" class="f-ink2" opacity=".55"/>
   <rect x="88" y="84" width="88" height="26" rx="7" class="f-card o2"/>
   <rect x="95" y="90" width="38" height="3.5" rx="1.75" class="f-ink2" opacity=".7"/>
   <g class="a-pulse"><rect x="95" y="97" width="34" height="9" rx="4.5" class="f-amber o2"/></g><rect x="134" y="97" width="22" height="9" rx="4.5" class="f-card o2"/>
   <text x="166" y="104" text-anchor="middle" class="f-verm" font-family="ui-rounded,'Segoe UI',system-ui,sans-serif" font-size="12" font-weight="900">?</text>
-</svg></span><span class="name"><span data-l="en">Lyra</span><span data-l="zh" lang="zh-CN">Lyra</span></span><span class="hint"><span data-l="en">Always-on assistant; asks before the irreversible.</span><span data-l="zh" lang="zh-CN">常驻助手；不可逆的事先问我。</span></span></a></li>
-        <li><a class="tile" href="/ecosystem/#jobs" style="--c:var(--amber);--c-soft:var(--teal-soft)"><span class="mini"><svg viewBox="0 0 200 128" class="art" aria-hidden="true" focusable="false">
-  <circle cx="54" cy="64" r="38" class="f-card o2"/>
-  <path d="M54.0 33.0L54.0 36.0" class="nf s-out" stroke-width="2.6" stroke-linecap="round"/><path d="M69.5 37.2L71.0 34.6" class="nf s-out" stroke-width="1.5" stroke-linecap="round"/><path d="M80.8 48.5L83.4 47.0" class="nf s-out" stroke-width="1.5" stroke-linecap="round"/><path d="M85.0 64.0L82.0 64.0" class="nf s-out" stroke-width="2.6" stroke-linecap="round"/><path d="M80.8 79.5L83.4 81.0" class="nf s-out" stroke-width="1.5" stroke-linecap="round"/><path d="M69.5 90.8L71.0 93.4" class="nf s-out" stroke-width="1.5" stroke-linecap="round"/><path d="M54.0 95.0L54.0 92.0" class="nf s-out" stroke-width="2.6" stroke-linecap="round"/><path d="M38.5 90.8L37.0 93.4" class="nf s-out" stroke-width="1.5" stroke-linecap="round"/><path d="M27.2 79.5L24.6 81.0" class="nf s-out" stroke-width="1.5" stroke-linecap="round"/><path d="M23.0 64.0L26.0 64.0" class="nf s-out" stroke-width="2.6" stroke-linecap="round"/><path d="M27.2 48.5L24.6 47.0" class="nf s-out" stroke-width="1.5" stroke-linecap="round"/><path d="M38.5 37.2L37.0 34.6" class="nf s-out" stroke-width="1.5" stroke-linecap="round"/>
-  <path d="M54 64L54 42M54 64L70 72" class="nf s-out" stroke-width="3.4" stroke-linecap="round"/>
-  <path d="M54 68L54 34" class="nf s-verm a-tick" stroke-width="1.6" stroke-linecap="round" style="transform-origin:54px 64px"/>
-  <circle cx="54" cy="64" r="3" class="f-verm"/>
-  <g><rect x="104" y="14" width="82" height="22" rx="5" class="f-card o2"/><rect x="104" y="14" width="7" height="22" class="f-amber"/><rect x="104" y="14" width="82" height="22" rx="5" class="nf o2"/><rect x="117" y="20" width="34" height="4" rx="2" class="f-ink2" opacity=".7"/><rect x="117" y="27" width="52" height="3" rx="1.5" class="f-uil"/></g><g><rect x="104" y="40" width="82" height="22" rx="5" class="f-card o2"/><rect x="104" y="40" width="7" height="22" class="f-teal"/><rect x="104" y="40" width="82" height="22" rx="5" class="nf o2"/><rect x="117" y="46" width="40" height="4" rx="2" class="f-ink2" opacity=".7"/><rect x="117" y="53" width="30" height="3" rx="1.5" class="f-uil"/></g><g><rect x="104" y="66" width="82" height="22" rx="5" class="f-card o2"/><rect x="104" y="66" width="7" height="22" class="f-verm"/><rect x="104" y="66" width="82" height="22" rx="5" class="nf o2"/><rect x="117" y="72" width="30" height="4" rx="2" class="f-ink2" opacity=".7"/><rect x="117" y="79" width="44" height="3" rx="1.5" class="f-uil"/></g><g><rect x="104" y="92" width="82" height="22" rx="5" class="f-card o2"/><rect x="104" y="92" width="7" height="22" class="f-lav"/><rect x="104" y="92" width="82" height="22" rx="5" class="nf o2"/><rect x="117" y="98" width="46" height="4" rx="2" class="f-ink2" opacity=".7"/><rect x="117" y="105" width="36" height="3" rx="1.5" class="f-uil"/></g>
-</svg></span><span class="name"><span data-l="en">Scheduled jobs</span><span data-l="zh" lang="zh-CN">定时任务</span></span><span class="hint"><span data-l="en">Digests and memory, on a clock.</span><span data-l="zh" lang="zh-CN">按时送摘要，整理记忆。</span></span></a></li>
-        <li><a class="tile" href="/ecosystem/#research" style="--c:var(--teal);--c-soft:var(--amber-soft)"><span class="mini"><svg viewBox="0 0 200 128" class="art" aria-hidden="true" focusable="false">
+</svg></span><span class="name"><span data-l="en">Lyra</span><span data-l="zh" lang="zh-CN">Lyra 大管家</span></span><span class="hint"><span data-l="en">Always-on steward; asks before the irreversible.</span><span data-l="zh" lang="zh-CN">常驻大管家；不可逆的事先问我。</span></span></a></li>
+        <li><a class="tile" href="/ecosystem/#roundtable" style="--c:var(--amber);--c-soft:var(--amber-soft)"><span class="mini"><svg viewBox="0 0 200 128" class="art" aria-hidden="true" focusable="false">
+  <ellipse cx="100" cy="78" rx="46" ry="26" class="f-desk3 o2"/>
+  <rect x="84" y="64" width="32" height="28" rx="4" class="f-paper o2"/>
+  <rect x="90" y="71" width="20" height="3" rx="1.5" class="f-uil"/><rect x="90" y="78" width="16" height="3" rx="1.5" class="f-uil"/><rect x="90" y="85" width="18" height="3" rx="1.5" class="f-teal" opacity=".7"/>
+  <circle cx="46" cy="56" r="9.5" class="f-amber o2"/><circle cx="154" cy="56" r="9.5" class="f-teal o2"/><circle cx="154" cy="100" r="9.5" class="f-verm o2"/><circle cx="46" cy="100" r="9.5" class="f-lav o2"/>
+  <path d="M56 62l10 5M144 62l-10 5M56 94l10-5M144 94l-10-5" class="nf s-out" stroke-width="2" stroke-dasharray="2 4" stroke-linecap="round"/>
+</svg><span class="chip teal"><span data-l="en">open source</span><span data-l="zh" lang="zh-CN">已开源</span></span></span><span class="name"><span data-l="en">Roundtable</span><span data-l="zh" lang="zh-CN">四代理圆桌</span></span><span class="hint"><span data-l="en">PI hosts Claude Code, Codex &amp; Antigravity.</span><span data-l="zh" lang="zh-CN">PI 主持，三端编码代理同桌协作。</span></span></a></li>
+        <li><a class="tile" href="/ecosystem/#research" style="--c:var(--teal);--c-soft:var(--teal-soft)"><span class="mini"><svg viewBox="0 0 200 128" class="art" aria-hidden="true" focusable="false">
   <ellipse cx="100" cy="66" rx="58" ry="40" class="f-desk3 o2"/>
   <rect x="84" y="46" width="32" height="40" rx="3" class="f-paper o2"/>
   <rect x="89" y="54" width="22" height="2.5" rx="1.25" class="f-uil"/><rect x="89" y="60" width="18" height="2.5" rx="1.25" class="f-uil"/><rect x="89" y="66" width="22" height="2.5" rx="1.25" class="f-uil"/><rect x="89" y="72" width="14" height="2.5" rx="1.25" class="f-uil"/>
@@ -308,7 +482,17 @@
   <circle cx="38" cy="48" r="9" class="f-teal o2"/><circle cx="162" cy="48" r="9" class="f-teal o2"/>
   <circle cx="44" cy="98" r="9" class="f-lav o2"/><circle cx="100" cy="116" r="9" class="f-lav o2"/><circle cx="156" cy="98" r="9" class="f-lav o2"/>
   <path d="M52 40q10-8 22-6M148 40q-10-8-22-6" class="nf s-teal" stroke-width="2" stroke-dasharray="2 4" stroke-linecap="round"/>
-</svg><span class="chip"><span data-l="en">being built</span><span data-l="zh" lang="zh-CN">建设中</span></span></span><span class="name"><span data-l="en">Research institution</span><span data-l="zh" lang="zh-CN">研究院</span></span><span class="hint"><span data-l="en">Director, reviewers, a council.</span><span data-l="zh" lang="zh-CN">主持、评审、评审会。</span></span></a></li>
+</svg></span><span class="name"><span data-l="en">Research &amp; Council</span><span data-l="zh" lang="zh-CN">研究院与评议会</span></span><span class="hint"><span data-l="en">Separate research and blind academic review.</span><span data-l="zh" lang="zh-CN">研究与双盲评审彻底分离，现已跑通。</span></span></a></li>
+        <li><a class="tile" href="/ecosystem/#memory" style="--c:var(--lav);--c-soft:var(--amber-soft)"><span class="mini"><svg viewBox="0 0 200 128" class="art" aria-hidden="true" focusable="false">
+  <rect x="20" y="18" width="50" height="92" rx="6" class="f-paper o2"/>
+  <rect x="28" y="28" width="34" height="6" rx="3" class="f-lav"/>
+  <rect x="28" y="42" width="32" height="4" rx="2" class="f-uil"/><rect x="28" y="51" width="28" height="4" rx="2" class="f-uil"/><rect x="28" y="60" width="34" height="4" rx="2" class="f-uil"/><rect x="28" y="69" width="24" height="4" rx="2" class="f-uil"/>
+  <rect x="28" y="84" width="34" height="16" rx="4" class="f-amber-soft o2"/>
+  <path d="M74 44h22M74 64h22M74 84h22" class="nf s-out" stroke-width="2" stroke-dasharray="2 4" stroke-linecap="round"/>
+  <rect x="100" y="20" width="80" height="24" rx="6" class="f-card o2"/><rect x="108" y="28" width="12" height="8" rx="2" class="f-amber"/><rect x="126" y="29" width="44" height="5" rx="2.5" class="f-uil"/>
+  <rect x="100" y="52" width="80" height="24" rx="6" class="f-card o2"/><rect x="108" y="60" width="12" height="8" rx="2" class="f-teal"/><rect x="126" y="61" width="48" height="5" rx="2.5" class="f-uil"/>
+  <rect x="100" y="84" width="80" height="24" rx="6" class="f-card o2"/><rect x="108" y="92" width="12" height="8" rx="2" class="f-verm"/><rect x="126" y="93" width="38" height="5" rx="2.5" class="f-uil"/>
+</svg></span><span class="name"><span data-l="en">Memory &amp; Gallery</span><span data-l="zh" lang="zh-CN">中央记忆与展厅</span></span><span class="hint"><span data-l="en">An 8 KB index opening into structured branches.</span><span data-l="zh" lang="zh-CN">8 KB 钥匙展厅与单正本分支档案。</span></span></a></li>
         <li><a class="tile" href="/ecosystem/#chrome" style="--c:var(--verm);--c-soft:var(--teal-soft)"><span class="mini"><svg viewBox="0 0 200 128" class="art" aria-hidden="true" focusable="false">
   <rect x="12" y="12" width="136" height="104" rx="9" class="f-screen o2"/><path d="M21 12h118a9 9 0 0 1 9 9v7h-136v-7a9 9 0 0 1 9-9z" class="f-ui1"/><rect x="12" y="12" width="136" height="104" rx="9" class="nf o2"/><circle cx="21" cy="20" r="2.4" class="f-verm"/><circle cx="28" cy="20" r="2.4" class="f-amber"/><circle cx="35" cy="20" r="2.4" class="f-teal"/>
   <rect x="42" y="15" width="98" height="9" rx="4.5" class="f-card"/><rect x="46" y="17.5" width="5" height="4" rx="1" class="f-teal"/><rect x="55" y="18.5" width="40" height="2.5" rx="1.25" class="f-uil"/>
@@ -318,58 +502,48 @@
   <g class="a-pulse"><rect x="69" y="86" width="36" height="14" rx="5" class="f-amber o2"/><path d="M81 93l3 3l6-6" class="nf s-out" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
   <rect x="109" y="86" width="24" height="14" rx="5" class="f-card o2"/><path d="M117 89.5l7 7M124 89.5l-7 7" class="nf s-out" stroke-width="1.8" stroke-linecap="round"/>
   <rect x="154" y="12" width="36" height="104" rx="8" class="f-ui1 o2"/>
-  <path d="M160 26l2.5 2.5l4.5-5" class="nf s-teal" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><rect x="170" y="24" width="14" height="3" rx="1.5" class="f-uil"/><path d="M160 40l2.5 2.5l4.5-5" class="nf s-teal" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><rect x="170" y="38" width="14" height="3" rx="1.5" class="f-uil"/><path d="M160 54l2.5 2.5l4.5-5" class="nf s-teal" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><rect x="170" y="52" width="14" height="3" rx="1.5" class="f-uil"/><path d="M160 68l2.5 2.5l4.5-5" class="nf s-teal" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><rect x="170" y="66" width="14" height="3" rx="1.5" class="f-uil"/>
+  <path d="M160 26l2.5 2.5l4.5-5M160 40l2.5 2.5l4.5-5M160 54l2.5 2.5l4.5-5M160 68l2.5 2.5l4.5-5" class="nf s-teal" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="170" y="24" width="14" height="3" rx="1.5" class="f-uil"/><rect x="170" y="38" width="14" height="3" rx="1.5" class="f-uil"/><rect x="170" y="52" width="14" height="3" rx="1.5" class="f-uil"/><rect x="170" y="66" width="14" height="3" rx="1.5" class="f-uil"/>
   <path d="M159 96q13-12 26 0q-13 12-26 0z" class="f-card o2"/><circle cx="172" cy="96" r="3.6" class="f-out"/>
-</svg></span><span class="name"><span data-l="en">PI Chrome</span><span data-l="zh" lang="zh-CN">PI Chrome</span></span><span class="hint"><span data-l="en">A controlled browser for the agents.</span><span data-l="zh" lang="zh-CN">给代理用的受控浏览器。</span></span></a></li>
-        <li><a class="tile" href="/ecosystem/#reading" style="--c:var(--lav);--c-soft:var(--amber-soft)"><span class="mini"><svg viewBox="0 0 200 128" class="art" aria-hidden="true" focusable="false">
-  <rect x="18" y="12" width="92" height="106" rx="4" class="f-paper o2"/>
-  <rect x="28" y="22" width="50" height="5" rx="2.5" class="f-ink2" opacity=".7"/>
-  <rect x="28" y="34" width="70" height="2.5" rx="1.25" class="f-uil"/><rect x="28" y="41" width="64" height="2.5" rx="1.25" class="f-uil"/><rect x="28" y="48" width="72" height="2.5" rx="1.25" class="f-uil"/><rect x="28" y="55" width="58" height="2.5" rx="1.25" class="f-uil"/><rect x="28" y="62" width="70" height="2.5" rx="1.25" class="f-uil"/><rect x="28" y="69" width="66" height="2.5" rx="1.25" class="f-uil"/><rect x="28" y="76" width="72" height="2.5" rx="1.25" class="f-uil"/><rect x="28" y="83" width="50" height="2.5" rx="1.25" class="f-uil"/><rect x="28" y="90" width="68" height="2.5" rx="1.25" class="f-uil"/><rect x="28" y="97" width="60" height="2.5" rx="1.25" class="f-uil"/><rect x="28" y="104" width="40" height="2.5" rx="1.25" class="f-uil"/>
-  <rect x="26" y="46" width="60" height="6" rx="1" class="f-amber" opacity=".5"/><rect x="26" y="74" width="48" height="6" rx="1" class="f-teal" opacity=".45"/>
-  <path d="M86 49C120 44 116 30 128 28" class="nf s-lav" stroke-width="1.8" stroke-dasharray="3 3"/>
-  <path d="M74 77C110 84 112 72 128 70" class="nf s-lav" stroke-width="1.8" stroke-dasharray="3 3"/>
-  <rect x="124" y="16" width="60" height="40" rx="6" class="f-lav-soft o2"/><rect x="131" y="24" width="30" height="4" rx="2" class="f-lav"/><rect x="131" y="33" width="44" height="3" rx="1.5" class="f-lav" opacity=".55"/><rect x="131" y="41" width="36" height="3" rx="1.5" class="f-lav" opacity=".55"/>
-  <rect x="124" y="62" width="60" height="40" rx="6" class="f-lav-soft o2"/><rect x="131" y="70" width="24" height="4" rx="2" class="f-lav"/><rect x="131" y="79" width="44" height="3" rx="1.5" class="f-lav" opacity=".55"/><rect x="131" y="87" width="30" height="3" rx="1.5" class="f-lav" opacity=".55"/>
-  <path d="M100 110l10-12l10 12" class="nf"/>
-</svg></span><span class="name"><span data-l="en">Reading workspace</span><span data-l="zh" lang="zh-CN">阅读区</span></span><span class="hint"><span data-l="en">Zotero and Obsidian beside the chat.</span><span data-l="zh" lang="zh-CN">Zotero 和 Obsidian 就在对话旁边。</span></span></a></li>
+</svg></span><span class="name"><span data-l="en">PI Chrome</span><span data-l="zh" lang="zh-CN">PI Chrome</span></span><span class="hint"><span data-l="en">A controlled, audited browser for the agents.</span><span data-l="zh" lang="zh-CN">带确认卡片与审计日志的受控浏览器。</span></span></a></li>
         <li><a class="tile" href="/ecosystem/#agents" style="--c:var(--amber);--c-soft:var(--lav-soft)"><span class="mini"><svg viewBox="0 0 200 128" class="art" aria-hidden="true" focusable="false">
   <rect x="14" y="12" width="172" height="104" rx="9" class="f-code o2"/>
   <circle cx="23" cy="20" r="2.4" class="f-verm"/><circle cx="30" cy="20" r="2.4" class="f-amber"/><circle cx="37" cy="20" r="2.4" class="f-teal"/>
-  <g font-family="ui-monospace,'Cascadia Mono',Consolas,monospace" font-size="11" font-weight="700">
-    <text x="24" y="44" class="f-amber">› claude</text>
-    <text x="24" y="62" class="f-teal">› codex</text>
+  <g font-family="ui-monospace,'Cascadia Mono',Consolas,monospace" font-size="10.5" font-weight="700">
+    <text x="24" y="42" class="f-amber">› claude</text>
+    <text x="24" y="58" class="f-teal">› codex</text>
+    <text x="24" y="74" class="f-lav">› antigravity</text>
   </g>
-  <rect x="24" y="72" width="4" height="4" rx="1" class="f-teal"/><rect x="32" y="72" width="70" height="4" rx="2" class="f-teal" opacity=".55"/>
-  <rect x="24" y="81" width="4" height="4" rx="1" class="f-verm"/><rect x="32" y="81" width="54" height="4" rx="2" class="f-verm" opacity=".55"/>
-  <rect x="24" y="90" width="4" height="4" rx="1" class="f-teal"/><rect x="32" y="90" width="82" height="4" rx="2" class="f-teal" opacity=".55"/>
-  <rect x="24" y="101" width="8" height="9" rx="1" class="f-star a-blink"/>
-  <rect x="124" y="30" width="52" height="50" rx="6" class="nf s-uil" stroke-width="1.5" stroke-dasharray="3 3"/>
-  <text x="150" y="61" text-anchor="middle" class="f-star" font-family="ui-rounded,'Segoe UI',system-ui,sans-serif" font-size="15" font-weight="800">PI</text>
-  <path d="M106 52h14m-4-4l4 4l-4 4" class="nf s-uil" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-</svg></span><span class="name"><span data-l="en">Coding agents</span><span data-l="zh" lang="zh-CN">编码代理</span></span><span class="hint"><span data-l="en">Claude Code and Codex.</span><span data-l="zh" lang="zh-CN">Claude Code 与 Codex。</span></span></a></li>
+  <rect x="24" y="84" width="4" height="4" rx="1" class="f-teal"/><rect x="32" y="84" width="76" height="4" rx="2" class="f-teal" opacity=".55"/>
+  <rect x="24" y="93" width="4" height="4" rx="1" class="f-amber"/><rect x="32" y="93" width="60" height="4" rx="2" class="f-amber" opacity=".55"/>
+  <rect x="24" y="102" width="8" height="8" rx="1" class="f-star a-blink"/>
+  <rect x="128" y="30" width="48" height="50" rx="6" class="nf s-uil" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <text x="152" y="61" text-anchor="middle" class="f-star" font-family="ui-rounded,'Segoe UI',system-ui,sans-serif" font-size="15" font-weight="800">PI</text>
+  <path d="M112 52h12m-4-4l4 4l-4 4" class="nf s-uil" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></span><span class="name"><span data-l="en">Coding agents</span><span data-l="zh" lang="zh-CN">三端编码代理</span></span><span class="hint"><span data-l="en">Claude Code, Codex, and Antigravity.</span><span data-l="zh" lang="zh-CN">Claude Code、Codex 与 Antigravity。</span></span></a></li>
         <li><a class="tile" href="/ecosystem/#rules" style="--c:var(--teal);--c-soft:var(--teal-soft)"><span class="mini"><svg viewBox="0 0 200 128" class="art" aria-hidden="true" focusable="false">
   <rect x="18" y="44" width="32" height="40" rx="7" class="f-card o2"/><rect x="64" y="44" width="32" height="40" rx="7" class="f-amber-soft o2"/><rect x="110" y="44" width="32" height="40" rx="7" class="f-teal-soft o2"/><rect x="156" y="44" width="32" height="40" rx="7" class="f-card o2"/>
-  <path d="M52 64h10m-4-4l4 4l-4 4" class="nf s-out" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M98 64h10m-4-4l4 4l-4 4" class="nf s-out" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M144 64h10m-4-4l4 4l-4 4" class="nf s-out" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M52 64h10m-4-4l4 4l-4 4M98 64h10m-4-4l4 4l-4 4M144 64h10m-4-4l4 4l-4 4" class="nf s-out" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
   <path d="M25 52h14l4 4v20h-18z" class="f-paper o2"/><rect x="29" y="62" width="10" height="2.5" rx="1" class="f-uil"/><rect x="29" y="67" width="8" height="2.5" rx="1" class="f-uil"/><rect x="36" y="55" width="10" height="8" rx="2" class="f-verm o2"/>
   <path d="M71 58h18v18h-18z" class="f-amber o2"/><path d="M71 64h18M80 58v6" class="nf s-out" stroke-width="1.6"/>
   <circle cx="126" cy="64" r="10" class="f-teal o2"/><path d="M121 64l4 4l6-7" class="nf" stroke="#fffaf1" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
   <path d="M164 58h16m-4-4l4 4l-4 4M180 70h-16m4-4l-4 4l4 4" class="nf s-out" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
   <path d="M28 100h144" class="nf s-uil" stroke-width="2" stroke-dasharray="2 6" stroke-linecap="round"/>
   <circle cx="28" cy="100" r="3.5" class="f-verm"/><circle cx="172" cy="100" r="3.5" class="f-teal"/>
-</svg></span><span class="name"><span data-l="en">House rules</span><span data-l="zh" lang="zh-CN">规矩</span></span><span class="hint"><span data-l="en">A new build is checked before it swaps in.</span><span data-l="zh" lang="zh-CN">新构建先检查，再替换。</span></span></a></li>
+</svg></span><span class="name"><span data-l="en">House rules &amp; locks</span><span data-l="zh" lang="zh-CN">总规矩与文件锁</span></span><span class="hint"><span data-l="en">Ticket locks, safe deletion, self-check, clean swaps.</span><span data-l="zh" lang="zh-CN">工单锁、安全回收、自检与核验换装。</span></span></a></li>
       </ul>
     </section>
 
     <section class="sec wrap" id="now" aria-labelledby="now-h">
       <div class="sec-head">
         <div class="t"><svg viewBox="0 0 64 64" class="art sticker" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-teal-soft"/><circle cx="32" cy="33" r="19" class="f-card o2"/><path d="M32 33V21M32 33l8 5" class="nf s-out" stroke-width="3" stroke-linecap="round"/><path d="M32 35V17" class="nf s-verm a-tick" stroke-width="1.6" stroke-linecap="round" style="transform-origin:32px 33px"/><circle cx="32" cy="33" r="2.4" class="f-verm"/><path d="M18 13l-5 5M46 13l5 5" class="nf s-out" stroke-width="3" stroke-linecap="round"/></svg><h2 id="now-h"><span data-l="en">Now</span><span data-l="zh" lang="zh-CN">此刻</span></h2></div>
-        <p data-l="en">Updated 2026-11-03.</p><p data-l="zh" lang="zh-CN">更新于 2026-11-03。</p>
+        <p data-l="en">Updated 2026-11-25.</p><p data-l="zh" lang="zh-CN">更新于 2026-11-25。</p>
         <a class="go" href="/now/"><span data-l="en">The now page</span><span data-l="zh" lang="zh-CN">完整的此刻页</span></a>
       </div>
-      <ul class="cards two">
-        <li><div class="card"><svg viewBox="0 0 64 64" class="art ic" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-teal-soft"/><ellipse cx="32" cy="36" rx="20" ry="13" class="f-desk3 o2"/><rect x="26" y="29" width="12" height="14" rx="2" class="f-paper o2"/><circle cx="32" cy="14" r="5.5" class="f-amber o2"/><circle cx="12" cy="30" r="5" class="f-teal o2"/><circle cx="52" cy="30" r="5" class="f-teal o2"/><circle cx="20" cy="52" r="5" class="f-lav o2"/><circle cx="44" cy="52" r="5" class="f-lav o2"/></svg><div class="txt"><h3><span data-l="en">The institution, from built to running</span><span data-l="zh" lang="zh-CN">研究院：从建好到跑通</span></h3><p data-l="en">Next: one complete, real research run.</p><p data-l="zh" lang="zh-CN">下一步：完整跑一轮真实的研究。</p></div></div></li>
-        <li><div class="card"><svg viewBox="0 0 64 64" class="art ic" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-lav-soft"/><rect x="10" y="14" width="44" height="34" rx="6" class="f-card o2"/><path d="M10 22h44" class="nf s-out" stroke-width="2"/><circle cx="15" cy="18" r="1.6" class="f-verm"/><circle cx="20" cy="18" r="1.6" class="f-amber"/><path d="M20 36q12-11 24 0q-12 11-24 0z" class="f-paper o2"/><circle cx="32" cy="36" r="3.6" class="f-out"/><path d="M24 52h16" class="nf s-out" stroke-width="3" stroke-linecap="round"/></svg><div class="txt"><h3><span data-l="en">New in Lyra and PI Chrome</span><span data-l="zh" lang="zh-CN">Lyra 和 PI Chrome 的新东西</span></h3><p data-l="en">Several chats share one Lyra; PI Chrome got a read-only mirror.</p><p data-l="zh" lang="zh-CN">多个对话共用一个 Lyra；PI Chrome 有了只读镜像。</p></div></div></li>
-
+      <ul class="cards">
+        <li><div class="card"><svg viewBox="0 0 64 64" class="art ic" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-amber-soft"/><rect x="12" y="20" width="40" height="28" rx="6" class="f-card o2"/><path d="M22 20v-4a4 4 0 0 1 4-4h12a4 4 0 0 1 4 4v4" class="nf s-out" stroke-width="2.4"/><rect x="27" y="29" width="10" height="8" rx="2.5" class="f-amber o2"/></svg><div class="txt"><h3><span data-l="en">Spinning tools out into open source</span><span data-l="zh" lang="zh-CN">把顺手工具拆成开源软件</span></h3><p data-l="en">Five tools shipped this week; next up are the governance template and Context Relay.</p><p data-l="zh" lang="zh-CN">一周内连发五款独立工具；接下来整理治理模板与 Context Relay。</p></div></div></li>
+        <li><div class="card"><svg viewBox="0 0 64 64" class="art ic" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-teal-soft"/><path d="M32 32L14 20M32 32L50 18M32 32L50 46M32 32L16 46M32 32L32 10" class="nf s-out" stroke-width="2.2" stroke-dasharray="2 4" stroke-linecap="round"/><circle cx="32" cy="32" r="9" class="f-amber o2"/><circle cx="14" cy="20" r="5" class="f-lav o2"/><circle cx="50" cy="18" r="5" class="f-teal o2"/><circle cx="50" cy="46" r="5" class="f-verm o2"/><circle cx="16" cy="46" r="5" class="f-teal o2"/><circle cx="32" cy="10" r="4" class="f-card o2"/></svg><div class="txt"><h3><span data-l="en">Converging PI &amp; Ecosystem 1.0</span><span data-l="zh" lang="zh-CN">PI 与 Ecosystem 1.0 收尾</span></h3><p data-l="en">All 11 departments, the roundtable, and the blind council are running daily; finishing the final PI 1.0 swap.</p><p data-l="zh" lang="zh-CN">11 个机构、圆桌与双盲评议会已进入日常运行，正在收官 PI 1.0 换装。</p></div></div></li>
+        <li><div class="card"><svg viewBox="0 0 64 64" class="art ic" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-lav-soft"/><rect x="12" y="16" width="40" height="32" rx="6" class="f-paper o2"/><path d="M16 26q4-6 8 0t8-1t8 4t8-3" class="nf s-out" stroke-width="2" stroke-linecap="round"/><path d="M16 34q5 5 10-2t10 3t12-2" class="nf s-teal" stroke-width="2" stroke-linecap="round"/><path d="M16 42q4-4 8 2t8-5t8 4t8-1" class="nf s-verm" stroke-width="2" stroke-linecap="round"/></svg><div class="txt"><h3><span data-l="en">EEG &amp; representation research</span><span data-l="zh" lang="zh-CN">脑电与表征研究</span></h3><p data-l="en">Cross-subject neural representation, continual learning, and reproducible evaluation.</p><p data-l="zh" lang="zh-CN">跨被试神经信号表征、持续学习与可复现评估。</p></div></div></li>
       </ul>
     </section>
 
@@ -378,13 +552,18 @@
         <div class="t"><svg viewBox="0 0 64 64" class="art sticker" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-amber-soft"/><path d="M18 12h24l6 6v34H18z" class="f-paper o2"/><path d="M24 24h18M24 31h18M24 38h12" class="nf s-uil" stroke-width="2.4" stroke-linecap="round"/><path d="M40 46l12-22l5 3l-12 22l-6 3z" class="f-verm o2"/></svg><h2 id="notes-h"><span data-l="en">Notes</span><span data-l="zh" lang="zh-CN">手记</span></h2></div>
         <a class="go" href="/notes/"><span data-l="en">All notes</span><span data-l="zh" lang="zh-CN">全部手记</span></a>
       </div>
-      <ul class="cards two" style="grid-template-columns:1fr">
-        <li><a class="card" href="/notes/ecosystem/" style="--c-soft:var(--lav-soft)"><span class="pic"><svg viewBox="0 0 200 90" preserveAspectRatio="xMidYMid meet" class="art" aria-hidden="true" focusable="false">
-    <path d="M100 45L40 22M100 45L46 70M100 45L160 20M100 45L156 70M100 45L70 12M100 45L132 80M100 45L20 46M100 45L180 46" class="nf s-out" stroke-width="1.6" stroke-dasharray="2 4" stroke-linecap="round" opacity=".6"/>
-    <circle cx="100" cy="45" r="15" class="f-amber o2"/><text x="100" y="49.5" text-anchor="middle" class="f-ink" font-family="ui-rounded,'Segoe UI',system-ui,sans-serif" font-size="11" font-weight="900">PI</text>
-    <circle cx="40" cy="22" r="7" class="f-lav o2"/><circle cx="46" cy="70" r="7" class="f-teal o2"/><circle cx="160" cy="20" r="7" class="f-verm o2"/><circle cx="156" cy="70" r="7" class="f-lav o2"/><circle cx="70" cy="12" r="7" class="f-teal o2"/><circle cx="132" cy="80" r="7" class="f-amber o2"/><circle cx="20" cy="46" r="7" class="f-verm o2"/><circle cx="180" cy="46" r="7" class="f-teal o2"/>
-  </svg></span><div class="txt"><h3><span data-l="en">Ecosystem, PI and Lyra: how do they fit?</span><span data-l="zh" lang="zh-CN">Ecosystem、PI 与 Lyra，各自在做什么？</span></h3><p data-l="en">A workbench, the habits around it, and the assistant inside.</p><p data-l="zh" lang="zh-CN">一个工作台，围着它的习惯，和住在里面的助手。</p></div><span class="meta">2026-10-31</span></a></li>
-
+      <ul class="cards two">
+        <li><a class="card" href="/notes/workbench-to-oss/" style="--c-soft:var(--amber-soft)"><span class="pic"><svg viewBox="0 0 200 72" preserveAspectRatio="xMidYMid meet" class="art" aria-hidden="true" focusable="false">
+          <rect x="20" y="14" width="52" height="44" rx="8" class="f-card o2"/><circle cx="46" cy="36" r="12" class="f-amber o2"/><text x="46" y="40" text-anchor="middle" class="f-ink" font-family="ui-rounded,'Segoe UI',system-ui,sans-serif" font-size="10" font-weight="900">1.0</text>
+          <path d="M78 36h24m-5-5l5 5l-5 5" class="nf s-out" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="110" y="14" width="22" height="20" rx="5" class="f-amber o2"/><rect x="138" y="14" width="22" height="20" rx="5" class="f-teal o2"/><rect x="166" y="14" width="22" height="20" rx="5" class="f-lav o2"/>
+          <rect x="124" y="40" width="22" height="20" rx="5" class="f-verm o2"/><rect x="152" y="40" width="22" height="20" rx="5" class="f-teal-soft o2"/>
+        </svg></span><div class="txt"><h3><span data-l="en">Spinning quiet tools out of a private workbench</span><span data-l="zh" lang="zh-CN">从私有工作台里拆出安静的开源工具</span></h3><p data-l="en">Why five parts of Ecosystem 1.0 became zero-dependency, offline-first public releases — and why the rest stays local.</p><p data-l="zh" lang="zh-CN">为什么把 Ecosystem 1.0 里的五块拆成了零依赖、离线的开源软件，而把其余部分留在本地。</p></div><span class="meta">2026-11-25</span></a></li>
+        <li><a class="card" href="/notes/ecosystem/" style="--c-soft:var(--lav-soft)"><span class="pic"><svg viewBox="0 0 200 72" preserveAspectRatio="xMidYMid meet" class="art" aria-hidden="true" focusable="false">
+          <path d="M100 36L40 18M100 36L46 56M100 36L160 16M100 36L156 56M100 36L70 10M100 36L132 62M100 36L20 36M100 36L180 36" class="nf s-out" stroke-width="1.6" stroke-dasharray="2 4" stroke-linecap="round" opacity=".6"/>
+          <circle cx="100" cy="36" r="14" class="f-amber o2"/><text x="100" y="40" text-anchor="middle" class="f-ink" font-family="ui-rounded,'Segoe UI',system-ui,sans-serif" font-size="10.5" font-weight="900">PI</text>
+          <circle cx="40" cy="18" r="6.5" class="f-lav o2"/><circle cx="46" cy="56" r="6.5" class="f-teal o2"/><circle cx="160" cy="16" r="6.5" class="f-verm o2"/><circle cx="156" cy="56" r="6.5" class="f-lav o2"/><circle cx="70" cy="10" r="6.5" class="f-teal o2"/><circle cx="132" cy="62" r="6.5" class="f-amber o2"/><circle cx="20" cy="36" r="6.5" class="f-verm o2"/><circle cx="180" cy="36" r="6.5" class="f-teal o2"/>
+        </svg></span><div class="txt"><h3><span data-l="en">Ecosystem, PI and Lyra: how do they fit?</span><span data-l="zh" lang="zh-CN">Ecosystem、PI 与 Lyra，各自在做什么？</span></h3><p data-l="en">A workbench, the 11-department habits around it, and the steward inside.</p><p data-l="zh" lang="zh-CN">一个工作台，围着它的 11 个机构与习惯，以及住在里面的大管家。</p></div><span class="meta">2026-10-31 · <span data-l="en">revised</span><span data-l="zh" lang="zh-CN">修订</span> 2026-11-25</span></a></li>
       </ul>
     </section>
 
@@ -394,7 +573,7 @@
   <defs><linearGradient id="pcsky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" class="sky-a"/><stop offset="1" class="sky-b"/></linearGradient></defs>
   <rect width="400" height="240" fill="url(#pcsky)"/>
   <g class="day"><circle cx="320" cy="64" r="26" class="f-amber"/><path d="M60 70a14 14 0 0 1 25-8a18 18 0 0 1 32 4a11 11 0 0 1 3 22H62a10 10 0 0 1-2-18z" class="f-cloud"/></g>
-  <g class="night"><circle cx="40" cy="40" r="1.6" class="f-star a-twinkle" style="animation-delay:0s"/><circle cx="90" cy="90" r="1.6" class="f-star a-twinkle" style="animation-delay:0.4s"/><circle cx="150" cy="30" r="1.6" class="f-star a-twinkle" style="animation-delay:0.8s"/><circle cx="250" cy="50" r="1.6" class="f-star a-twinkle" style="animation-delay:1.2000000000000002s"/><circle cx="350" cy="120" r="1.6" class="f-star a-twinkle" style="animation-delay:1.6s"/><circle cx="300" cy="30" r="1.6" class="f-star a-twinkle" style="animation-delay:2s"/><circle cx="200" cy="100" r="1.6" class="f-star a-twinkle" style="animation-delay:2.4000000000000004s"/><circle cx="60" cy="140" r="1.6" class="f-star a-twinkle" style="animation-delay:2.8000000000000003s"/><circle cx="322" cy="62" r="22" class="f-star"/><circle cx="332" cy="56" r="18" class="f-hill" style="fill:var(--s-sky-a)"/></g>
+  <g class="night"><circle cx="40" cy="40" r="1.6" class="f-star a-twinkle" style="animation-delay:0s"/><circle cx="90" cy="90" r="1.6" class="f-star a-twinkle" style="animation-delay:0.4s"/><circle cx="150" cy="30" r="1.6" class="f-star a-twinkle" style="animation-delay:0.8s"/><circle cx="250" cy="50" r="1.6" class="f-star a-twinkle" style="animation-delay:1.2s"/><circle cx="350" cy="120" r="1.6" class="f-star a-twinkle" style="animation-delay:1.6s"/><circle cx="300" cy="30" r="1.6" class="f-star a-twinkle" style="animation-delay:2s"/><circle cx="200" cy="100" r="1.6" class="f-star a-twinkle" style="animation-delay:2.4s"/><circle cx="60" cy="140" r="1.6" class="f-star a-twinkle" style="animation-delay:2.8s"/><circle cx="322" cy="62" r="22" class="f-star"/><circle cx="332" cy="56" r="18" class="f-hill" style="fill:var(--s-sky-a)"/></g>
   <path d="M0 200q60-30 120-8t120-6t160 4V240H0z" class="f-hill"/>
   <path d="M0 220q80-18 160-2t140-6t100 2V240H0z" class="f-hill2"/>
   <path d="M40 180C110 150 150 190 200 140S270 90 300 100" class="nf s-out" stroke-width="2.4" stroke-dasharray="4 7" stroke-linecap="round" opacity=".55"/>
@@ -416,6 +595,7 @@
       <nav aria-label="Elsewhere">
         <a href="mailto:kenny@kojoo.co">kenny@kojoo.co</a>
         <a href="https://github.com/KennyMcSimpson" rel="me noopener">GitHub</a>
+        <a href="/projects/"><span data-l="en">Projects</span><span data-l="zh" lang="zh-CN">开源</span></a>
         <a href="/uses/"><span data-l="en">Uses</span><span data-l="zh" lang="zh-CN">工具</span></a>
         <a href="/feed.xml">RSS</a>
       </nav>
@@ -425,7 +605,7 @@
         <button type="button" data-theme-set="light" aria-pressed="false"><span data-l="en">light</span><span data-l="zh" lang="zh-CN">浅色</span></button>
         <button type="button" data-theme-set="dark" aria-pressed="false"><span data-l="en">dark</span><span data-l="zh" lang="zh-CN">深色</span></button>
       </div>
-      <p class="meta-line"><span data-l="en">Updated 2026-11-03 · drawn by hand in SVG · no trackers · <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">source</a></span><span data-l="zh" lang="zh-CN">更新于 2026-11-03 · SVG 手绘 · 无统计 · <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">源码</a></span></p>
+      <p class="meta-line"><span data-l="en">Updated 2026-11-25 · drawn by hand in SVG · no trackers · <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">source</a></span><span data-l="zh" lang="zh-CN">更新于 2026-11-25 · SVG 手绘 · 无统计 · <a href="https://github.com/KennyMcSimpson/kennymcsimpson.github.io" rel="noopener">源码</a></span></p>
     </div>
   </footer>
 </body>
