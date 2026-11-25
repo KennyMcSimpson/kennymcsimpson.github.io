@@ -47,7 +47,7 @@
         <div class="t"><svg viewBox="0 0 64 64" class="art sticker" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-lav-soft"/><ellipse cx="32" cy="32" rx="18" ry="12" class="f-desk3 o2"/><circle cx="32" cy="12" r="5" class="f-amber o2"/><circle cx="52" cy="32" r="5" class="f-teal o2"/><circle cx="32" cy="52" r="5" class="f-verm o2"/><circle cx="12" cy="32" r="5" class="f-lav o2"/></svg><h2 id="agents-h"><span data-l="en">Multi-agent infrastructure</span><span data-l="zh" lang="zh-CN">多代理协作与基础设施</span></h2></div>
         <p data-l="en">Coordination, local observability, and register calibration for coding agents you already run.</p><p data-l="zh" lang="zh-CN">围绕现成编码代理的协作房间、本地账本与语域校准。</p>
       </div>
-      <ul class="projects">
+      <ul class="projects two">
         <li class="proj" id="agentroundtable" style="--c:var(--amber);--c-soft:var(--amber-soft)">
           <div class="mini"><svg viewBox="0 0 200 112" class="art" aria-hidden="true" focusable="false">
             <ellipse cx="100" cy="58" rx="52" ry="30" class="f-desk3 o2"/>
@@ -56,15 +56,15 @@
             <path d="M100 22v14M100 84v10M42 58h12M146 58h12" class="nf s-out" stroke-width="2" stroke-dasharray="2 4" stroke-linecap="round"/>
             <circle cx="100" cy="18" r="10" class="f-amber o2"/><circle cx="164" cy="58" r="10" class="f-teal o2"/><circle cx="100" cy="96" r="10" class="f-verm o2"/><circle cx="36" cy="58" r="10" class="f-lav o2"/>
             <circle cx="100" cy="18" r="3" class="f-card"/><circle cx="164" cy="58" r="3" class="f-card"/><circle cx="100" cy="96" r="3" class="f-card"/><circle cx="36" cy="58" r="3" class="f-card"/>
-          </svg><span class="chip">v0.2.0</span></div>
+          </svg><span class="chip">v0.2.1</span></div>
           <div class="body">
             <h3>AgentRoundtable</h3>
-            <p data-l="en">Governed multi-agent roundtable for Claude Code, Codex, Antigravity, and other CLI/desktop coding agents. Non-intrusive <code>JOIN.md</code> seat protocol, artifact freeze gates, SSE multi-room daemon, and group-chat / Arena UI.</p>
-            <p data-l="zh" lang="zh-CN">面向 Claude Code、Codex、Antigravity 等现成编码代理的受治理圆桌房间。非侵入式 <code>JOIN.md</code> 席位协议、产物冻结闸门、SSE 多房间守护进程，以及群聊与竞技场界面。</p>
-            <p class="tags">Node.js · 0 dependencies · zh-CN / EN · MIT</p>
+            <p data-l="en">Governed multi-agent roundtable for Claude Code, Codex, Antigravity, Gemini CLI, and other coding agents. Non-intrusive <code>JOIN.md</code> seat protocol, artifact freeze gates, SSE multi-room daemon, and studio group-chat / Arena UI.</p>
+            <p data-l="zh" lang="zh-CN">面向 Claude Code、Codex、Antigravity、Gemini CLI 等现成编码代理的受治理圆桌房间。非侵入式 <code>JOIN.md</code> 席位协议、产物冻结闸门、SSE 多房间守护进程，以及工作室群聊与竞技场界面。</p>
+            <p class="tags">Node.js · 0 dependencies · 3-OS CI · MIT</p>
             <div class="actions">
               <a href="https://github.com/KennyMcSimpson/AgentRoundtable" rel="noopener">GitHub</a>
-              <a class="sub" href="https://github.com/KennyMcSimpson/AgentRoundtable/releases/tag/v0.2.0" rel="noopener"><span data-l="en">Release v0.2.0</span><span data-l="zh" lang="zh-CN">v0.2.0 发布页</span></a>
+              <a class="sub" href="https://github.com/KennyMcSimpson/AgentRoundtable/releases/tag/v0.2.1" rel="noopener"><span data-l="en">Release v0.2.1</span><span data-l="zh" lang="zh-CN">v0.2.1 发布页</span></a>
             </div>
           </div>
         </li>
@@ -91,6 +91,31 @@
             <p class="tags">Node.js · 0 dependencies · Local Dashboard · MIT</p>
             <div class="actions">
               <a href="https://github.com/KennyMcSimpson/AgentTokenMeter" rel="noopener">GitHub</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="proj" id="contextrelay" style="--c:var(--amber);--c-soft:var(--teal-soft)">
+          <div class="mini"><svg viewBox="0 0 200 112" class="art" aria-hidden="true" focusable="false">
+            <rect x="16" y="18" width="60" height="76" rx="8" class="f-ui1 o2"/>
+            <rect x="24" y="28" width="44" height="5" rx="2.5" class="f-uil"/><rect x="24" y="38" width="38" height="5" rx="2.5" class="f-verm" opacity=".5"/><rect x="24" y="48" width="44" height="5" rx="2.5" class="f-verm" opacity=".5"/><rect x="24" y="58" width="32" height="5" rx="2.5" class="f-uil"/><rect x="24" y="68" width="40" height="5" rx="2.5" class="f-verm" opacity=".5"/><rect x="24" y="78" width="36" height="5" rx="2.5" class="f-uil"/>
+            <path d="M76 56c16 0 18-18 36-18" class="nf s-out" stroke-width="2.8" stroke-linecap="round"/>
+            <path d="M76 56h18" class="nf s-verm" stroke-width="2.2" stroke-dasharray="3 3" stroke-linecap="round"/>
+            <circle cx="76" cy="56" r="4.5" class="f-amber o2"/>
+            <rect x="114" y="22" width="70" height="68" rx="9" class="f-paper o2"/>
+            <rect x="123" y="32" width="34" height="7" rx="3.5" class="f-teal"/>
+            <rect x="123" y="46" width="50" height="4.5" rx="2.2" class="f-ink2" opacity=".7"/>
+            <rect x="123" y="56" width="42" height="4.5" rx="2.2" class="f-uil"/>
+            <rect x="123" y="70" width="50" height="11" rx="5.5" class="f-amber-soft o2"/>
+          </svg><span class="chip teal">v0.2.2</span></div>
+          <div class="body">
+            <h3>ContextRelay</h3>
+            <p data-l="en">Zero-UI native <code>/fork</code> plugin for Google Antigravity — one-click deterministic conversation denoising without LLM calls, live sidebar title sync, 0-token bloat nudges, Git-grounded handoffs, and token-savings SVG cards.</p>
+            <p data-l="zh" lang="zh-CN">面向 Google Antigravity 的原生零 UI <code>/fork</code> 插件——零模型调用确定性长会话去噪分叉、实时同步侧边栏重命名标题、0-token 膨胀提醒、真实 Git 交接与省流统计卡片。</p>
+            <p class="tags">Node.js · 0 dependencies · Antigravity Plugin · MIT</p>
+            <div class="actions">
+              <a href="https://github.com/KennyMcSimpson/ContextRelay" rel="noopener">GitHub</a>
+              <a class="sub" href="https://github.com/KennyMcSimpson/ContextRelay/releases/tag/v0.2.2" rel="noopener"><span data-l="en">Release v0.2.2</span><span data-l="zh" lang="zh-CN">v0.2.2 发布页</span></a>
             </div>
           </div>
         </li>
@@ -221,21 +246,16 @@
 
         <li>
           <div class="card muted">
-            <svg viewBox="0 0 64 64" class="art ic" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-teal-soft"/><path d="M18 46V20m0 14c0-10 24-6 24-16" class="nf s-out" stroke-width="3" stroke-linecap="round"/><circle cx="18" cy="46" r="4.5" class="f-card o2"/><circle cx="18" cy="20" r="4.5" class="f-amber o2"/><circle cx="42" cy="18" r="4.5" class="f-teal o2"/><path d="M34 38l14 0" class="nf s-verm" stroke-width="3" stroke-linecap="round"/></svg>
+            <svg viewBox="0 0 64 64" class="art ic" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" class="f-lav-soft"/><rect x="12" y="16" width="40" height="32" rx="6" class="f-paper o2"/><path d="M16 26q4-6 8 0t8-1t8 4t8-3" class="nf s-out" stroke-width="2" stroke-linecap="round"/><path d="M16 34q5 5 10-2t10 3t12-2" class="nf s-teal" stroke-width="2" stroke-linecap="round"/><path d="M16 42q4-4 8 2t8-5t8 4t8-1" class="nf s-verm" stroke-width="2" stroke-linecap="round"/></svg>
             <div class="txt">
-              <h3>Context Relay (/fork) <span class="chip"><span data-l="en">ready locally</span><span data-l="zh" lang="zh-CN">本地就绪</span></span></h3>
-              <p data-l="en">Zero-LLM conversation pruning, clean cross-project relaunch, and cumulative token-savings stats for long coding-agent threads — pairs with AgentTokenMeter and Unarmored.</p>
-              <p data-l="zh" lang="zh-CN">无需消耗模型配额的长会话去噪、跨项目干净分叉与累计省流统计插件，与 AgentTokenMeter、Unarmored 组成编码代理三件套。</p>
-              <p class="meta"><span data-l="en">v0.2.1 · finalizing docs before public push</span><span data-l="zh" lang="zh-CN">v0.2.1 · 整理文档后公开发布</span></p>
+              <h3><span data-l="en">EEG &amp; blind-review utilities</span><span data-l="zh" lang="zh-CN">脑电与盲审工具（孵化中）</span> <span class="chip"><span data-l="en">incubating</span><span data-l="zh" lang="zh-CN">筹备中</span></span></h3>
+              <p data-l="en"><code>eeg-split-auditor</code> (subject-disjoint EEG leakage checker), <code>blind-council-gate</code> (isolated multi-reviewer verdict harness with rubber-stamp checks), and <code>bare-eeg-probe</code> (minimal reproducible linear-probe baseline).</p>
+              <p data-l="zh" lang="zh-CN"><code>eeg-split-auditor</code>（脑电跨被试划分泄漏审计）、<code>blind-council-gate</code>（隔离盲审与橡皮图章熔断框架）以及 <code>bare-eeg-probe</code>（极简可复现脑电线性探针基线）。</p>
+              <p class="meta"><span data-l="en">Published once documented and independently reproducible</span><span data-l="zh" lang="zh-CN">先跑通、写清文档、独立复现后再公开</span></p>
             </div>
           </div>
         </li>
       </ul>
-
-      <div class="bench">
-        <p data-l="en"><strong>On the research &amp; governance bench (incubating):</strong> <code>eeg-split-auditor</code> (subject-disjoint EEG leakage checker), <code>blind-council-gate</code> (isolated multi-reviewer verdict harness with rubber-stamp checks), and <code>bare-eeg-probe</code> (minimal reproducible linear-probe baseline). Published only once clean, documented, and independently reproducible.</p>
-        <p data-l="zh" lang="zh-CN"><strong>科研与治理孵化位（筹备中）：</strong><code>eeg-split-auditor</code>（脑电跨被试数据划分泄漏审计）、<code>blind-council-gate</code>（隔离盲审与橡皮图章熔断框架）以及 <code>bare-eeg-probe</code>（极简可复现脑电线性探针基线）。全部坚持先跑通、写清文档、独立复现后再公开。</p>
-      </div>
     </section>
   </main>
 
